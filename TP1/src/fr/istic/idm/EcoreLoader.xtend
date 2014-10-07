@@ -8,20 +8,13 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl
 
 class EcoreLoader {
-	
-	/**
-	 * Load an ecore model
-	 * @param path: path to a .ecore file
-	 * @return the main package of the model
-	 */
 	def EPackage loadModel(String path) {
+		//Load Ecore Model
 		var fact = new EcoreResourceFactoryImpl
-		
 		if (!EPackage.Registry.INSTANCE.containsKey(EcorePackage.eNS_URI)) {
 			EPackage.Registry.INSTANCE.put(EcorePackage.eNS_URI, EcorePackage.eINSTANCE);
 		}
 		Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put("ecore", fact);
-		
 		var rs = new ResourceSetImpl()
 		var uri = URI.createURI(path);
 		var res = rs.getResource(uri, true);
@@ -29,6 +22,4 @@ class EcoreLoader {
 		return p;
 
 	}
-	
 }
-
