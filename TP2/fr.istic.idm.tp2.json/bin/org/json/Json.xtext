@@ -1,0 +1,27 @@
+grammar org.json.Json with org.eclipse.xtext.common.Terminals
+
+generate json "http://www.json.org/Json"
+
+Object:
+	'{'
+		(members+=Member)?
+		(',' members+=Member)*
+	'}';
+	
+Member:
+	key=STRING ':' value=Value;
+	
+Value:
+	 Object | STRING | Array | Boolean | Null | Number;
+	 
+Array:
+	'[' (values+=Value)? (',' values+=Value)* ']';
+	
+Boolean:
+	'true' | 'false';
+
+Null:
+	'null';
+	
+terminal Number:
+	'-'? INT? '.' INT (('E'|'e') '-'? INT)?;
