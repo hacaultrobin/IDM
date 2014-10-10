@@ -102,7 +102,7 @@ ruleJsonPollSystem returns [EObject current=null]
     {
     	newLeafNode(otherlv_4, grammarAccess.getJsonPollSystemAccess().getRightCurlyBracketKeyword_4());
     }
-)
+)?
 ;
 
 

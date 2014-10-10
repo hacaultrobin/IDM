@@ -28,10 +28,10 @@ public class JsonGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
 		//JsonPollSystem:
-		//	"{" "polls" ":" ArrayJsonPoll "}";
+		//	("{" "polls" ":" ArrayJsonPoll "}")?;
 		public ParserRule getRule() { return rule; }
 
-		//"{" "polls" ":" ArrayJsonPoll "}"
+		//("{" "polls" ":" ArrayJsonPoll "}")?
 		public Group getGroup() { return cGroup; }
 
 		//"{"
@@ -455,7 +455,7 @@ public class JsonGrammarAccess extends AbstractGrammarElementFinder {
 
 	
 	//JsonPollSystem:
-	//	"{" "polls" ":" ArrayJsonPoll "}";
+	//	("{" "polls" ":" ArrayJsonPoll "}")?;
 	public JsonPollSystemElements getJsonPollSystemAccess() {
 		return pJsonPollSystem;
 	}

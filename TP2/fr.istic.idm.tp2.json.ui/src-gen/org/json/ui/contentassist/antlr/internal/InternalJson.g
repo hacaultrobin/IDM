@@ -73,7 +73,7 @@ ruleJsonPollSystem
 	:
 (
 { before(grammarAccess.getJsonPollSystemAccess().getGroup()); }
-(rule__JsonPollSystem__Group__0)
+(rule__JsonPollSystem__Group__0)?
 { after(grammarAccess.getJsonPollSystemAccess().getGroup()); }
 )
 

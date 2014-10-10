@@ -1,6 +1,8 @@
 {
-	"polls" : [
-		"name" : "Poll A",
-		"questions" : []	
+	polls : [
+		{
+		name : "Poll A",
+		questions : []
+		}	
 	]
 }

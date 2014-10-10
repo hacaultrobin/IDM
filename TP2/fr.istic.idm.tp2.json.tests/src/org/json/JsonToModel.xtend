@@ -11,6 +11,7 @@ class JsonToModel {
 	def loadModel(URI uri) {
 		new JsonStandaloneSetupGenerated().createInjectorAndDoEMFRegistration()
 		var res = new ResourceSetImpl().getResource(uri, true)
+		//res.errors
 		res.contents.get(0) as JsonPollSystem
 	}
 	

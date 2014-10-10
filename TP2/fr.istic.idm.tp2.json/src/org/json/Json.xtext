@@ -3,9 +3,9 @@ grammar org.json.Json with org.eclipse.xtext.common.Terminals
 generate json "http://www.json.org/Json"
 
 JsonPollSystem:
-	'{'
+	('{'
 		"polls" ':' ArrayJsonPoll
-	'}';
+	'}')?;
 
 ArrayJsonPoll:
 	'[' (polls+=JsonPoll)? (',' polls+=JsonPoll)* ']';

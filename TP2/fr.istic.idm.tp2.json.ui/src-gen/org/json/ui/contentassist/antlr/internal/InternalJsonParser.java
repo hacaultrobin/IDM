@@ -115,27 +115,38 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "ruleJsonPollSystem"
-    // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:69:1: ruleJsonPollSystem : ( ( rule__JsonPollSystem__Group__0 ) ) ;
+    // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:69:1: ruleJsonPollSystem : ( ( rule__JsonPollSystem__Group__0 )? ) ;
     public final void ruleJsonPollSystem() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:73:2: ( ( ( rule__JsonPollSystem__Group__0 ) ) )
-            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:74:1: ( ( rule__JsonPollSystem__Group__0 ) )
+            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:73:2: ( ( ( rule__JsonPollSystem__Group__0 )? ) )
+            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:74:1: ( ( rule__JsonPollSystem__Group__0 )? )
             {
-            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:74:1: ( ( rule__JsonPollSystem__Group__0 ) )
-            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:75:1: ( rule__JsonPollSystem__Group__0 )
+            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:74:1: ( ( rule__JsonPollSystem__Group__0 )? )
+            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:75:1: ( rule__JsonPollSystem__Group__0 )?
             {
              before(grammarAccess.getJsonPollSystemAccess().getGroup()); 
-            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:76:1: ( rule__JsonPollSystem__Group__0 )
-            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:76:2: rule__JsonPollSystem__Group__0
-            {
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__0_in_ruleJsonPollSystem94);
-            rule__JsonPollSystem__Group__0();
+            // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:76:1: ( rule__JsonPollSystem__Group__0 )?
+            int alt1=2;
+            int LA1_0 = input.LA(1);
 
-            state._fsp--;
+            if ( (LA1_0==11) ) {
+                alt1=1;
+            }
+            switch (alt1) {
+                case 1 :
+                    // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:76:2: rule__JsonPollSystem__Group__0
+                    {
+                    pushFollow(FOLLOW_rule__JsonPollSystem__Group__0_in_ruleJsonPollSystem94);
+                    rule__JsonPollSystem__Group__0();
 
+                    state._fsp--;
+
+
+                    }
+                    break;
 
             }
 
@@ -169,13 +180,13 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:90:1: ruleArrayJsonPoll EOF
             {
              before(grammarAccess.getArrayJsonPollRule()); 
-            pushFollow(FOLLOW_ruleArrayJsonPoll_in_entryRuleArrayJsonPoll121);
+            pushFollow(FOLLOW_ruleArrayJsonPoll_in_entryRuleArrayJsonPoll122);
             ruleArrayJsonPoll();
 
             state._fsp--;
 
              after(grammarAccess.getArrayJsonPollRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleArrayJsonPoll128); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleArrayJsonPoll129); 
 
             }
 
@@ -208,7 +219,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:104:1: ( rule__ArrayJsonPoll__Group__0 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:104:2: rule__ArrayJsonPoll__Group__0
             {
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__0_in_ruleArrayJsonPoll154);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__0_in_ruleArrayJsonPoll155);
             rule__ArrayJsonPoll__Group__0();
 
             state._fsp--;
@@ -246,13 +257,13 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:118:1: ruleJsonPoll EOF
             {
              before(grammarAccess.getJsonPollRule()); 
-            pushFollow(FOLLOW_ruleJsonPoll_in_entryRuleJsonPoll181);
+            pushFollow(FOLLOW_ruleJsonPoll_in_entryRuleJsonPoll182);
             ruleJsonPoll();
 
             state._fsp--;
 
              after(grammarAccess.getJsonPollRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJsonPoll188); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJsonPoll189); 
 
             }
 
@@ -285,7 +296,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:132:1: ( rule__JsonPoll__Group__0 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:132:2: rule__JsonPoll__Group__0
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group__0_in_ruleJsonPoll214);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__0_in_ruleJsonPoll215);
             rule__JsonPoll__Group__0();
 
             state._fsp--;
@@ -323,13 +334,13 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:146:1: ruleArrayJsonQuestion EOF
             {
              before(grammarAccess.getArrayJsonQuestionRule()); 
-            pushFollow(FOLLOW_ruleArrayJsonQuestion_in_entryRuleArrayJsonQuestion241);
+            pushFollow(FOLLOW_ruleArrayJsonQuestion_in_entryRuleArrayJsonQuestion242);
             ruleArrayJsonQuestion();
 
             state._fsp--;
 
              after(grammarAccess.getArrayJsonQuestionRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleArrayJsonQuestion248); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleArrayJsonQuestion249); 
 
             }
 
@@ -362,7 +373,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:160:1: ( rule__ArrayJsonQuestion__Group__0 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:160:2: rule__ArrayJsonQuestion__Group__0
             {
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__0_in_ruleArrayJsonQuestion274);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__0_in_ruleArrayJsonQuestion275);
             rule__ArrayJsonQuestion__Group__0();
 
             state._fsp--;
@@ -400,13 +411,13 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:174:1: ruleJsonQuestion EOF
             {
              before(grammarAccess.getJsonQuestionRule()); 
-            pushFollow(FOLLOW_ruleJsonQuestion_in_entryRuleJsonQuestion301);
+            pushFollow(FOLLOW_ruleJsonQuestion_in_entryRuleJsonQuestion302);
             ruleJsonQuestion();
 
             state._fsp--;
 
              after(grammarAccess.getJsonQuestionRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJsonQuestion308); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJsonQuestion309); 
 
             }
 
@@ -439,7 +450,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:188:1: ( rule__JsonQuestion__Group__0 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:188:2: rule__JsonQuestion__Group__0
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__0_in_ruleJsonQuestion334);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__0_in_ruleJsonQuestion335);
             rule__JsonQuestion__Group__0();
 
             state._fsp--;
@@ -477,13 +488,13 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:202:1: ruleArrayJsonOption EOF
             {
              before(grammarAccess.getArrayJsonOptionRule()); 
-            pushFollow(FOLLOW_ruleArrayJsonOption_in_entryRuleArrayJsonOption361);
+            pushFollow(FOLLOW_ruleArrayJsonOption_in_entryRuleArrayJsonOption362);
             ruleArrayJsonOption();
 
             state._fsp--;
 
              after(grammarAccess.getArrayJsonOptionRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleArrayJsonOption368); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleArrayJsonOption369); 
 
             }
 
@@ -516,7 +527,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:216:1: ( rule__ArrayJsonOption__Group__0 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:216:2: rule__ArrayJsonOption__Group__0
             {
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__0_in_ruleArrayJsonOption394);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__0_in_ruleArrayJsonOption395);
             rule__ArrayJsonOption__Group__0();
 
             state._fsp--;
@@ -554,13 +565,13 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:230:1: ruleJsonOption EOF
             {
              before(grammarAccess.getJsonOptionRule()); 
-            pushFollow(FOLLOW_ruleJsonOption_in_entryRuleJsonOption421);
+            pushFollow(FOLLOW_ruleJsonOption_in_entryRuleJsonOption422);
             ruleJsonOption();
 
             state._fsp--;
 
              after(grammarAccess.getJsonOptionRule()); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleJsonOption428); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleJsonOption429); 
 
             }
 
@@ -593,7 +604,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:244:1: ( rule__JsonOption__Group__0 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:244:2: rule__JsonOption__Group__0
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group__0_in_ruleJsonOption454);
+            pushFollow(FOLLOW_rule__JsonOption__Group__0_in_ruleJsonOption455);
             rule__JsonOption__Group__0();
 
             state._fsp--;
@@ -633,12 +644,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:262:1: ( rule__JsonPollSystem__Group__0__Impl rule__JsonPollSystem__Group__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:263:2: rule__JsonPollSystem__Group__0__Impl rule__JsonPollSystem__Group__1
             {
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__0__Impl_in_rule__JsonPollSystem__Group__0488);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__0__Impl_in_rule__JsonPollSystem__Group__0489);
             rule__JsonPollSystem__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__1_in_rule__JsonPollSystem__Group__0491);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__1_in_rule__JsonPollSystem__Group__0492);
             rule__JsonPollSystem__Group__1();
 
             state._fsp--;
@@ -675,7 +686,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:276:1: '{'
             {
              before(grammarAccess.getJsonPollSystemAccess().getLeftCurlyBracketKeyword_0()); 
-            match(input,11,FOLLOW_11_in_rule__JsonPollSystem__Group__0__Impl519); 
+            match(input,11,FOLLOW_11_in_rule__JsonPollSystem__Group__0__Impl520); 
              after(grammarAccess.getJsonPollSystemAccess().getLeftCurlyBracketKeyword_0()); 
 
             }
@@ -708,12 +719,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:293:1: ( rule__JsonPollSystem__Group__1__Impl rule__JsonPollSystem__Group__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:294:2: rule__JsonPollSystem__Group__1__Impl rule__JsonPollSystem__Group__2
             {
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__1__Impl_in_rule__JsonPollSystem__Group__1550);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__1__Impl_in_rule__JsonPollSystem__Group__1551);
             rule__JsonPollSystem__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__2_in_rule__JsonPollSystem__Group__1553);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__2_in_rule__JsonPollSystem__Group__1554);
             rule__JsonPollSystem__Group__2();
 
             state._fsp--;
@@ -750,7 +761,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:307:1: 'polls'
             {
              before(grammarAccess.getJsonPollSystemAccess().getPollsKeyword_1()); 
-            match(input,12,FOLLOW_12_in_rule__JsonPollSystem__Group__1__Impl581); 
+            match(input,12,FOLLOW_12_in_rule__JsonPollSystem__Group__1__Impl582); 
              after(grammarAccess.getJsonPollSystemAccess().getPollsKeyword_1()); 
 
             }
@@ -783,12 +794,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:324:1: ( rule__JsonPollSystem__Group__2__Impl rule__JsonPollSystem__Group__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:325:2: rule__JsonPollSystem__Group__2__Impl rule__JsonPollSystem__Group__3
             {
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__2__Impl_in_rule__JsonPollSystem__Group__2612);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__2__Impl_in_rule__JsonPollSystem__Group__2613);
             rule__JsonPollSystem__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__3_in_rule__JsonPollSystem__Group__2615);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__3_in_rule__JsonPollSystem__Group__2616);
             rule__JsonPollSystem__Group__3();
 
             state._fsp--;
@@ -825,7 +836,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:338:1: ':'
             {
              before(grammarAccess.getJsonPollSystemAccess().getColonKeyword_2()); 
-            match(input,13,FOLLOW_13_in_rule__JsonPollSystem__Group__2__Impl643); 
+            match(input,13,FOLLOW_13_in_rule__JsonPollSystem__Group__2__Impl644); 
              after(grammarAccess.getJsonPollSystemAccess().getColonKeyword_2()); 
 
             }
@@ -858,12 +869,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:355:1: ( rule__JsonPollSystem__Group__3__Impl rule__JsonPollSystem__Group__4 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:356:2: rule__JsonPollSystem__Group__3__Impl rule__JsonPollSystem__Group__4
             {
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__3__Impl_in_rule__JsonPollSystem__Group__3674);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__3__Impl_in_rule__JsonPollSystem__Group__3675);
             rule__JsonPollSystem__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__4_in_rule__JsonPollSystem__Group__3677);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__4_in_rule__JsonPollSystem__Group__3678);
             rule__JsonPollSystem__Group__4();
 
             state._fsp--;
@@ -900,7 +911,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:369:1: ruleArrayJsonPoll
             {
              before(grammarAccess.getJsonPollSystemAccess().getArrayJsonPollParserRuleCall_3()); 
-            pushFollow(FOLLOW_ruleArrayJsonPoll_in_rule__JsonPollSystem__Group__3__Impl704);
+            pushFollow(FOLLOW_ruleArrayJsonPoll_in_rule__JsonPollSystem__Group__3__Impl705);
             ruleArrayJsonPoll();
 
             state._fsp--;
@@ -937,7 +948,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:384:1: ( rule__JsonPollSystem__Group__4__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:385:2: rule__JsonPollSystem__Group__4__Impl
             {
-            pushFollow(FOLLOW_rule__JsonPollSystem__Group__4__Impl_in_rule__JsonPollSystem__Group__4733);
+            pushFollow(FOLLOW_rule__JsonPollSystem__Group__4__Impl_in_rule__JsonPollSystem__Group__4734);
             rule__JsonPollSystem__Group__4__Impl();
 
             state._fsp--;
@@ -974,7 +985,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:397:1: '}'
             {
              before(grammarAccess.getJsonPollSystemAccess().getRightCurlyBracketKeyword_4()); 
-            match(input,14,FOLLOW_14_in_rule__JsonPollSystem__Group__4__Impl761); 
+            match(input,14,FOLLOW_14_in_rule__JsonPollSystem__Group__4__Impl762); 
              after(grammarAccess.getJsonPollSystemAccess().getRightCurlyBracketKeyword_4()); 
 
             }
@@ -1007,12 +1018,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:424:1: ( rule__ArrayJsonPoll__Group__0__Impl rule__ArrayJsonPoll__Group__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:425:2: rule__ArrayJsonPoll__Group__0__Impl rule__ArrayJsonPoll__Group__1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__0__Impl_in_rule__ArrayJsonPoll__Group__0802);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__0__Impl_in_rule__ArrayJsonPoll__Group__0803);
             rule__ArrayJsonPoll__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__1_in_rule__ArrayJsonPoll__Group__0805);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__1_in_rule__ArrayJsonPoll__Group__0806);
             rule__ArrayJsonPoll__Group__1();
 
             state._fsp--;
@@ -1049,7 +1060,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:438:1: '['
             {
              before(grammarAccess.getArrayJsonPollAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,15,FOLLOW_15_in_rule__ArrayJsonPoll__Group__0__Impl833); 
+            match(input,15,FOLLOW_15_in_rule__ArrayJsonPoll__Group__0__Impl834); 
              after(grammarAccess.getArrayJsonPollAccess().getLeftSquareBracketKeyword_0()); 
 
             }
@@ -1082,12 +1093,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:455:1: ( rule__ArrayJsonPoll__Group__1__Impl rule__ArrayJsonPoll__Group__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:456:2: rule__ArrayJsonPoll__Group__1__Impl rule__ArrayJsonPoll__Group__2
             {
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__1__Impl_in_rule__ArrayJsonPoll__Group__1864);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__1__Impl_in_rule__ArrayJsonPoll__Group__1865);
             rule__ArrayJsonPoll__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__2_in_rule__ArrayJsonPoll__Group__1867);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__2_in_rule__ArrayJsonPoll__Group__1868);
             rule__ArrayJsonPoll__Group__2();
 
             state._fsp--;
@@ -1125,17 +1136,17 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getArrayJsonPollAccess().getPollsAssignment_1()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:470:1: ( rule__ArrayJsonPoll__PollsAssignment_1 )?
-            int alt1=2;
-            int LA1_0 = input.LA(1);
+            int alt2=2;
+            int LA2_0 = input.LA(1);
 
-            if ( (LA1_0==11) ) {
-                alt1=1;
+            if ( (LA2_0==11) ) {
+                alt2=1;
             }
-            switch (alt1) {
+            switch (alt2) {
                 case 1 :
                     // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:470:2: rule__ArrayJsonPoll__PollsAssignment_1
                     {
-                    pushFollow(FOLLOW_rule__ArrayJsonPoll__PollsAssignment_1_in_rule__ArrayJsonPoll__Group__1__Impl894);
+                    pushFollow(FOLLOW_rule__ArrayJsonPoll__PollsAssignment_1_in_rule__ArrayJsonPoll__Group__1__Impl895);
                     rule__ArrayJsonPoll__PollsAssignment_1();
 
                     state._fsp--;
@@ -1178,12 +1189,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:484:1: ( rule__ArrayJsonPoll__Group__2__Impl rule__ArrayJsonPoll__Group__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:485:2: rule__ArrayJsonPoll__Group__2__Impl rule__ArrayJsonPoll__Group__3
             {
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__2__Impl_in_rule__ArrayJsonPoll__Group__2925);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__2__Impl_in_rule__ArrayJsonPoll__Group__2926);
             rule__ArrayJsonPoll__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__3_in_rule__ArrayJsonPoll__Group__2928);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__3_in_rule__ArrayJsonPoll__Group__2929);
             rule__ArrayJsonPoll__Group__3();
 
             state._fsp--;
@@ -1221,21 +1232,21 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getArrayJsonPollAccess().getGroup_2()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:499:1: ( rule__ArrayJsonPoll__Group_2__0 )*
-            loop2:
+            loop3:
             do {
-                int alt2=2;
-                int LA2_0 = input.LA(1);
+                int alt3=2;
+                int LA3_0 = input.LA(1);
 
-                if ( (LA2_0==17) ) {
-                    alt2=1;
+                if ( (LA3_0==17) ) {
+                    alt3=1;
                 }
 
 
-                switch (alt2) {
+                switch (alt3) {
             	case 1 :
             	    // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:499:2: rule__ArrayJsonPoll__Group_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__ArrayJsonPoll__Group_2__0_in_rule__ArrayJsonPoll__Group__2__Impl955);
+            	    pushFollow(FOLLOW_rule__ArrayJsonPoll__Group_2__0_in_rule__ArrayJsonPoll__Group__2__Impl956);
             	    rule__ArrayJsonPoll__Group_2__0();
 
             	    state._fsp--;
@@ -1245,7 +1256,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop2;
+            	    break loop3;
                 }
             } while (true);
 
@@ -1281,7 +1292,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:513:1: ( rule__ArrayJsonPoll__Group__3__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:514:2: rule__ArrayJsonPoll__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__3__Impl_in_rule__ArrayJsonPoll__Group__3986);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group__3__Impl_in_rule__ArrayJsonPoll__Group__3987);
             rule__ArrayJsonPoll__Group__3__Impl();
 
             state._fsp--;
@@ -1318,7 +1329,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:526:1: ']'
             {
              before(grammarAccess.getArrayJsonPollAccess().getRightSquareBracketKeyword_3()); 
-            match(input,16,FOLLOW_16_in_rule__ArrayJsonPoll__Group__3__Impl1014); 
+            match(input,16,FOLLOW_16_in_rule__ArrayJsonPoll__Group__3__Impl1015); 
              after(grammarAccess.getArrayJsonPollAccess().getRightSquareBracketKeyword_3()); 
 
             }
@@ -1351,12 +1362,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:551:1: ( rule__ArrayJsonPoll__Group_2__0__Impl rule__ArrayJsonPoll__Group_2__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:552:2: rule__ArrayJsonPoll__Group_2__0__Impl rule__ArrayJsonPoll__Group_2__1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group_2__0__Impl_in_rule__ArrayJsonPoll__Group_2__01053);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group_2__0__Impl_in_rule__ArrayJsonPoll__Group_2__01054);
             rule__ArrayJsonPoll__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group_2__1_in_rule__ArrayJsonPoll__Group_2__01056);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group_2__1_in_rule__ArrayJsonPoll__Group_2__01057);
             rule__ArrayJsonPoll__Group_2__1();
 
             state._fsp--;
@@ -1393,7 +1404,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:565:1: ','
             {
              before(grammarAccess.getArrayJsonPollAccess().getCommaKeyword_2_0()); 
-            match(input,17,FOLLOW_17_in_rule__ArrayJsonPoll__Group_2__0__Impl1084); 
+            match(input,17,FOLLOW_17_in_rule__ArrayJsonPoll__Group_2__0__Impl1085); 
              after(grammarAccess.getArrayJsonPollAccess().getCommaKeyword_2_0()); 
 
             }
@@ -1426,7 +1437,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:582:1: ( rule__ArrayJsonPoll__Group_2__1__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:583:2: rule__ArrayJsonPoll__Group_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group_2__1__Impl_in_rule__ArrayJsonPoll__Group_2__11115);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__Group_2__1__Impl_in_rule__ArrayJsonPoll__Group_2__11116);
             rule__ArrayJsonPoll__Group_2__1__Impl();
 
             state._fsp--;
@@ -1466,7 +1477,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:596:1: ( rule__ArrayJsonPoll__PollsAssignment_2_1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:596:2: rule__ArrayJsonPoll__PollsAssignment_2_1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonPoll__PollsAssignment_2_1_in_rule__ArrayJsonPoll__Group_2__1__Impl1142);
+            pushFollow(FOLLOW_rule__ArrayJsonPoll__PollsAssignment_2_1_in_rule__ArrayJsonPoll__Group_2__1__Impl1143);
             rule__ArrayJsonPoll__PollsAssignment_2_1();
 
             state._fsp--;
@@ -1506,12 +1517,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:614:1: ( rule__JsonPoll__Group__0__Impl rule__JsonPoll__Group__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:615:2: rule__JsonPoll__Group__0__Impl rule__JsonPoll__Group__1
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group__0__Impl_in_rule__JsonPoll__Group__01176);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__0__Impl_in_rule__JsonPoll__Group__01177);
             rule__JsonPoll__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPoll__Group__1_in_rule__JsonPoll__Group__01179);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__1_in_rule__JsonPoll__Group__01180);
             rule__JsonPoll__Group__1();
 
             state._fsp--;
@@ -1548,7 +1559,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:628:1: '{'
             {
              before(grammarAccess.getJsonPollAccess().getLeftCurlyBracketKeyword_0()); 
-            match(input,11,FOLLOW_11_in_rule__JsonPoll__Group__0__Impl1207); 
+            match(input,11,FOLLOW_11_in_rule__JsonPoll__Group__0__Impl1208); 
              after(grammarAccess.getJsonPollAccess().getLeftCurlyBracketKeyword_0()); 
 
             }
@@ -1581,12 +1592,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:645:1: ( rule__JsonPoll__Group__1__Impl rule__JsonPoll__Group__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:646:2: rule__JsonPoll__Group__1__Impl rule__JsonPoll__Group__2
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group__1__Impl_in_rule__JsonPoll__Group__11238);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__1__Impl_in_rule__JsonPoll__Group__11239);
             rule__JsonPoll__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPoll__Group__2_in_rule__JsonPoll__Group__11241);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__2_in_rule__JsonPoll__Group__11242);
             rule__JsonPoll__Group__2();
 
             state._fsp--;
@@ -1624,17 +1635,17 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getJsonPollAccess().getGroup_1()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:660:1: ( rule__JsonPoll__Group_1__0 )?
-            int alt3=2;
-            int LA3_0 = input.LA(1);
+            int alt4=2;
+            int LA4_0 = input.LA(1);
 
-            if ( (LA3_0==19) ) {
-                alt3=1;
+            if ( (LA4_0==19) ) {
+                alt4=1;
             }
-            switch (alt3) {
+            switch (alt4) {
                 case 1 :
                     // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:660:2: rule__JsonPoll__Group_1__0
                     {
-                    pushFollow(FOLLOW_rule__JsonPoll__Group_1__0_in_rule__JsonPoll__Group__1__Impl1268);
+                    pushFollow(FOLLOW_rule__JsonPoll__Group_1__0_in_rule__JsonPoll__Group__1__Impl1269);
                     rule__JsonPoll__Group_1__0();
 
                     state._fsp--;
@@ -1677,12 +1688,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:674:1: ( rule__JsonPoll__Group__2__Impl rule__JsonPoll__Group__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:675:2: rule__JsonPoll__Group__2__Impl rule__JsonPoll__Group__3
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group__2__Impl_in_rule__JsonPoll__Group__21299);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__2__Impl_in_rule__JsonPoll__Group__21300);
             rule__JsonPoll__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPoll__Group__3_in_rule__JsonPoll__Group__21302);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__3_in_rule__JsonPoll__Group__21303);
             rule__JsonPoll__Group__3();
 
             state._fsp--;
@@ -1719,7 +1730,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:688:1: 'questions'
             {
              before(grammarAccess.getJsonPollAccess().getQuestionsKeyword_2()); 
-            match(input,18,FOLLOW_18_in_rule__JsonPoll__Group__2__Impl1330); 
+            match(input,18,FOLLOW_18_in_rule__JsonPoll__Group__2__Impl1331); 
              after(grammarAccess.getJsonPollAccess().getQuestionsKeyword_2()); 
 
             }
@@ -1752,12 +1763,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:705:1: ( rule__JsonPoll__Group__3__Impl rule__JsonPoll__Group__4 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:706:2: rule__JsonPoll__Group__3__Impl rule__JsonPoll__Group__4
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group__3__Impl_in_rule__JsonPoll__Group__31361);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__3__Impl_in_rule__JsonPoll__Group__31362);
             rule__JsonPoll__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPoll__Group__4_in_rule__JsonPoll__Group__31364);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__4_in_rule__JsonPoll__Group__31365);
             rule__JsonPoll__Group__4();
 
             state._fsp--;
@@ -1794,7 +1805,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:719:1: ':'
             {
              before(grammarAccess.getJsonPollAccess().getColonKeyword_3()); 
-            match(input,13,FOLLOW_13_in_rule__JsonPoll__Group__3__Impl1392); 
+            match(input,13,FOLLOW_13_in_rule__JsonPoll__Group__3__Impl1393); 
              after(grammarAccess.getJsonPollAccess().getColonKeyword_3()); 
 
             }
@@ -1827,12 +1838,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:736:1: ( rule__JsonPoll__Group__4__Impl rule__JsonPoll__Group__5 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:737:2: rule__JsonPoll__Group__4__Impl rule__JsonPoll__Group__5
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group__4__Impl_in_rule__JsonPoll__Group__41423);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__4__Impl_in_rule__JsonPoll__Group__41424);
             rule__JsonPoll__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPoll__Group__5_in_rule__JsonPoll__Group__41426);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__5_in_rule__JsonPoll__Group__41427);
             rule__JsonPoll__Group__5();
 
             state._fsp--;
@@ -1872,7 +1883,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:751:1: ( rule__JsonPoll__QuestionsAssignment_4 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:751:2: rule__JsonPoll__QuestionsAssignment_4
             {
-            pushFollow(FOLLOW_rule__JsonPoll__QuestionsAssignment_4_in_rule__JsonPoll__Group__4__Impl1453);
+            pushFollow(FOLLOW_rule__JsonPoll__QuestionsAssignment_4_in_rule__JsonPoll__Group__4__Impl1454);
             rule__JsonPoll__QuestionsAssignment_4();
 
             state._fsp--;
@@ -1912,7 +1923,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:765:1: ( rule__JsonPoll__Group__5__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:766:2: rule__JsonPoll__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group__5__Impl_in_rule__JsonPoll__Group__51483);
+            pushFollow(FOLLOW_rule__JsonPoll__Group__5__Impl_in_rule__JsonPoll__Group__51484);
             rule__JsonPoll__Group__5__Impl();
 
             state._fsp--;
@@ -1949,7 +1960,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:778:1: '}'
             {
              before(grammarAccess.getJsonPollAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,14,FOLLOW_14_in_rule__JsonPoll__Group__5__Impl1511); 
+            match(input,14,FOLLOW_14_in_rule__JsonPoll__Group__5__Impl1512); 
              after(grammarAccess.getJsonPollAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -1982,12 +1993,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:807:1: ( rule__JsonPoll__Group_1__0__Impl rule__JsonPoll__Group_1__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:808:2: rule__JsonPoll__Group_1__0__Impl rule__JsonPoll__Group_1__1
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group_1__0__Impl_in_rule__JsonPoll__Group_1__01554);
+            pushFollow(FOLLOW_rule__JsonPoll__Group_1__0__Impl_in_rule__JsonPoll__Group_1__01555);
             rule__JsonPoll__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPoll__Group_1__1_in_rule__JsonPoll__Group_1__01557);
+            pushFollow(FOLLOW_rule__JsonPoll__Group_1__1_in_rule__JsonPoll__Group_1__01558);
             rule__JsonPoll__Group_1__1();
 
             state._fsp--;
@@ -2024,7 +2035,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:821:1: 'name'
             {
              before(grammarAccess.getJsonPollAccess().getNameKeyword_1_0()); 
-            match(input,19,FOLLOW_19_in_rule__JsonPoll__Group_1__0__Impl1585); 
+            match(input,19,FOLLOW_19_in_rule__JsonPoll__Group_1__0__Impl1586); 
              after(grammarAccess.getJsonPollAccess().getNameKeyword_1_0()); 
 
             }
@@ -2057,12 +2068,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:838:1: ( rule__JsonPoll__Group_1__1__Impl rule__JsonPoll__Group_1__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:839:2: rule__JsonPoll__Group_1__1__Impl rule__JsonPoll__Group_1__2
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group_1__1__Impl_in_rule__JsonPoll__Group_1__11616);
+            pushFollow(FOLLOW_rule__JsonPoll__Group_1__1__Impl_in_rule__JsonPoll__Group_1__11617);
             rule__JsonPoll__Group_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPoll__Group_1__2_in_rule__JsonPoll__Group_1__11619);
+            pushFollow(FOLLOW_rule__JsonPoll__Group_1__2_in_rule__JsonPoll__Group_1__11620);
             rule__JsonPoll__Group_1__2();
 
             state._fsp--;
@@ -2099,7 +2110,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:852:1: ':'
             {
              before(grammarAccess.getJsonPollAccess().getColonKeyword_1_1()); 
-            match(input,13,FOLLOW_13_in_rule__JsonPoll__Group_1__1__Impl1647); 
+            match(input,13,FOLLOW_13_in_rule__JsonPoll__Group_1__1__Impl1648); 
              after(grammarAccess.getJsonPollAccess().getColonKeyword_1_1()); 
 
             }
@@ -2132,12 +2143,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:869:1: ( rule__JsonPoll__Group_1__2__Impl rule__JsonPoll__Group_1__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:870:2: rule__JsonPoll__Group_1__2__Impl rule__JsonPoll__Group_1__3
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group_1__2__Impl_in_rule__JsonPoll__Group_1__21678);
+            pushFollow(FOLLOW_rule__JsonPoll__Group_1__2__Impl_in_rule__JsonPoll__Group_1__21679);
             rule__JsonPoll__Group_1__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonPoll__Group_1__3_in_rule__JsonPoll__Group_1__21681);
+            pushFollow(FOLLOW_rule__JsonPoll__Group_1__3_in_rule__JsonPoll__Group_1__21682);
             rule__JsonPoll__Group_1__3();
 
             state._fsp--;
@@ -2177,7 +2188,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:884:1: ( rule__JsonPoll__NameAssignment_1_2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:884:2: rule__JsonPoll__NameAssignment_1_2
             {
-            pushFollow(FOLLOW_rule__JsonPoll__NameAssignment_1_2_in_rule__JsonPoll__Group_1__2__Impl1708);
+            pushFollow(FOLLOW_rule__JsonPoll__NameAssignment_1_2_in_rule__JsonPoll__Group_1__2__Impl1709);
             rule__JsonPoll__NameAssignment_1_2();
 
             state._fsp--;
@@ -2217,7 +2228,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:898:1: ( rule__JsonPoll__Group_1__3__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:899:2: rule__JsonPoll__Group_1__3__Impl
             {
-            pushFollow(FOLLOW_rule__JsonPoll__Group_1__3__Impl_in_rule__JsonPoll__Group_1__31738);
+            pushFollow(FOLLOW_rule__JsonPoll__Group_1__3__Impl_in_rule__JsonPoll__Group_1__31739);
             rule__JsonPoll__Group_1__3__Impl();
 
             state._fsp--;
@@ -2254,7 +2265,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:911:1: ','
             {
              before(grammarAccess.getJsonPollAccess().getCommaKeyword_1_3()); 
-            match(input,17,FOLLOW_17_in_rule__JsonPoll__Group_1__3__Impl1766); 
+            match(input,17,FOLLOW_17_in_rule__JsonPoll__Group_1__3__Impl1767); 
              after(grammarAccess.getJsonPollAccess().getCommaKeyword_1_3()); 
 
             }
@@ -2287,12 +2298,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:936:1: ( rule__ArrayJsonQuestion__Group__0__Impl rule__ArrayJsonQuestion__Group__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:937:2: rule__ArrayJsonQuestion__Group__0__Impl rule__ArrayJsonQuestion__Group__1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__0__Impl_in_rule__ArrayJsonQuestion__Group__01805);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__0__Impl_in_rule__ArrayJsonQuestion__Group__01806);
             rule__ArrayJsonQuestion__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__1_in_rule__ArrayJsonQuestion__Group__01808);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__1_in_rule__ArrayJsonQuestion__Group__01809);
             rule__ArrayJsonQuestion__Group__1();
 
             state._fsp--;
@@ -2329,7 +2340,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:950:1: '['
             {
              before(grammarAccess.getArrayJsonQuestionAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,15,FOLLOW_15_in_rule__ArrayJsonQuestion__Group__0__Impl1836); 
+            match(input,15,FOLLOW_15_in_rule__ArrayJsonQuestion__Group__0__Impl1837); 
              after(grammarAccess.getArrayJsonQuestionAccess().getLeftSquareBracketKeyword_0()); 
 
             }
@@ -2362,12 +2373,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:967:1: ( rule__ArrayJsonQuestion__Group__1__Impl rule__ArrayJsonQuestion__Group__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:968:2: rule__ArrayJsonQuestion__Group__1__Impl rule__ArrayJsonQuestion__Group__2
             {
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__1__Impl_in_rule__ArrayJsonQuestion__Group__11867);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__1__Impl_in_rule__ArrayJsonQuestion__Group__11868);
             rule__ArrayJsonQuestion__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__2_in_rule__ArrayJsonQuestion__Group__11870);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__2_in_rule__ArrayJsonQuestion__Group__11871);
             rule__ArrayJsonQuestion__Group__2();
 
             state._fsp--;
@@ -2405,17 +2416,17 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getArrayJsonQuestionAccess().getQuestionAssignment_1()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:982:1: ( rule__ArrayJsonQuestion__QuestionAssignment_1 )?
-            int alt4=2;
-            int LA4_0 = input.LA(1);
+            int alt5=2;
+            int LA5_0 = input.LA(1);
 
-            if ( (LA4_0==11) ) {
-                alt4=1;
+            if ( (LA5_0==11) ) {
+                alt5=1;
             }
-            switch (alt4) {
+            switch (alt5) {
                 case 1 :
                     // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:982:2: rule__ArrayJsonQuestion__QuestionAssignment_1
                     {
-                    pushFollow(FOLLOW_rule__ArrayJsonQuestion__QuestionAssignment_1_in_rule__ArrayJsonQuestion__Group__1__Impl1897);
+                    pushFollow(FOLLOW_rule__ArrayJsonQuestion__QuestionAssignment_1_in_rule__ArrayJsonQuestion__Group__1__Impl1898);
                     rule__ArrayJsonQuestion__QuestionAssignment_1();
 
                     state._fsp--;
@@ -2458,12 +2469,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:996:1: ( rule__ArrayJsonQuestion__Group__2__Impl rule__ArrayJsonQuestion__Group__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:997:2: rule__ArrayJsonQuestion__Group__2__Impl rule__ArrayJsonQuestion__Group__3
             {
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__2__Impl_in_rule__ArrayJsonQuestion__Group__21928);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__2__Impl_in_rule__ArrayJsonQuestion__Group__21929);
             rule__ArrayJsonQuestion__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__3_in_rule__ArrayJsonQuestion__Group__21931);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__3_in_rule__ArrayJsonQuestion__Group__21932);
             rule__ArrayJsonQuestion__Group__3();
 
             state._fsp--;
@@ -2501,21 +2512,21 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getArrayJsonQuestionAccess().getGroup_2()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1011:1: ( rule__ArrayJsonQuestion__Group_2__0 )*
-            loop5:
+            loop6:
             do {
-                int alt5=2;
-                int LA5_0 = input.LA(1);
+                int alt6=2;
+                int LA6_0 = input.LA(1);
 
-                if ( (LA5_0==17) ) {
-                    alt5=1;
+                if ( (LA6_0==17) ) {
+                    alt6=1;
                 }
 
 
-                switch (alt5) {
+                switch (alt6) {
             	case 1 :
             	    // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1011:2: rule__ArrayJsonQuestion__Group_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group_2__0_in_rule__ArrayJsonQuestion__Group__2__Impl1958);
+            	    pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group_2__0_in_rule__ArrayJsonQuestion__Group__2__Impl1959);
             	    rule__ArrayJsonQuestion__Group_2__0();
 
             	    state._fsp--;
@@ -2525,7 +2536,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop5;
+            	    break loop6;
                 }
             } while (true);
 
@@ -2561,7 +2572,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1025:1: ( rule__ArrayJsonQuestion__Group__3__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1026:2: rule__ArrayJsonQuestion__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__3__Impl_in_rule__ArrayJsonQuestion__Group__31989);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group__3__Impl_in_rule__ArrayJsonQuestion__Group__31990);
             rule__ArrayJsonQuestion__Group__3__Impl();
 
             state._fsp--;
@@ -2598,7 +2609,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1038:1: ']'
             {
              before(grammarAccess.getArrayJsonQuestionAccess().getRightSquareBracketKeyword_3()); 
-            match(input,16,FOLLOW_16_in_rule__ArrayJsonQuestion__Group__3__Impl2017); 
+            match(input,16,FOLLOW_16_in_rule__ArrayJsonQuestion__Group__3__Impl2018); 
              after(grammarAccess.getArrayJsonQuestionAccess().getRightSquareBracketKeyword_3()); 
 
             }
@@ -2631,12 +2642,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1063:1: ( rule__ArrayJsonQuestion__Group_2__0__Impl rule__ArrayJsonQuestion__Group_2__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1064:2: rule__ArrayJsonQuestion__Group_2__0__Impl rule__ArrayJsonQuestion__Group_2__1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group_2__0__Impl_in_rule__ArrayJsonQuestion__Group_2__02056);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group_2__0__Impl_in_rule__ArrayJsonQuestion__Group_2__02057);
             rule__ArrayJsonQuestion__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group_2__1_in_rule__ArrayJsonQuestion__Group_2__02059);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group_2__1_in_rule__ArrayJsonQuestion__Group_2__02060);
             rule__ArrayJsonQuestion__Group_2__1();
 
             state._fsp--;
@@ -2673,7 +2684,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1077:1: ','
             {
              before(grammarAccess.getArrayJsonQuestionAccess().getCommaKeyword_2_0()); 
-            match(input,17,FOLLOW_17_in_rule__ArrayJsonQuestion__Group_2__0__Impl2087); 
+            match(input,17,FOLLOW_17_in_rule__ArrayJsonQuestion__Group_2__0__Impl2088); 
              after(grammarAccess.getArrayJsonQuestionAccess().getCommaKeyword_2_0()); 
 
             }
@@ -2706,7 +2717,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1094:1: ( rule__ArrayJsonQuestion__Group_2__1__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1095:2: rule__ArrayJsonQuestion__Group_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group_2__1__Impl_in_rule__ArrayJsonQuestion__Group_2__12118);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__Group_2__1__Impl_in_rule__ArrayJsonQuestion__Group_2__12119);
             rule__ArrayJsonQuestion__Group_2__1__Impl();
 
             state._fsp--;
@@ -2746,7 +2757,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1108:1: ( rule__ArrayJsonQuestion__QuestionAssignment_2_1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1108:2: rule__ArrayJsonQuestion__QuestionAssignment_2_1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonQuestion__QuestionAssignment_2_1_in_rule__ArrayJsonQuestion__Group_2__1__Impl2145);
+            pushFollow(FOLLOW_rule__ArrayJsonQuestion__QuestionAssignment_2_1_in_rule__ArrayJsonQuestion__Group_2__1__Impl2146);
             rule__ArrayJsonQuestion__QuestionAssignment_2_1();
 
             state._fsp--;
@@ -2786,12 +2797,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1126:1: ( rule__JsonQuestion__Group__0__Impl rule__JsonQuestion__Group__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1127:2: rule__JsonQuestion__Group__0__Impl rule__JsonQuestion__Group__1
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__0__Impl_in_rule__JsonQuestion__Group__02179);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__0__Impl_in_rule__JsonQuestion__Group__02180);
             rule__JsonQuestion__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__1_in_rule__JsonQuestion__Group__02182);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__1_in_rule__JsonQuestion__Group__02183);
             rule__JsonQuestion__Group__1();
 
             state._fsp--;
@@ -2828,7 +2839,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1140:1: '{'
             {
              before(grammarAccess.getJsonQuestionAccess().getLeftCurlyBracketKeyword_0()); 
-            match(input,11,FOLLOW_11_in_rule__JsonQuestion__Group__0__Impl2210); 
+            match(input,11,FOLLOW_11_in_rule__JsonQuestion__Group__0__Impl2211); 
              after(grammarAccess.getJsonQuestionAccess().getLeftCurlyBracketKeyword_0()); 
 
             }
@@ -2861,12 +2872,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1157:1: ( rule__JsonQuestion__Group__1__Impl rule__JsonQuestion__Group__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1158:2: rule__JsonQuestion__Group__1__Impl rule__JsonQuestion__Group__2
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__1__Impl_in_rule__JsonQuestion__Group__12241);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__1__Impl_in_rule__JsonQuestion__Group__12242);
             rule__JsonQuestion__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__2_in_rule__JsonQuestion__Group__12244);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__2_in_rule__JsonQuestion__Group__12245);
             rule__JsonQuestion__Group__2();
 
             state._fsp--;
@@ -2903,7 +2914,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1171:1: 'question'
             {
              before(grammarAccess.getJsonQuestionAccess().getQuestionKeyword_1()); 
-            match(input,20,FOLLOW_20_in_rule__JsonQuestion__Group__1__Impl2272); 
+            match(input,20,FOLLOW_20_in_rule__JsonQuestion__Group__1__Impl2273); 
              after(grammarAccess.getJsonQuestionAccess().getQuestionKeyword_1()); 
 
             }
@@ -2936,12 +2947,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1188:1: ( rule__JsonQuestion__Group__2__Impl rule__JsonQuestion__Group__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1189:2: rule__JsonQuestion__Group__2__Impl rule__JsonQuestion__Group__3
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__2__Impl_in_rule__JsonQuestion__Group__22303);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__2__Impl_in_rule__JsonQuestion__Group__22304);
             rule__JsonQuestion__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__3_in_rule__JsonQuestion__Group__22306);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__3_in_rule__JsonQuestion__Group__22307);
             rule__JsonQuestion__Group__3();
 
             state._fsp--;
@@ -2978,7 +2989,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1202:1: ':'
             {
              before(grammarAccess.getJsonQuestionAccess().getColonKeyword_2()); 
-            match(input,13,FOLLOW_13_in_rule__JsonQuestion__Group__2__Impl2334); 
+            match(input,13,FOLLOW_13_in_rule__JsonQuestion__Group__2__Impl2335); 
              after(grammarAccess.getJsonQuestionAccess().getColonKeyword_2()); 
 
             }
@@ -3011,12 +3022,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1219:1: ( rule__JsonQuestion__Group__3__Impl rule__JsonQuestion__Group__4 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1220:2: rule__JsonQuestion__Group__3__Impl rule__JsonQuestion__Group__4
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__3__Impl_in_rule__JsonQuestion__Group__32365);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__3__Impl_in_rule__JsonQuestion__Group__32366);
             rule__JsonQuestion__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__4_in_rule__JsonQuestion__Group__32368);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__4_in_rule__JsonQuestion__Group__32369);
             rule__JsonQuestion__Group__4();
 
             state._fsp--;
@@ -3053,7 +3064,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1233:1: '{'
             {
              before(grammarAccess.getJsonQuestionAccess().getLeftCurlyBracketKeyword_3()); 
-            match(input,11,FOLLOW_11_in_rule__JsonQuestion__Group__3__Impl2396); 
+            match(input,11,FOLLOW_11_in_rule__JsonQuestion__Group__3__Impl2397); 
              after(grammarAccess.getJsonQuestionAccess().getLeftCurlyBracketKeyword_3()); 
 
             }
@@ -3086,12 +3097,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1250:1: ( rule__JsonQuestion__Group__4__Impl rule__JsonQuestion__Group__5 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1251:2: rule__JsonQuestion__Group__4__Impl rule__JsonQuestion__Group__5
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__4__Impl_in_rule__JsonQuestion__Group__42427);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__4__Impl_in_rule__JsonQuestion__Group__42428);
             rule__JsonQuestion__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__5_in_rule__JsonQuestion__Group__42430);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__5_in_rule__JsonQuestion__Group__42431);
             rule__JsonQuestion__Group__5();
 
             state._fsp--;
@@ -3129,17 +3140,17 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getJsonQuestionAccess().getGroup_4()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1265:1: ( rule__JsonQuestion__Group_4__0 )?
-            int alt6=2;
-            int LA6_0 = input.LA(1);
+            int alt7=2;
+            int LA7_0 = input.LA(1);
 
-            if ( (LA6_0==19) ) {
-                alt6=1;
+            if ( (LA7_0==19) ) {
+                alt7=1;
             }
-            switch (alt6) {
+            switch (alt7) {
                 case 1 :
                     // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1265:2: rule__JsonQuestion__Group_4__0
                     {
-                    pushFollow(FOLLOW_rule__JsonQuestion__Group_4__0_in_rule__JsonQuestion__Group__4__Impl2457);
+                    pushFollow(FOLLOW_rule__JsonQuestion__Group_4__0_in_rule__JsonQuestion__Group__4__Impl2458);
                     rule__JsonQuestion__Group_4__0();
 
                     state._fsp--;
@@ -3182,12 +3193,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1279:1: ( rule__JsonQuestion__Group__5__Impl rule__JsonQuestion__Group__6 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1280:2: rule__JsonQuestion__Group__5__Impl rule__JsonQuestion__Group__6
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__5__Impl_in_rule__JsonQuestion__Group__52488);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__5__Impl_in_rule__JsonQuestion__Group__52489);
             rule__JsonQuestion__Group__5__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__6_in_rule__JsonQuestion__Group__52491);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__6_in_rule__JsonQuestion__Group__52492);
             rule__JsonQuestion__Group__6();
 
             state._fsp--;
@@ -3224,7 +3235,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1293:1: 'text'
             {
              before(grammarAccess.getJsonQuestionAccess().getTextKeyword_5()); 
-            match(input,21,FOLLOW_21_in_rule__JsonQuestion__Group__5__Impl2519); 
+            match(input,21,FOLLOW_21_in_rule__JsonQuestion__Group__5__Impl2520); 
              after(grammarAccess.getJsonQuestionAccess().getTextKeyword_5()); 
 
             }
@@ -3257,12 +3268,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1310:1: ( rule__JsonQuestion__Group__6__Impl rule__JsonQuestion__Group__7 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1311:2: rule__JsonQuestion__Group__6__Impl rule__JsonQuestion__Group__7
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__6__Impl_in_rule__JsonQuestion__Group__62550);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__6__Impl_in_rule__JsonQuestion__Group__62551);
             rule__JsonQuestion__Group__6__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__7_in_rule__JsonQuestion__Group__62553);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__7_in_rule__JsonQuestion__Group__62554);
             rule__JsonQuestion__Group__7();
 
             state._fsp--;
@@ -3299,7 +3310,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1324:1: ':'
             {
              before(grammarAccess.getJsonQuestionAccess().getColonKeyword_6()); 
-            match(input,13,FOLLOW_13_in_rule__JsonQuestion__Group__6__Impl2581); 
+            match(input,13,FOLLOW_13_in_rule__JsonQuestion__Group__6__Impl2582); 
              after(grammarAccess.getJsonQuestionAccess().getColonKeyword_6()); 
 
             }
@@ -3332,12 +3343,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1341:1: ( rule__JsonQuestion__Group__7__Impl rule__JsonQuestion__Group__8 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1342:2: rule__JsonQuestion__Group__7__Impl rule__JsonQuestion__Group__8
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__7__Impl_in_rule__JsonQuestion__Group__72612);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__7__Impl_in_rule__JsonQuestion__Group__72613);
             rule__JsonQuestion__Group__7__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__8_in_rule__JsonQuestion__Group__72615);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__8_in_rule__JsonQuestion__Group__72616);
             rule__JsonQuestion__Group__8();
 
             state._fsp--;
@@ -3377,7 +3388,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1356:1: ( rule__JsonQuestion__TextAssignment_7 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1356:2: rule__JsonQuestion__TextAssignment_7
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__TextAssignment_7_in_rule__JsonQuestion__Group__7__Impl2642);
+            pushFollow(FOLLOW_rule__JsonQuestion__TextAssignment_7_in_rule__JsonQuestion__Group__7__Impl2643);
             rule__JsonQuestion__TextAssignment_7();
 
             state._fsp--;
@@ -3417,12 +3428,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1370:1: ( rule__JsonQuestion__Group__8__Impl rule__JsonQuestion__Group__9 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1371:2: rule__JsonQuestion__Group__8__Impl rule__JsonQuestion__Group__9
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__8__Impl_in_rule__JsonQuestion__Group__82672);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__8__Impl_in_rule__JsonQuestion__Group__82673);
             rule__JsonQuestion__Group__8__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__9_in_rule__JsonQuestion__Group__82675);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__9_in_rule__JsonQuestion__Group__82676);
             rule__JsonQuestion__Group__9();
 
             state._fsp--;
@@ -3459,7 +3470,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1384:1: ','
             {
              before(grammarAccess.getJsonQuestionAccess().getCommaKeyword_8()); 
-            match(input,17,FOLLOW_17_in_rule__JsonQuestion__Group__8__Impl2703); 
+            match(input,17,FOLLOW_17_in_rule__JsonQuestion__Group__8__Impl2704); 
              after(grammarAccess.getJsonQuestionAccess().getCommaKeyword_8()); 
 
             }
@@ -3492,12 +3503,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1401:1: ( rule__JsonQuestion__Group__9__Impl rule__JsonQuestion__Group__10 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1402:2: rule__JsonQuestion__Group__9__Impl rule__JsonQuestion__Group__10
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__9__Impl_in_rule__JsonQuestion__Group__92734);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__9__Impl_in_rule__JsonQuestion__Group__92735);
             rule__JsonQuestion__Group__9__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__10_in_rule__JsonQuestion__Group__92737);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__10_in_rule__JsonQuestion__Group__92738);
             rule__JsonQuestion__Group__10();
 
             state._fsp--;
@@ -3534,7 +3545,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1415:1: 'options'
             {
              before(grammarAccess.getJsonQuestionAccess().getOptionsKeyword_9()); 
-            match(input,22,FOLLOW_22_in_rule__JsonQuestion__Group__9__Impl2765); 
+            match(input,22,FOLLOW_22_in_rule__JsonQuestion__Group__9__Impl2766); 
              after(grammarAccess.getJsonQuestionAccess().getOptionsKeyword_9()); 
 
             }
@@ -3567,12 +3578,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1432:1: ( rule__JsonQuestion__Group__10__Impl rule__JsonQuestion__Group__11 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1433:2: rule__JsonQuestion__Group__10__Impl rule__JsonQuestion__Group__11
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__10__Impl_in_rule__JsonQuestion__Group__102796);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__10__Impl_in_rule__JsonQuestion__Group__102797);
             rule__JsonQuestion__Group__10__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__11_in_rule__JsonQuestion__Group__102799);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__11_in_rule__JsonQuestion__Group__102800);
             rule__JsonQuestion__Group__11();
 
             state._fsp--;
@@ -3609,7 +3620,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1446:1: ':'
             {
              before(grammarAccess.getJsonQuestionAccess().getColonKeyword_10()); 
-            match(input,13,FOLLOW_13_in_rule__JsonQuestion__Group__10__Impl2827); 
+            match(input,13,FOLLOW_13_in_rule__JsonQuestion__Group__10__Impl2828); 
              after(grammarAccess.getJsonQuestionAccess().getColonKeyword_10()); 
 
             }
@@ -3642,12 +3653,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1463:1: ( rule__JsonQuestion__Group__11__Impl rule__JsonQuestion__Group__12 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1464:2: rule__JsonQuestion__Group__11__Impl rule__JsonQuestion__Group__12
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__11__Impl_in_rule__JsonQuestion__Group__112858);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__11__Impl_in_rule__JsonQuestion__Group__112859);
             rule__JsonQuestion__Group__11__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__12_in_rule__JsonQuestion__Group__112861);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__12_in_rule__JsonQuestion__Group__112862);
             rule__JsonQuestion__Group__12();
 
             state._fsp--;
@@ -3687,7 +3698,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1478:1: ( rule__JsonQuestion__OptionsAssignment_11 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1478:2: rule__JsonQuestion__OptionsAssignment_11
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__OptionsAssignment_11_in_rule__JsonQuestion__Group__11__Impl2888);
+            pushFollow(FOLLOW_rule__JsonQuestion__OptionsAssignment_11_in_rule__JsonQuestion__Group__11__Impl2889);
             rule__JsonQuestion__OptionsAssignment_11();
 
             state._fsp--;
@@ -3727,12 +3738,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1492:1: ( rule__JsonQuestion__Group__12__Impl rule__JsonQuestion__Group__13 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1493:2: rule__JsonQuestion__Group__12__Impl rule__JsonQuestion__Group__13
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__12__Impl_in_rule__JsonQuestion__Group__122918);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__12__Impl_in_rule__JsonQuestion__Group__122919);
             rule__JsonQuestion__Group__12__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__13_in_rule__JsonQuestion__Group__122921);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__13_in_rule__JsonQuestion__Group__122922);
             rule__JsonQuestion__Group__13();
 
             state._fsp--;
@@ -3769,7 +3780,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1506:1: '}'
             {
              before(grammarAccess.getJsonQuestionAccess().getRightCurlyBracketKeyword_12()); 
-            match(input,14,FOLLOW_14_in_rule__JsonQuestion__Group__12__Impl2949); 
+            match(input,14,FOLLOW_14_in_rule__JsonQuestion__Group__12__Impl2950); 
              after(grammarAccess.getJsonQuestionAccess().getRightCurlyBracketKeyword_12()); 
 
             }
@@ -3802,7 +3813,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1523:1: ( rule__JsonQuestion__Group__13__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1524:2: rule__JsonQuestion__Group__13__Impl
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group__13__Impl_in_rule__JsonQuestion__Group__132980);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group__13__Impl_in_rule__JsonQuestion__Group__132981);
             rule__JsonQuestion__Group__13__Impl();
 
             state._fsp--;
@@ -3839,7 +3850,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1536:1: '}'
             {
              before(grammarAccess.getJsonQuestionAccess().getRightCurlyBracketKeyword_13()); 
-            match(input,14,FOLLOW_14_in_rule__JsonQuestion__Group__13__Impl3008); 
+            match(input,14,FOLLOW_14_in_rule__JsonQuestion__Group__13__Impl3009); 
              after(grammarAccess.getJsonQuestionAccess().getRightCurlyBracketKeyword_13()); 
 
             }
@@ -3872,12 +3883,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1581:1: ( rule__JsonQuestion__Group_4__0__Impl rule__JsonQuestion__Group_4__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1582:2: rule__JsonQuestion__Group_4__0__Impl rule__JsonQuestion__Group_4__1
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__0__Impl_in_rule__JsonQuestion__Group_4__03067);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__0__Impl_in_rule__JsonQuestion__Group_4__03068);
             rule__JsonQuestion__Group_4__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__1_in_rule__JsonQuestion__Group_4__03070);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__1_in_rule__JsonQuestion__Group_4__03071);
             rule__JsonQuestion__Group_4__1();
 
             state._fsp--;
@@ -3914,7 +3925,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1595:1: 'name'
             {
              before(grammarAccess.getJsonQuestionAccess().getNameKeyword_4_0()); 
-            match(input,19,FOLLOW_19_in_rule__JsonQuestion__Group_4__0__Impl3098); 
+            match(input,19,FOLLOW_19_in_rule__JsonQuestion__Group_4__0__Impl3099); 
              after(grammarAccess.getJsonQuestionAccess().getNameKeyword_4_0()); 
 
             }
@@ -3947,12 +3958,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1612:1: ( rule__JsonQuestion__Group_4__1__Impl rule__JsonQuestion__Group_4__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1613:2: rule__JsonQuestion__Group_4__1__Impl rule__JsonQuestion__Group_4__2
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__1__Impl_in_rule__JsonQuestion__Group_4__13129);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__1__Impl_in_rule__JsonQuestion__Group_4__13130);
             rule__JsonQuestion__Group_4__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__2_in_rule__JsonQuestion__Group_4__13132);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__2_in_rule__JsonQuestion__Group_4__13133);
             rule__JsonQuestion__Group_4__2();
 
             state._fsp--;
@@ -3989,7 +4000,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1626:1: ':'
             {
              before(grammarAccess.getJsonQuestionAccess().getColonKeyword_4_1()); 
-            match(input,13,FOLLOW_13_in_rule__JsonQuestion__Group_4__1__Impl3160); 
+            match(input,13,FOLLOW_13_in_rule__JsonQuestion__Group_4__1__Impl3161); 
              after(grammarAccess.getJsonQuestionAccess().getColonKeyword_4_1()); 
 
             }
@@ -4022,12 +4033,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1643:1: ( rule__JsonQuestion__Group_4__2__Impl rule__JsonQuestion__Group_4__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1644:2: rule__JsonQuestion__Group_4__2__Impl rule__JsonQuestion__Group_4__3
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__2__Impl_in_rule__JsonQuestion__Group_4__23191);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__2__Impl_in_rule__JsonQuestion__Group_4__23192);
             rule__JsonQuestion__Group_4__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__3_in_rule__JsonQuestion__Group_4__23194);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__3_in_rule__JsonQuestion__Group_4__23195);
             rule__JsonQuestion__Group_4__3();
 
             state._fsp--;
@@ -4067,7 +4078,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1658:1: ( rule__JsonQuestion__NameAssignment_4_2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1658:2: rule__JsonQuestion__NameAssignment_4_2
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__NameAssignment_4_2_in_rule__JsonQuestion__Group_4__2__Impl3221);
+            pushFollow(FOLLOW_rule__JsonQuestion__NameAssignment_4_2_in_rule__JsonQuestion__Group_4__2__Impl3222);
             rule__JsonQuestion__NameAssignment_4_2();
 
             state._fsp--;
@@ -4107,7 +4118,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1672:1: ( rule__JsonQuestion__Group_4__3__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1673:2: rule__JsonQuestion__Group_4__3__Impl
             {
-            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__3__Impl_in_rule__JsonQuestion__Group_4__33251);
+            pushFollow(FOLLOW_rule__JsonQuestion__Group_4__3__Impl_in_rule__JsonQuestion__Group_4__33252);
             rule__JsonQuestion__Group_4__3__Impl();
 
             state._fsp--;
@@ -4144,7 +4155,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1685:1: ','
             {
              before(grammarAccess.getJsonQuestionAccess().getCommaKeyword_4_3()); 
-            match(input,17,FOLLOW_17_in_rule__JsonQuestion__Group_4__3__Impl3279); 
+            match(input,17,FOLLOW_17_in_rule__JsonQuestion__Group_4__3__Impl3280); 
              after(grammarAccess.getJsonQuestionAccess().getCommaKeyword_4_3()); 
 
             }
@@ -4177,12 +4188,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1710:1: ( rule__ArrayJsonOption__Group__0__Impl rule__ArrayJsonOption__Group__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1711:2: rule__ArrayJsonOption__Group__0__Impl rule__ArrayJsonOption__Group__1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__0__Impl_in_rule__ArrayJsonOption__Group__03318);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__0__Impl_in_rule__ArrayJsonOption__Group__03319);
             rule__ArrayJsonOption__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__1_in_rule__ArrayJsonOption__Group__03321);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__1_in_rule__ArrayJsonOption__Group__03322);
             rule__ArrayJsonOption__Group__1();
 
             state._fsp--;
@@ -4219,7 +4230,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1724:1: '['
             {
              before(grammarAccess.getArrayJsonOptionAccess().getLeftSquareBracketKeyword_0()); 
-            match(input,15,FOLLOW_15_in_rule__ArrayJsonOption__Group__0__Impl3349); 
+            match(input,15,FOLLOW_15_in_rule__ArrayJsonOption__Group__0__Impl3350); 
              after(grammarAccess.getArrayJsonOptionAccess().getLeftSquareBracketKeyword_0()); 
 
             }
@@ -4252,12 +4263,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1741:1: ( rule__ArrayJsonOption__Group__1__Impl rule__ArrayJsonOption__Group__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1742:2: rule__ArrayJsonOption__Group__1__Impl rule__ArrayJsonOption__Group__2
             {
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__1__Impl_in_rule__ArrayJsonOption__Group__13380);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__1__Impl_in_rule__ArrayJsonOption__Group__13381);
             rule__ArrayJsonOption__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__2_in_rule__ArrayJsonOption__Group__13383);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__2_in_rule__ArrayJsonOption__Group__13384);
             rule__ArrayJsonOption__Group__2();
 
             state._fsp--;
@@ -4295,17 +4306,17 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getArrayJsonOptionAccess().getOptionAssignment_1()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1756:1: ( rule__ArrayJsonOption__OptionAssignment_1 )?
-            int alt7=2;
-            int LA7_0 = input.LA(1);
+            int alt8=2;
+            int LA8_0 = input.LA(1);
 
-            if ( (LA7_0==11) ) {
-                alt7=1;
+            if ( (LA8_0==11) ) {
+                alt8=1;
             }
-            switch (alt7) {
+            switch (alt8) {
                 case 1 :
                     // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1756:2: rule__ArrayJsonOption__OptionAssignment_1
                     {
-                    pushFollow(FOLLOW_rule__ArrayJsonOption__OptionAssignment_1_in_rule__ArrayJsonOption__Group__1__Impl3410);
+                    pushFollow(FOLLOW_rule__ArrayJsonOption__OptionAssignment_1_in_rule__ArrayJsonOption__Group__1__Impl3411);
                     rule__ArrayJsonOption__OptionAssignment_1();
 
                     state._fsp--;
@@ -4348,12 +4359,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1770:1: ( rule__ArrayJsonOption__Group__2__Impl rule__ArrayJsonOption__Group__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1771:2: rule__ArrayJsonOption__Group__2__Impl rule__ArrayJsonOption__Group__3
             {
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__2__Impl_in_rule__ArrayJsonOption__Group__23441);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__2__Impl_in_rule__ArrayJsonOption__Group__23442);
             rule__ArrayJsonOption__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__3_in_rule__ArrayJsonOption__Group__23444);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__3_in_rule__ArrayJsonOption__Group__23445);
             rule__ArrayJsonOption__Group__3();
 
             state._fsp--;
@@ -4391,21 +4402,21 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getArrayJsonOptionAccess().getGroup_2()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1785:1: ( rule__ArrayJsonOption__Group_2__0 )*
-            loop8:
+            loop9:
             do {
-                int alt8=2;
-                int LA8_0 = input.LA(1);
+                int alt9=2;
+                int LA9_0 = input.LA(1);
 
-                if ( (LA8_0==17) ) {
-                    alt8=1;
+                if ( (LA9_0==17) ) {
+                    alt9=1;
                 }
 
 
-                switch (alt8) {
+                switch (alt9) {
             	case 1 :
             	    // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1785:2: rule__ArrayJsonOption__Group_2__0
             	    {
-            	    pushFollow(FOLLOW_rule__ArrayJsonOption__Group_2__0_in_rule__ArrayJsonOption__Group__2__Impl3471);
+            	    pushFollow(FOLLOW_rule__ArrayJsonOption__Group_2__0_in_rule__ArrayJsonOption__Group__2__Impl3472);
             	    rule__ArrayJsonOption__Group_2__0();
 
             	    state._fsp--;
@@ -4415,7 +4426,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             	    break;
 
             	default :
-            	    break loop8;
+            	    break loop9;
                 }
             } while (true);
 
@@ -4451,7 +4462,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1799:1: ( rule__ArrayJsonOption__Group__3__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1800:2: rule__ArrayJsonOption__Group__3__Impl
             {
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__3__Impl_in_rule__ArrayJsonOption__Group__33502);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group__3__Impl_in_rule__ArrayJsonOption__Group__33503);
             rule__ArrayJsonOption__Group__3__Impl();
 
             state._fsp--;
@@ -4488,7 +4499,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1812:1: ']'
             {
              before(grammarAccess.getArrayJsonOptionAccess().getRightSquareBracketKeyword_3()); 
-            match(input,16,FOLLOW_16_in_rule__ArrayJsonOption__Group__3__Impl3530); 
+            match(input,16,FOLLOW_16_in_rule__ArrayJsonOption__Group__3__Impl3531); 
              after(grammarAccess.getArrayJsonOptionAccess().getRightSquareBracketKeyword_3()); 
 
             }
@@ -4521,12 +4532,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1837:1: ( rule__ArrayJsonOption__Group_2__0__Impl rule__ArrayJsonOption__Group_2__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1838:2: rule__ArrayJsonOption__Group_2__0__Impl rule__ArrayJsonOption__Group_2__1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group_2__0__Impl_in_rule__ArrayJsonOption__Group_2__03569);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group_2__0__Impl_in_rule__ArrayJsonOption__Group_2__03570);
             rule__ArrayJsonOption__Group_2__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group_2__1_in_rule__ArrayJsonOption__Group_2__03572);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group_2__1_in_rule__ArrayJsonOption__Group_2__03573);
             rule__ArrayJsonOption__Group_2__1();
 
             state._fsp--;
@@ -4563,7 +4574,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1851:1: ','
             {
              before(grammarAccess.getArrayJsonOptionAccess().getCommaKeyword_2_0()); 
-            match(input,17,FOLLOW_17_in_rule__ArrayJsonOption__Group_2__0__Impl3600); 
+            match(input,17,FOLLOW_17_in_rule__ArrayJsonOption__Group_2__0__Impl3601); 
              after(grammarAccess.getArrayJsonOptionAccess().getCommaKeyword_2_0()); 
 
             }
@@ -4596,7 +4607,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1868:1: ( rule__ArrayJsonOption__Group_2__1__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1869:2: rule__ArrayJsonOption__Group_2__1__Impl
             {
-            pushFollow(FOLLOW_rule__ArrayJsonOption__Group_2__1__Impl_in_rule__ArrayJsonOption__Group_2__13631);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__Group_2__1__Impl_in_rule__ArrayJsonOption__Group_2__13632);
             rule__ArrayJsonOption__Group_2__1__Impl();
 
             state._fsp--;
@@ -4636,7 +4647,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1882:1: ( rule__ArrayJsonOption__OptionAssignment_2_1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1882:2: rule__ArrayJsonOption__OptionAssignment_2_1
             {
-            pushFollow(FOLLOW_rule__ArrayJsonOption__OptionAssignment_2_1_in_rule__ArrayJsonOption__Group_2__1__Impl3658);
+            pushFollow(FOLLOW_rule__ArrayJsonOption__OptionAssignment_2_1_in_rule__ArrayJsonOption__Group_2__1__Impl3659);
             rule__ArrayJsonOption__OptionAssignment_2_1();
 
             state._fsp--;
@@ -4676,12 +4687,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1900:1: ( rule__JsonOption__Group__0__Impl rule__JsonOption__Group__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1901:2: rule__JsonOption__Group__0__Impl rule__JsonOption__Group__1
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group__0__Impl_in_rule__JsonOption__Group__03692);
+            pushFollow(FOLLOW_rule__JsonOption__Group__0__Impl_in_rule__JsonOption__Group__03693);
             rule__JsonOption__Group__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonOption__Group__1_in_rule__JsonOption__Group__03695);
+            pushFollow(FOLLOW_rule__JsonOption__Group__1_in_rule__JsonOption__Group__03696);
             rule__JsonOption__Group__1();
 
             state._fsp--;
@@ -4718,7 +4729,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1914:1: '{'
             {
              before(grammarAccess.getJsonOptionAccess().getLeftCurlyBracketKeyword_0()); 
-            match(input,11,FOLLOW_11_in_rule__JsonOption__Group__0__Impl3723); 
+            match(input,11,FOLLOW_11_in_rule__JsonOption__Group__0__Impl3724); 
              after(grammarAccess.getJsonOptionAccess().getLeftCurlyBracketKeyword_0()); 
 
             }
@@ -4751,12 +4762,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1931:1: ( rule__JsonOption__Group__1__Impl rule__JsonOption__Group__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1932:2: rule__JsonOption__Group__1__Impl rule__JsonOption__Group__2
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group__1__Impl_in_rule__JsonOption__Group__13754);
+            pushFollow(FOLLOW_rule__JsonOption__Group__1__Impl_in_rule__JsonOption__Group__13755);
             rule__JsonOption__Group__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonOption__Group__2_in_rule__JsonOption__Group__13757);
+            pushFollow(FOLLOW_rule__JsonOption__Group__2_in_rule__JsonOption__Group__13758);
             rule__JsonOption__Group__2();
 
             state._fsp--;
@@ -4794,17 +4805,17 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             {
              before(grammarAccess.getJsonOptionAccess().getGroup_1()); 
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1946:1: ( rule__JsonOption__Group_1__0 )?
-            int alt9=2;
-            int LA9_0 = input.LA(1);
+            int alt10=2;
+            int LA10_0 = input.LA(1);
 
-            if ( (LA9_0==24) ) {
-                alt9=1;
+            if ( (LA10_0==24) ) {
+                alt10=1;
             }
-            switch (alt9) {
+            switch (alt10) {
                 case 1 :
                     // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1946:2: rule__JsonOption__Group_1__0
                     {
-                    pushFollow(FOLLOW_rule__JsonOption__Group_1__0_in_rule__JsonOption__Group__1__Impl3784);
+                    pushFollow(FOLLOW_rule__JsonOption__Group_1__0_in_rule__JsonOption__Group__1__Impl3785);
                     rule__JsonOption__Group_1__0();
 
                     state._fsp--;
@@ -4847,12 +4858,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1960:1: ( rule__JsonOption__Group__2__Impl rule__JsonOption__Group__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1961:2: rule__JsonOption__Group__2__Impl rule__JsonOption__Group__3
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group__2__Impl_in_rule__JsonOption__Group__23815);
+            pushFollow(FOLLOW_rule__JsonOption__Group__2__Impl_in_rule__JsonOption__Group__23816);
             rule__JsonOption__Group__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonOption__Group__3_in_rule__JsonOption__Group__23818);
+            pushFollow(FOLLOW_rule__JsonOption__Group__3_in_rule__JsonOption__Group__23819);
             rule__JsonOption__Group__3();
 
             state._fsp--;
@@ -4889,7 +4900,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1974:1: 'test'
             {
              before(grammarAccess.getJsonOptionAccess().getTestKeyword_2()); 
-            match(input,23,FOLLOW_23_in_rule__JsonOption__Group__2__Impl3846); 
+            match(input,23,FOLLOW_23_in_rule__JsonOption__Group__2__Impl3847); 
              after(grammarAccess.getJsonOptionAccess().getTestKeyword_2()); 
 
             }
@@ -4922,12 +4933,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1991:1: ( rule__JsonOption__Group__3__Impl rule__JsonOption__Group__4 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:1992:2: rule__JsonOption__Group__3__Impl rule__JsonOption__Group__4
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group__3__Impl_in_rule__JsonOption__Group__33877);
+            pushFollow(FOLLOW_rule__JsonOption__Group__3__Impl_in_rule__JsonOption__Group__33878);
             rule__JsonOption__Group__3__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonOption__Group__4_in_rule__JsonOption__Group__33880);
+            pushFollow(FOLLOW_rule__JsonOption__Group__4_in_rule__JsonOption__Group__33881);
             rule__JsonOption__Group__4();
 
             state._fsp--;
@@ -4964,7 +4975,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2005:1: ':'
             {
              before(grammarAccess.getJsonOptionAccess().getColonKeyword_3()); 
-            match(input,13,FOLLOW_13_in_rule__JsonOption__Group__3__Impl3908); 
+            match(input,13,FOLLOW_13_in_rule__JsonOption__Group__3__Impl3909); 
              after(grammarAccess.getJsonOptionAccess().getColonKeyword_3()); 
 
             }
@@ -4997,12 +5008,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2022:1: ( rule__JsonOption__Group__4__Impl rule__JsonOption__Group__5 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2023:2: rule__JsonOption__Group__4__Impl rule__JsonOption__Group__5
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group__4__Impl_in_rule__JsonOption__Group__43939);
+            pushFollow(FOLLOW_rule__JsonOption__Group__4__Impl_in_rule__JsonOption__Group__43940);
             rule__JsonOption__Group__4__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonOption__Group__5_in_rule__JsonOption__Group__43942);
+            pushFollow(FOLLOW_rule__JsonOption__Group__5_in_rule__JsonOption__Group__43943);
             rule__JsonOption__Group__5();
 
             state._fsp--;
@@ -5042,7 +5053,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2037:1: ( rule__JsonOption__TextAssignment_4 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2037:2: rule__JsonOption__TextAssignment_4
             {
-            pushFollow(FOLLOW_rule__JsonOption__TextAssignment_4_in_rule__JsonOption__Group__4__Impl3969);
+            pushFollow(FOLLOW_rule__JsonOption__TextAssignment_4_in_rule__JsonOption__Group__4__Impl3970);
             rule__JsonOption__TextAssignment_4();
 
             state._fsp--;
@@ -5082,7 +5093,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2051:1: ( rule__JsonOption__Group__5__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2052:2: rule__JsonOption__Group__5__Impl
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group__5__Impl_in_rule__JsonOption__Group__53999);
+            pushFollow(FOLLOW_rule__JsonOption__Group__5__Impl_in_rule__JsonOption__Group__54000);
             rule__JsonOption__Group__5__Impl();
 
             state._fsp--;
@@ -5119,7 +5130,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2064:1: '}'
             {
              before(grammarAccess.getJsonOptionAccess().getRightCurlyBracketKeyword_5()); 
-            match(input,14,FOLLOW_14_in_rule__JsonOption__Group__5__Impl4027); 
+            match(input,14,FOLLOW_14_in_rule__JsonOption__Group__5__Impl4028); 
              after(grammarAccess.getJsonOptionAccess().getRightCurlyBracketKeyword_5()); 
 
             }
@@ -5152,12 +5163,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2093:1: ( rule__JsonOption__Group_1__0__Impl rule__JsonOption__Group_1__1 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2094:2: rule__JsonOption__Group_1__0__Impl rule__JsonOption__Group_1__1
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group_1__0__Impl_in_rule__JsonOption__Group_1__04070);
+            pushFollow(FOLLOW_rule__JsonOption__Group_1__0__Impl_in_rule__JsonOption__Group_1__04071);
             rule__JsonOption__Group_1__0__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonOption__Group_1__1_in_rule__JsonOption__Group_1__04073);
+            pushFollow(FOLLOW_rule__JsonOption__Group_1__1_in_rule__JsonOption__Group_1__04074);
             rule__JsonOption__Group_1__1();
 
             state._fsp--;
@@ -5194,7 +5205,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2107:1: 'id'
             {
              before(grammarAccess.getJsonOptionAccess().getIdKeyword_1_0()); 
-            match(input,24,FOLLOW_24_in_rule__JsonOption__Group_1__0__Impl4101); 
+            match(input,24,FOLLOW_24_in_rule__JsonOption__Group_1__0__Impl4102); 
              after(grammarAccess.getJsonOptionAccess().getIdKeyword_1_0()); 
 
             }
@@ -5227,12 +5238,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2124:1: ( rule__JsonOption__Group_1__1__Impl rule__JsonOption__Group_1__2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2125:2: rule__JsonOption__Group_1__1__Impl rule__JsonOption__Group_1__2
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group_1__1__Impl_in_rule__JsonOption__Group_1__14132);
+            pushFollow(FOLLOW_rule__JsonOption__Group_1__1__Impl_in_rule__JsonOption__Group_1__14133);
             rule__JsonOption__Group_1__1__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonOption__Group_1__2_in_rule__JsonOption__Group_1__14135);
+            pushFollow(FOLLOW_rule__JsonOption__Group_1__2_in_rule__JsonOption__Group_1__14136);
             rule__JsonOption__Group_1__2();
 
             state._fsp--;
@@ -5269,7 +5280,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2138:1: ':'
             {
              before(grammarAccess.getJsonOptionAccess().getColonKeyword_1_1()); 
-            match(input,13,FOLLOW_13_in_rule__JsonOption__Group_1__1__Impl4163); 
+            match(input,13,FOLLOW_13_in_rule__JsonOption__Group_1__1__Impl4164); 
              after(grammarAccess.getJsonOptionAccess().getColonKeyword_1_1()); 
 
             }
@@ -5302,12 +5313,12 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2155:1: ( rule__JsonOption__Group_1__2__Impl rule__JsonOption__Group_1__3 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2156:2: rule__JsonOption__Group_1__2__Impl rule__JsonOption__Group_1__3
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group_1__2__Impl_in_rule__JsonOption__Group_1__24194);
+            pushFollow(FOLLOW_rule__JsonOption__Group_1__2__Impl_in_rule__JsonOption__Group_1__24195);
             rule__JsonOption__Group_1__2__Impl();
 
             state._fsp--;
 
-            pushFollow(FOLLOW_rule__JsonOption__Group_1__3_in_rule__JsonOption__Group_1__24197);
+            pushFollow(FOLLOW_rule__JsonOption__Group_1__3_in_rule__JsonOption__Group_1__24198);
             rule__JsonOption__Group_1__3();
 
             state._fsp--;
@@ -5347,7 +5358,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2170:1: ( rule__JsonOption__IdAssignment_1_2 )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2170:2: rule__JsonOption__IdAssignment_1_2
             {
-            pushFollow(FOLLOW_rule__JsonOption__IdAssignment_1_2_in_rule__JsonOption__Group_1__2__Impl4224);
+            pushFollow(FOLLOW_rule__JsonOption__IdAssignment_1_2_in_rule__JsonOption__Group_1__2__Impl4225);
             rule__JsonOption__IdAssignment_1_2();
 
             state._fsp--;
@@ -5387,7 +5398,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2184:1: ( rule__JsonOption__Group_1__3__Impl )
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2185:2: rule__JsonOption__Group_1__3__Impl
             {
-            pushFollow(FOLLOW_rule__JsonOption__Group_1__3__Impl_in_rule__JsonOption__Group_1__34254);
+            pushFollow(FOLLOW_rule__JsonOption__Group_1__3__Impl_in_rule__JsonOption__Group_1__34255);
             rule__JsonOption__Group_1__3__Impl();
 
             state._fsp--;
@@ -5424,7 +5435,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2197:1: ','
             {
              before(grammarAccess.getJsonOptionAccess().getCommaKeyword_1_3()); 
-            match(input,17,FOLLOW_17_in_rule__JsonOption__Group_1__3__Impl4282); 
+            match(input,17,FOLLOW_17_in_rule__JsonOption__Group_1__3__Impl4283); 
              after(grammarAccess.getJsonOptionAccess().getCommaKeyword_1_3()); 
 
             }
@@ -5461,7 +5472,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2225:1: ruleJsonPoll
             {
              before(grammarAccess.getArrayJsonPollAccess().getPollsJsonPollParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleJsonPoll_in_rule__ArrayJsonPoll__PollsAssignment_14326);
+            pushFollow(FOLLOW_ruleJsonPoll_in_rule__ArrayJsonPoll__PollsAssignment_14327);
             ruleJsonPoll();
 
             state._fsp--;
@@ -5502,7 +5513,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2240:1: ruleJsonPoll
             {
              before(grammarAccess.getArrayJsonPollAccess().getPollsJsonPollParserRuleCall_2_1_0()); 
-            pushFollow(FOLLOW_ruleJsonPoll_in_rule__ArrayJsonPoll__PollsAssignment_2_14357);
+            pushFollow(FOLLOW_ruleJsonPoll_in_rule__ArrayJsonPoll__PollsAssignment_2_14358);
             ruleJsonPoll();
 
             state._fsp--;
@@ -5543,7 +5554,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2255:1: RULE_STRING
             {
              before(grammarAccess.getJsonPollAccess().getNameSTRINGTerminalRuleCall_1_2_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonPoll__NameAssignment_1_24388); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonPoll__NameAssignment_1_24389); 
              after(grammarAccess.getJsonPollAccess().getNameSTRINGTerminalRuleCall_1_2_0()); 
 
             }
@@ -5580,7 +5591,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2270:1: ruleArrayJsonQuestion
             {
              before(grammarAccess.getJsonPollAccess().getQuestionsArrayJsonQuestionParserRuleCall_4_0()); 
-            pushFollow(FOLLOW_ruleArrayJsonQuestion_in_rule__JsonPoll__QuestionsAssignment_44419);
+            pushFollow(FOLLOW_ruleArrayJsonQuestion_in_rule__JsonPoll__QuestionsAssignment_44420);
             ruleArrayJsonQuestion();
 
             state._fsp--;
@@ -5621,7 +5632,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2285:1: ruleJsonQuestion
             {
              before(grammarAccess.getArrayJsonQuestionAccess().getQuestionJsonQuestionParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleJsonQuestion_in_rule__ArrayJsonQuestion__QuestionAssignment_14450);
+            pushFollow(FOLLOW_ruleJsonQuestion_in_rule__ArrayJsonQuestion__QuestionAssignment_14451);
             ruleJsonQuestion();
 
             state._fsp--;
@@ -5662,7 +5673,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2300:1: ruleJsonQuestion
             {
              before(grammarAccess.getArrayJsonQuestionAccess().getQuestionJsonQuestionParserRuleCall_2_1_0()); 
-            pushFollow(FOLLOW_ruleJsonQuestion_in_rule__ArrayJsonQuestion__QuestionAssignment_2_14481);
+            pushFollow(FOLLOW_ruleJsonQuestion_in_rule__ArrayJsonQuestion__QuestionAssignment_2_14482);
             ruleJsonQuestion();
 
             state._fsp--;
@@ -5703,7 +5714,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2315:1: RULE_STRING
             {
              before(grammarAccess.getJsonQuestionAccess().getNameSTRINGTerminalRuleCall_4_2_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonQuestion__NameAssignment_4_24512); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonQuestion__NameAssignment_4_24513); 
              after(grammarAccess.getJsonQuestionAccess().getNameSTRINGTerminalRuleCall_4_2_0()); 
 
             }
@@ -5740,7 +5751,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2330:1: RULE_STRING
             {
              before(grammarAccess.getJsonQuestionAccess().getTextSTRINGTerminalRuleCall_7_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonQuestion__TextAssignment_74543); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonQuestion__TextAssignment_74544); 
              after(grammarAccess.getJsonQuestionAccess().getTextSTRINGTerminalRuleCall_7_0()); 
 
             }
@@ -5777,7 +5788,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2345:1: ruleArrayJsonOption
             {
              before(grammarAccess.getJsonQuestionAccess().getOptionsArrayJsonOptionParserRuleCall_11_0()); 
-            pushFollow(FOLLOW_ruleArrayJsonOption_in_rule__JsonQuestion__OptionsAssignment_114574);
+            pushFollow(FOLLOW_ruleArrayJsonOption_in_rule__JsonQuestion__OptionsAssignment_114575);
             ruleArrayJsonOption();
 
             state._fsp--;
@@ -5818,7 +5829,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2360:1: ruleJsonOption
             {
              before(grammarAccess.getArrayJsonOptionAccess().getOptionJsonOptionParserRuleCall_1_0()); 
-            pushFollow(FOLLOW_ruleJsonOption_in_rule__ArrayJsonOption__OptionAssignment_14605);
+            pushFollow(FOLLOW_ruleJsonOption_in_rule__ArrayJsonOption__OptionAssignment_14606);
             ruleJsonOption();
 
             state._fsp--;
@@ -5859,7 +5870,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2375:1: ruleJsonOption
             {
              before(grammarAccess.getArrayJsonOptionAccess().getOptionJsonOptionParserRuleCall_2_1_0()); 
-            pushFollow(FOLLOW_ruleJsonOption_in_rule__ArrayJsonOption__OptionAssignment_2_14636);
+            pushFollow(FOLLOW_ruleJsonOption_in_rule__ArrayJsonOption__OptionAssignment_2_14637);
             ruleJsonOption();
 
             state._fsp--;
@@ -5900,7 +5911,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2390:1: RULE_STRING
             {
              before(grammarAccess.getJsonOptionAccess().getIdSTRINGTerminalRuleCall_1_2_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonOption__IdAssignment_1_24667); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonOption__IdAssignment_1_24668); 
              after(grammarAccess.getJsonOptionAccess().getIdSTRINGTerminalRuleCall_1_2_0()); 
 
             }
@@ -5937,7 +5948,7 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.tp2.json.ui/src-gen/org/json/ui/contentassist/antlr/internal/InternalJson.g:2405:1: RULE_STRING
             {
              before(grammarAccess.getJsonOptionAccess().getTextSTRINGTerminalRuleCall_4_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonOption__TextAssignment_44698); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__JsonOption__TextAssignment_44699); 
              after(grammarAccess.getJsonOptionAccess().getTextSTRINGTerminalRuleCall_4_0()); 
 
             }
@@ -5967,206 +5978,206 @@ public class InternalJsonParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_ruleJsonPollSystem_in_entryRuleJsonPollSystem61 = new BitSet(new long[]{0x0000000000000000L});
     public static final BitSet FOLLOW_EOF_in_entryRuleJsonPollSystem68 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__JsonPollSystem__Group__0_in_ruleJsonPollSystem94 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArrayJsonPoll_in_entryRuleArrayJsonPoll121 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleArrayJsonPoll128 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__0_in_ruleArrayJsonPoll154 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonPoll_in_entryRuleJsonPoll181 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJsonPoll188 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__0_in_ruleJsonPoll214 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArrayJsonQuestion_in_entryRuleArrayJsonQuestion241 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleArrayJsonQuestion248 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__0_in_ruleArrayJsonQuestion274 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonQuestion_in_entryRuleJsonQuestion301 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJsonQuestion308 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__0_in_ruleJsonQuestion334 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArrayJsonOption_in_entryRuleArrayJsonOption361 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleArrayJsonOption368 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__0_in_ruleArrayJsonOption394 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonOption_in_entryRuleJsonOption421 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleJsonOption428 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__0_in_ruleJsonOption454 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__0__Impl_in_rule__JsonPollSystem__Group__0488 = new BitSet(new long[]{0x0000000000001000L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__1_in_rule__JsonPollSystem__Group__0491 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_rule__JsonPollSystem__Group__0__Impl519 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__1__Impl_in_rule__JsonPollSystem__Group__1550 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__2_in_rule__JsonPollSystem__Group__1553 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_12_in_rule__JsonPollSystem__Group__1__Impl581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__2__Impl_in_rule__JsonPollSystem__Group__2612 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__3_in_rule__JsonPollSystem__Group__2615 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonPollSystem__Group__2__Impl643 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__3__Impl_in_rule__JsonPollSystem__Group__3674 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__4_in_rule__JsonPollSystem__Group__3677 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArrayJsonPoll_in_rule__JsonPollSystem__Group__3__Impl704 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__4__Impl_in_rule__JsonPollSystem__Group__4733 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__JsonPollSystem__Group__4__Impl761 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__0__Impl_in_rule__ArrayJsonPoll__Group__0802 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__1_in_rule__ArrayJsonPoll__Group__0805 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__ArrayJsonPoll__Group__0__Impl833 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__1__Impl_in_rule__ArrayJsonPoll__Group__1864 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__2_in_rule__ArrayJsonPoll__Group__1867 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__PollsAssignment_1_in_rule__ArrayJsonPoll__Group__1__Impl894 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__2__Impl_in_rule__ArrayJsonPoll__Group__2925 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__3_in_rule__ArrayJsonPoll__Group__2928 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group_2__0_in_rule__ArrayJsonPoll__Group__2__Impl955 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__3__Impl_in_rule__ArrayJsonPoll__Group__3986 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__ArrayJsonPoll__Group__3__Impl1014 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group_2__0__Impl_in_rule__ArrayJsonPoll__Group_2__01053 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group_2__1_in_rule__ArrayJsonPoll__Group_2__01056 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__ArrayJsonPoll__Group_2__0__Impl1084 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group_2__1__Impl_in_rule__ArrayJsonPoll__Group_2__11115 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonPoll__PollsAssignment_2_1_in_rule__ArrayJsonPoll__Group_2__1__Impl1142 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__0__Impl_in_rule__JsonPoll__Group__01176 = new BitSet(new long[]{0x00000000000C0000L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__1_in_rule__JsonPoll__Group__01179 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_rule__JsonPoll__Group__0__Impl1207 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__1__Impl_in_rule__JsonPoll__Group__11238 = new BitSet(new long[]{0x00000000000C0000L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__2_in_rule__JsonPoll__Group__11241 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__0_in_rule__JsonPoll__Group__1__Impl1268 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__2__Impl_in_rule__JsonPoll__Group__21299 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__3_in_rule__JsonPoll__Group__21302 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_18_in_rule__JsonPoll__Group__2__Impl1330 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__3__Impl_in_rule__JsonPoll__Group__31361 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__4_in_rule__JsonPoll__Group__31364 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonPoll__Group__3__Impl1392 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__4__Impl_in_rule__JsonPoll__Group__41423 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__5_in_rule__JsonPoll__Group__41426 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__QuestionsAssignment_4_in_rule__JsonPoll__Group__4__Impl1453 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group__5__Impl_in_rule__JsonPoll__Group__51483 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__JsonPoll__Group__5__Impl1511 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__0__Impl_in_rule__JsonPoll__Group_1__01554 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__1_in_rule__JsonPoll__Group_1__01557 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__JsonPoll__Group_1__0__Impl1585 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__1__Impl_in_rule__JsonPoll__Group_1__11616 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__2_in_rule__JsonPoll__Group_1__11619 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonPoll__Group_1__1__Impl1647 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__2__Impl_in_rule__JsonPoll__Group_1__21678 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__3_in_rule__JsonPoll__Group_1__21681 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__NameAssignment_1_2_in_rule__JsonPoll__Group_1__2__Impl1708 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__3__Impl_in_rule__JsonPoll__Group_1__31738 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__JsonPoll__Group_1__3__Impl1766 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__0__Impl_in_rule__ArrayJsonQuestion__Group__01805 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__1_in_rule__ArrayJsonQuestion__Group__01808 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__ArrayJsonQuestion__Group__0__Impl1836 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__1__Impl_in_rule__ArrayJsonQuestion__Group__11867 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__2_in_rule__ArrayJsonQuestion__Group__11870 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__QuestionAssignment_1_in_rule__ArrayJsonQuestion__Group__1__Impl1897 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__2__Impl_in_rule__ArrayJsonQuestion__Group__21928 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__3_in_rule__ArrayJsonQuestion__Group__21931 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group_2__0_in_rule__ArrayJsonQuestion__Group__2__Impl1958 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__3__Impl_in_rule__ArrayJsonQuestion__Group__31989 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__ArrayJsonQuestion__Group__3__Impl2017 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group_2__0__Impl_in_rule__ArrayJsonQuestion__Group_2__02056 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group_2__1_in_rule__ArrayJsonQuestion__Group_2__02059 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__ArrayJsonQuestion__Group_2__0__Impl2087 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group_2__1__Impl_in_rule__ArrayJsonQuestion__Group_2__12118 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__QuestionAssignment_2_1_in_rule__ArrayJsonQuestion__Group_2__1__Impl2145 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__0__Impl_in_rule__JsonQuestion__Group__02179 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__1_in_rule__JsonQuestion__Group__02182 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_rule__JsonQuestion__Group__0__Impl2210 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__1__Impl_in_rule__JsonQuestion__Group__12241 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__2_in_rule__JsonQuestion__Group__12244 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_20_in_rule__JsonQuestion__Group__1__Impl2272 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__2__Impl_in_rule__JsonQuestion__Group__22303 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__3_in_rule__JsonQuestion__Group__22306 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonQuestion__Group__2__Impl2334 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__3__Impl_in_rule__JsonQuestion__Group__32365 = new BitSet(new long[]{0x0000000000280000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__4_in_rule__JsonQuestion__Group__32368 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_rule__JsonQuestion__Group__3__Impl2396 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__4__Impl_in_rule__JsonQuestion__Group__42427 = new BitSet(new long[]{0x0000000000280000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__5_in_rule__JsonQuestion__Group__42430 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__0_in_rule__JsonQuestion__Group__4__Impl2457 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__5__Impl_in_rule__JsonQuestion__Group__52488 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__6_in_rule__JsonQuestion__Group__52491 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_21_in_rule__JsonQuestion__Group__5__Impl2519 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__6__Impl_in_rule__JsonQuestion__Group__62550 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__7_in_rule__JsonQuestion__Group__62553 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonQuestion__Group__6__Impl2581 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__7__Impl_in_rule__JsonQuestion__Group__72612 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__8_in_rule__JsonQuestion__Group__72615 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__TextAssignment_7_in_rule__JsonQuestion__Group__7__Impl2642 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__8__Impl_in_rule__JsonQuestion__Group__82672 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__9_in_rule__JsonQuestion__Group__82675 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__JsonQuestion__Group__8__Impl2703 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__9__Impl_in_rule__JsonQuestion__Group__92734 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__10_in_rule__JsonQuestion__Group__92737 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_22_in_rule__JsonQuestion__Group__9__Impl2765 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__10__Impl_in_rule__JsonQuestion__Group__102796 = new BitSet(new long[]{0x0000000000008000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__11_in_rule__JsonQuestion__Group__102799 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonQuestion__Group__10__Impl2827 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__11__Impl_in_rule__JsonQuestion__Group__112858 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__12_in_rule__JsonQuestion__Group__112861 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__OptionsAssignment_11_in_rule__JsonQuestion__Group__11__Impl2888 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__12__Impl_in_rule__JsonQuestion__Group__122918 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__13_in_rule__JsonQuestion__Group__122921 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__JsonQuestion__Group__12__Impl2949 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group__13__Impl_in_rule__JsonQuestion__Group__132980 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__JsonQuestion__Group__13__Impl3008 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__0__Impl_in_rule__JsonQuestion__Group_4__03067 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__1_in_rule__JsonQuestion__Group_4__03070 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_19_in_rule__JsonQuestion__Group_4__0__Impl3098 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__1__Impl_in_rule__JsonQuestion__Group_4__13129 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__2_in_rule__JsonQuestion__Group_4__13132 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonQuestion__Group_4__1__Impl3160 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__2__Impl_in_rule__JsonQuestion__Group_4__23191 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__3_in_rule__JsonQuestion__Group_4__23194 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__NameAssignment_4_2_in_rule__JsonQuestion__Group_4__2__Impl3221 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__3__Impl_in_rule__JsonQuestion__Group_4__33251 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__JsonQuestion__Group_4__3__Impl3279 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__0__Impl_in_rule__ArrayJsonOption__Group__03318 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__1_in_rule__ArrayJsonOption__Group__03321 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_15_in_rule__ArrayJsonOption__Group__0__Impl3349 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__1__Impl_in_rule__ArrayJsonOption__Group__13380 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__2_in_rule__ArrayJsonOption__Group__13383 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__OptionAssignment_1_in_rule__ArrayJsonOption__Group__1__Impl3410 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__2__Impl_in_rule__ArrayJsonOption__Group__23441 = new BitSet(new long[]{0x0000000000030800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__3_in_rule__ArrayJsonOption__Group__23444 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group_2__0_in_rule__ArrayJsonOption__Group__2__Impl3471 = new BitSet(new long[]{0x0000000000020002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__3__Impl_in_rule__ArrayJsonOption__Group__33502 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_16_in_rule__ArrayJsonOption__Group__3__Impl3530 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group_2__0__Impl_in_rule__ArrayJsonOption__Group_2__03569 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group_2__1_in_rule__ArrayJsonOption__Group_2__03572 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__ArrayJsonOption__Group_2__0__Impl3600 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group_2__1__Impl_in_rule__ArrayJsonOption__Group_2__13631 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__ArrayJsonOption__OptionAssignment_2_1_in_rule__ArrayJsonOption__Group_2__1__Impl3658 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__0__Impl_in_rule__JsonOption__Group__03692 = new BitSet(new long[]{0x0000000001800000L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__1_in_rule__JsonOption__Group__03695 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_11_in_rule__JsonOption__Group__0__Impl3723 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__1__Impl_in_rule__JsonOption__Group__13754 = new BitSet(new long[]{0x0000000001800000L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__2_in_rule__JsonOption__Group__13757 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group_1__0_in_rule__JsonOption__Group__1__Impl3784 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__2__Impl_in_rule__JsonOption__Group__23815 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__3_in_rule__JsonOption__Group__23818 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_23_in_rule__JsonOption__Group__2__Impl3846 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__3__Impl_in_rule__JsonOption__Group__33877 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__4_in_rule__JsonOption__Group__33880 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonOption__Group__3__Impl3908 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__4__Impl_in_rule__JsonOption__Group__43939 = new BitSet(new long[]{0x0000000000004000L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__5_in_rule__JsonOption__Group__43942 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__TextAssignment_4_in_rule__JsonOption__Group__4__Impl3969 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group__5__Impl_in_rule__JsonOption__Group__53999 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_14_in_rule__JsonOption__Group__5__Impl4027 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group_1__0__Impl_in_rule__JsonOption__Group_1__04070 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group_1__1_in_rule__JsonOption__Group_1__04073 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_24_in_rule__JsonOption__Group_1__0__Impl4101 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group_1__1__Impl_in_rule__JsonOption__Group_1__14132 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group_1__2_in_rule__JsonOption__Group_1__14135 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_13_in_rule__JsonOption__Group_1__1__Impl4163 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group_1__2__Impl_in_rule__JsonOption__Group_1__24194 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group_1__3_in_rule__JsonOption__Group_1__24197 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__IdAssignment_1_2_in_rule__JsonOption__Group_1__2__Impl4224 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__JsonOption__Group_1__3__Impl_in_rule__JsonOption__Group_1__34254 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_17_in_rule__JsonOption__Group_1__3__Impl4282 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonPoll_in_rule__ArrayJsonPoll__PollsAssignment_14326 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonPoll_in_rule__ArrayJsonPoll__PollsAssignment_2_14357 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonPoll__NameAssignment_1_24388 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArrayJsonQuestion_in_rule__JsonPoll__QuestionsAssignment_44419 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonQuestion_in_rule__ArrayJsonQuestion__QuestionAssignment_14450 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonQuestion_in_rule__ArrayJsonQuestion__QuestionAssignment_2_14481 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonQuestion__NameAssignment_4_24512 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonQuestion__TextAssignment_74543 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleArrayJsonOption_in_rule__JsonQuestion__OptionsAssignment_114574 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonOption_in_rule__ArrayJsonOption__OptionAssignment_14605 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleJsonOption_in_rule__ArrayJsonOption__OptionAssignment_2_14636 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonOption__IdAssignment_1_24667 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonOption__TextAssignment_44698 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArrayJsonPoll_in_entryRuleArrayJsonPoll122 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleArrayJsonPoll129 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__0_in_ruleArrayJsonPoll155 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonPoll_in_entryRuleJsonPoll182 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJsonPoll189 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__0_in_ruleJsonPoll215 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArrayJsonQuestion_in_entryRuleArrayJsonQuestion242 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleArrayJsonQuestion249 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__0_in_ruleArrayJsonQuestion275 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonQuestion_in_entryRuleJsonQuestion302 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJsonQuestion309 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__0_in_ruleJsonQuestion335 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArrayJsonOption_in_entryRuleArrayJsonOption362 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleArrayJsonOption369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__0_in_ruleArrayJsonOption395 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonOption_in_entryRuleJsonOption422 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleJsonOption429 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__0_in_ruleJsonOption455 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__0__Impl_in_rule__JsonPollSystem__Group__0489 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__1_in_rule__JsonPollSystem__Group__0492 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_rule__JsonPollSystem__Group__0__Impl520 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__1__Impl_in_rule__JsonPollSystem__Group__1551 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__2_in_rule__JsonPollSystem__Group__1554 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_12_in_rule__JsonPollSystem__Group__1__Impl582 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__2__Impl_in_rule__JsonPollSystem__Group__2613 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__3_in_rule__JsonPollSystem__Group__2616 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonPollSystem__Group__2__Impl644 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__3__Impl_in_rule__JsonPollSystem__Group__3675 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__4_in_rule__JsonPollSystem__Group__3678 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArrayJsonPoll_in_rule__JsonPollSystem__Group__3__Impl705 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPollSystem__Group__4__Impl_in_rule__JsonPollSystem__Group__4734 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__JsonPollSystem__Group__4__Impl762 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__0__Impl_in_rule__ArrayJsonPoll__Group__0803 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__1_in_rule__ArrayJsonPoll__Group__0806 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__ArrayJsonPoll__Group__0__Impl834 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__1__Impl_in_rule__ArrayJsonPoll__Group__1865 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__2_in_rule__ArrayJsonPoll__Group__1868 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__PollsAssignment_1_in_rule__ArrayJsonPoll__Group__1__Impl895 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__2__Impl_in_rule__ArrayJsonPoll__Group__2926 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__3_in_rule__ArrayJsonPoll__Group__2929 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group_2__0_in_rule__ArrayJsonPoll__Group__2__Impl956 = new BitSet(new long[]{0x0000000000020002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group__3__Impl_in_rule__ArrayJsonPoll__Group__3987 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__ArrayJsonPoll__Group__3__Impl1015 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group_2__0__Impl_in_rule__ArrayJsonPoll__Group_2__01054 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group_2__1_in_rule__ArrayJsonPoll__Group_2__01057 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__ArrayJsonPoll__Group_2__0__Impl1085 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__Group_2__1__Impl_in_rule__ArrayJsonPoll__Group_2__11116 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonPoll__PollsAssignment_2_1_in_rule__ArrayJsonPoll__Group_2__1__Impl1143 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__0__Impl_in_rule__JsonPoll__Group__01177 = new BitSet(new long[]{0x00000000000C0000L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__1_in_rule__JsonPoll__Group__01180 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_rule__JsonPoll__Group__0__Impl1208 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__1__Impl_in_rule__JsonPoll__Group__11239 = new BitSet(new long[]{0x00000000000C0000L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__2_in_rule__JsonPoll__Group__11242 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__0_in_rule__JsonPoll__Group__1__Impl1269 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__2__Impl_in_rule__JsonPoll__Group__21300 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__3_in_rule__JsonPoll__Group__21303 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_18_in_rule__JsonPoll__Group__2__Impl1331 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__3__Impl_in_rule__JsonPoll__Group__31362 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__4_in_rule__JsonPoll__Group__31365 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonPoll__Group__3__Impl1393 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__4__Impl_in_rule__JsonPoll__Group__41424 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__5_in_rule__JsonPoll__Group__41427 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__QuestionsAssignment_4_in_rule__JsonPoll__Group__4__Impl1454 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group__5__Impl_in_rule__JsonPoll__Group__51484 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__JsonPoll__Group__5__Impl1512 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__0__Impl_in_rule__JsonPoll__Group_1__01555 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__1_in_rule__JsonPoll__Group_1__01558 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__JsonPoll__Group_1__0__Impl1586 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__1__Impl_in_rule__JsonPoll__Group_1__11617 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__2_in_rule__JsonPoll__Group_1__11620 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonPoll__Group_1__1__Impl1648 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__2__Impl_in_rule__JsonPoll__Group_1__21679 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__3_in_rule__JsonPoll__Group_1__21682 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__NameAssignment_1_2_in_rule__JsonPoll__Group_1__2__Impl1709 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonPoll__Group_1__3__Impl_in_rule__JsonPoll__Group_1__31739 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__JsonPoll__Group_1__3__Impl1767 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__0__Impl_in_rule__ArrayJsonQuestion__Group__01806 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__1_in_rule__ArrayJsonQuestion__Group__01809 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__ArrayJsonQuestion__Group__0__Impl1837 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__1__Impl_in_rule__ArrayJsonQuestion__Group__11868 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__2_in_rule__ArrayJsonQuestion__Group__11871 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__QuestionAssignment_1_in_rule__ArrayJsonQuestion__Group__1__Impl1898 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__2__Impl_in_rule__ArrayJsonQuestion__Group__21929 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__3_in_rule__ArrayJsonQuestion__Group__21932 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group_2__0_in_rule__ArrayJsonQuestion__Group__2__Impl1959 = new BitSet(new long[]{0x0000000000020002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group__3__Impl_in_rule__ArrayJsonQuestion__Group__31990 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__ArrayJsonQuestion__Group__3__Impl2018 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group_2__0__Impl_in_rule__ArrayJsonQuestion__Group_2__02057 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group_2__1_in_rule__ArrayJsonQuestion__Group_2__02060 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__ArrayJsonQuestion__Group_2__0__Impl2088 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__Group_2__1__Impl_in_rule__ArrayJsonQuestion__Group_2__12119 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonQuestion__QuestionAssignment_2_1_in_rule__ArrayJsonQuestion__Group_2__1__Impl2146 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__0__Impl_in_rule__JsonQuestion__Group__02180 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__1_in_rule__JsonQuestion__Group__02183 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_rule__JsonQuestion__Group__0__Impl2211 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__1__Impl_in_rule__JsonQuestion__Group__12242 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__2_in_rule__JsonQuestion__Group__12245 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_20_in_rule__JsonQuestion__Group__1__Impl2273 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__2__Impl_in_rule__JsonQuestion__Group__22304 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__3_in_rule__JsonQuestion__Group__22307 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonQuestion__Group__2__Impl2335 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__3__Impl_in_rule__JsonQuestion__Group__32366 = new BitSet(new long[]{0x0000000000280000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__4_in_rule__JsonQuestion__Group__32369 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_rule__JsonQuestion__Group__3__Impl2397 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__4__Impl_in_rule__JsonQuestion__Group__42428 = new BitSet(new long[]{0x0000000000280000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__5_in_rule__JsonQuestion__Group__42431 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__0_in_rule__JsonQuestion__Group__4__Impl2458 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__5__Impl_in_rule__JsonQuestion__Group__52489 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__6_in_rule__JsonQuestion__Group__52492 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_21_in_rule__JsonQuestion__Group__5__Impl2520 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__6__Impl_in_rule__JsonQuestion__Group__62551 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__7_in_rule__JsonQuestion__Group__62554 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonQuestion__Group__6__Impl2582 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__7__Impl_in_rule__JsonQuestion__Group__72613 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__8_in_rule__JsonQuestion__Group__72616 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__TextAssignment_7_in_rule__JsonQuestion__Group__7__Impl2643 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__8__Impl_in_rule__JsonQuestion__Group__82673 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__9_in_rule__JsonQuestion__Group__82676 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__JsonQuestion__Group__8__Impl2704 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__9__Impl_in_rule__JsonQuestion__Group__92735 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__10_in_rule__JsonQuestion__Group__92738 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_22_in_rule__JsonQuestion__Group__9__Impl2766 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__10__Impl_in_rule__JsonQuestion__Group__102797 = new BitSet(new long[]{0x0000000000008000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__11_in_rule__JsonQuestion__Group__102800 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonQuestion__Group__10__Impl2828 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__11__Impl_in_rule__JsonQuestion__Group__112859 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__12_in_rule__JsonQuestion__Group__112862 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__OptionsAssignment_11_in_rule__JsonQuestion__Group__11__Impl2889 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__12__Impl_in_rule__JsonQuestion__Group__122919 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__13_in_rule__JsonQuestion__Group__122922 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__JsonQuestion__Group__12__Impl2950 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group__13__Impl_in_rule__JsonQuestion__Group__132981 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__JsonQuestion__Group__13__Impl3009 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__0__Impl_in_rule__JsonQuestion__Group_4__03068 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__1_in_rule__JsonQuestion__Group_4__03071 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_19_in_rule__JsonQuestion__Group_4__0__Impl3099 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__1__Impl_in_rule__JsonQuestion__Group_4__13130 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__2_in_rule__JsonQuestion__Group_4__13133 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonQuestion__Group_4__1__Impl3161 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__2__Impl_in_rule__JsonQuestion__Group_4__23192 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__3_in_rule__JsonQuestion__Group_4__23195 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__NameAssignment_4_2_in_rule__JsonQuestion__Group_4__2__Impl3222 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonQuestion__Group_4__3__Impl_in_rule__JsonQuestion__Group_4__33252 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__JsonQuestion__Group_4__3__Impl3280 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__0__Impl_in_rule__ArrayJsonOption__Group__03319 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__1_in_rule__ArrayJsonOption__Group__03322 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_15_in_rule__ArrayJsonOption__Group__0__Impl3350 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__1__Impl_in_rule__ArrayJsonOption__Group__13381 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__2_in_rule__ArrayJsonOption__Group__13384 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__OptionAssignment_1_in_rule__ArrayJsonOption__Group__1__Impl3411 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__2__Impl_in_rule__ArrayJsonOption__Group__23442 = new BitSet(new long[]{0x0000000000030800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__3_in_rule__ArrayJsonOption__Group__23445 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group_2__0_in_rule__ArrayJsonOption__Group__2__Impl3472 = new BitSet(new long[]{0x0000000000020002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group__3__Impl_in_rule__ArrayJsonOption__Group__33503 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_16_in_rule__ArrayJsonOption__Group__3__Impl3531 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group_2__0__Impl_in_rule__ArrayJsonOption__Group_2__03570 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group_2__1_in_rule__ArrayJsonOption__Group_2__03573 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__ArrayJsonOption__Group_2__0__Impl3601 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__Group_2__1__Impl_in_rule__ArrayJsonOption__Group_2__13632 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__ArrayJsonOption__OptionAssignment_2_1_in_rule__ArrayJsonOption__Group_2__1__Impl3659 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__0__Impl_in_rule__JsonOption__Group__03693 = new BitSet(new long[]{0x0000000001800000L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__1_in_rule__JsonOption__Group__03696 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_11_in_rule__JsonOption__Group__0__Impl3724 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__1__Impl_in_rule__JsonOption__Group__13755 = new BitSet(new long[]{0x0000000001800000L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__2_in_rule__JsonOption__Group__13758 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group_1__0_in_rule__JsonOption__Group__1__Impl3785 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__2__Impl_in_rule__JsonOption__Group__23816 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__3_in_rule__JsonOption__Group__23819 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_23_in_rule__JsonOption__Group__2__Impl3847 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__3__Impl_in_rule__JsonOption__Group__33878 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__4_in_rule__JsonOption__Group__33881 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonOption__Group__3__Impl3909 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__4__Impl_in_rule__JsonOption__Group__43940 = new BitSet(new long[]{0x0000000000004000L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__5_in_rule__JsonOption__Group__43943 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__TextAssignment_4_in_rule__JsonOption__Group__4__Impl3970 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group__5__Impl_in_rule__JsonOption__Group__54000 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_14_in_rule__JsonOption__Group__5__Impl4028 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group_1__0__Impl_in_rule__JsonOption__Group_1__04071 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group_1__1_in_rule__JsonOption__Group_1__04074 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_24_in_rule__JsonOption__Group_1__0__Impl4102 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group_1__1__Impl_in_rule__JsonOption__Group_1__14133 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group_1__2_in_rule__JsonOption__Group_1__14136 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_13_in_rule__JsonOption__Group_1__1__Impl4164 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group_1__2__Impl_in_rule__JsonOption__Group_1__24195 = new BitSet(new long[]{0x0000000000020000L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group_1__3_in_rule__JsonOption__Group_1__24198 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__IdAssignment_1_2_in_rule__JsonOption__Group_1__2__Impl4225 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__JsonOption__Group_1__3__Impl_in_rule__JsonOption__Group_1__34255 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_17_in_rule__JsonOption__Group_1__3__Impl4283 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonPoll_in_rule__ArrayJsonPoll__PollsAssignment_14327 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonPoll_in_rule__ArrayJsonPoll__PollsAssignment_2_14358 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonPoll__NameAssignment_1_24389 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArrayJsonQuestion_in_rule__JsonPoll__QuestionsAssignment_44420 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonQuestion_in_rule__ArrayJsonQuestion__QuestionAssignment_14451 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonQuestion_in_rule__ArrayJsonQuestion__QuestionAssignment_2_14482 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonQuestion__NameAssignment_4_24513 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonQuestion__TextAssignment_74544 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleArrayJsonOption_in_rule__JsonQuestion__OptionsAssignment_114575 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonOption_in_rule__ArrayJsonOption__OptionAssignment_14606 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleJsonOption_in_rule__ArrayJsonOption__OptionAssignment_2_14637 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonOption__IdAssignment_1_24668 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__JsonOption__TextAssignment_44699 = new BitSet(new long[]{0x0000000000000002L});
 
 }
