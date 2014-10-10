@@ -23,40 +23,67 @@ public interface JsonFactory extends EFactory
   JsonFactory eINSTANCE = org.json.json.impl.JsonFactoryImpl.init();
 
   /**
-   * Returns a new object of class '<em>Object</em>'.
+   * Returns a new object of class '<em>Poll System</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Object</em>'.
+   * @return a new object of class '<em>Poll System</em>'.
    * @generated
    */
-  Object createObject();
+  JsonPollSystem createJsonPollSystem();
 
   /**
-   * Returns a new object of class '<em>Member</em>'.
+   * Returns a new object of class '<em>Array Json Poll</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Member</em>'.
+   * @return a new object of class '<em>Array Json Poll</em>'.
    * @generated
    */
-  Member createMember();
+  ArrayJsonPoll createArrayJsonPoll();
 
   /**
-   * Returns a new object of class '<em>Value</em>'.
+   * Returns a new object of class '<em>Poll</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Value</em>'.
+   * @return a new object of class '<em>Poll</em>'.
    * @generated
    */
-  Value createValue();
+  JsonPoll createJsonPoll();
 
   /**
-   * Returns a new object of class '<em>Array</em>'.
+   * Returns a new object of class '<em>Array Json Question</em>'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Array</em>'.
+   * @return a new object of class '<em>Array Json Question</em>'.
    * @generated
    */
-  Array createArray();
+  ArrayJsonQuestion createArrayJsonQuestion();
+
+  /**
+   * Returns a new object of class '<em>Question</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Question</em>'.
+   * @generated
+   */
+  JsonQuestion createJsonQuestion();
+
+  /**
+   * Returns a new object of class '<em>Array Json Option</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Array Json Option</em>'.
+   * @generated
+   */
+  ArrayJsonOption createArrayJsonOption();
+
+  /**
+   * Returns a new object of class '<em>Option</em>'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return a new object of class '<em>Option</em>'.
+   * @generated
+   */
+  JsonOption createJsonOption();
 
   /**
    * Returns the package supported by this factory.

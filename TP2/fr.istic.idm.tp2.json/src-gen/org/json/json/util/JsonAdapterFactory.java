@@ -9,10 +9,7 @@ import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 
 import org.eclipse.emf.ecore.EObject;
 
-import org.json.json.Array;
-import org.json.json.JsonPackage;
-import org.json.json.Member;
-import org.json.json.Value;
+import org.json.json.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -78,24 +75,39 @@ public class JsonAdapterFactory extends AdapterFactoryImpl
     new JsonSwitch<Adapter>()
     {
       @Override
-      public Adapter caseObject(org.json.json.Object object)
+      public Adapter caseJsonPollSystem(JsonPollSystem object)
       {
-        return createObjectAdapter();
+        return createJsonPollSystemAdapter();
       }
       @Override
-      public Adapter caseMember(Member object)
+      public Adapter caseArrayJsonPoll(ArrayJsonPoll object)
       {
-        return createMemberAdapter();
+        return createArrayJsonPollAdapter();
       }
       @Override
-      public Adapter caseValue(Value object)
+      public Adapter caseJsonPoll(JsonPoll object)
       {
-        return createValueAdapter();
+        return createJsonPollAdapter();
       }
       @Override
-      public Adapter caseArray(Array object)
+      public Adapter caseArrayJsonQuestion(ArrayJsonQuestion object)
       {
-        return createArrayAdapter();
+        return createArrayJsonQuestionAdapter();
+      }
+      @Override
+      public Adapter caseJsonQuestion(JsonQuestion object)
+      {
+        return createJsonQuestionAdapter();
+      }
+      @Override
+      public Adapter caseArrayJsonOption(ArrayJsonOption object)
+      {
+        return createArrayJsonOptionAdapter();
+      }
+      @Override
+      public Adapter caseJsonOption(JsonOption object)
+      {
+        return createJsonOptionAdapter();
       }
       @Override
       public Adapter defaultCase(EObject object)
@@ -120,61 +132,106 @@ public class JsonAdapterFactory extends AdapterFactoryImpl
 
 
   /**
-   * Creates a new adapter for an object of class '{@link org.json.json.Object <em>Object</em>}'.
+   * Creates a new adapter for an object of class '{@link org.json.json.JsonPollSystem <em>Poll System</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.json.json.Object
+   * @see org.json.json.JsonPollSystem
    * @generated
    */
-  public Adapter createObjectAdapter()
+  public Adapter createJsonPollSystemAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.json.json.Member <em>Member</em>}'.
+   * Creates a new adapter for an object of class '{@link org.json.json.ArrayJsonPoll <em>Array Json Poll</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.json.json.Member
+   * @see org.json.json.ArrayJsonPoll
    * @generated
    */
-  public Adapter createMemberAdapter()
+  public Adapter createArrayJsonPollAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.json.json.Value <em>Value</em>}'.
+   * Creates a new adapter for an object of class '{@link org.json.json.JsonPoll <em>Poll</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.json.json.Value
+   * @see org.json.json.JsonPoll
    * @generated
    */
-  public Adapter createValueAdapter()
+  public Adapter createJsonPollAdapter()
   {
     return null;
   }
 
   /**
-   * Creates a new adapter for an object of class '{@link org.json.json.Array <em>Array</em>}'.
+   * Creates a new adapter for an object of class '{@link org.json.json.ArrayJsonQuestion <em>Array Json Question</em>}'.
    * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
    * @return the new adapter.
-   * @see org.json.json.Array
+   * @see org.json.json.ArrayJsonQuestion
    * @generated
    */
-  public Adapter createArrayAdapter()
+  public Adapter createArrayJsonQuestionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.json.json.JsonQuestion <em>Question</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.json.json.JsonQuestion
+   * @generated
+   */
+  public Adapter createJsonQuestionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.json.json.ArrayJsonOption <em>Array Json Option</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.json.json.ArrayJsonOption
+   * @generated
+   */
+  public Adapter createArrayJsonOptionAdapter()
+  {
+    return null;
+  }
+
+  /**
+   * Creates a new adapter for an object of class '{@link org.json.json.JsonOption <em>Option</em>}'.
+   * <!-- begin-user-doc -->
+   * This default implementation returns null so that we can easily ignore cases;
+   * it's useful to ignore a case when inheritance will catch all the cases anyway.
+   * <!-- end-user-doc -->
+   * @return the new adapter.
+   * @see org.json.json.JsonOption
+   * @generated
+   */
+  public Adapter createJsonOptionAdapter()
   {
     return null;
   }

@@ -10,11 +10,7 @@ import org.eclipse.emf.ecore.impl.EFactoryImpl;
 
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
-import org.json.json.Array;
-import org.json.json.JsonFactory;
-import org.json.json.JsonPackage;
-import org.json.json.Member;
-import org.json.json.Value;
+import org.json.json.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -68,10 +64,13 @@ public class JsonFactoryImpl extends EFactoryImpl implements JsonFactory
   {
     switch (eClass.getClassifierID())
     {
-      case JsonPackage.OBJECT: return createObject();
-      case JsonPackage.MEMBER: return createMember();
-      case JsonPackage.VALUE: return createValue();
-      case JsonPackage.ARRAY: return createArray();
+      case JsonPackage.JSON_POLL_SYSTEM: return createJsonPollSystem();
+      case JsonPackage.ARRAY_JSON_POLL: return createArrayJsonPoll();
+      case JsonPackage.JSON_POLL: return createJsonPoll();
+      case JsonPackage.ARRAY_JSON_QUESTION: return createArrayJsonQuestion();
+      case JsonPackage.JSON_QUESTION: return createJsonQuestion();
+      case JsonPackage.ARRAY_JSON_OPTION: return createArrayJsonOption();
+      case JsonPackage.JSON_OPTION: return createJsonOption();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
     }
@@ -82,10 +81,10 @@ public class JsonFactoryImpl extends EFactoryImpl implements JsonFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public org.json.json.Object createObject()
+  public JsonPollSystem createJsonPollSystem()
   {
-    ObjectImpl object = new ObjectImpl();
-    return object;
+    JsonPollSystemImpl jsonPollSystem = new JsonPollSystemImpl();
+    return jsonPollSystem;
   }
 
   /**
@@ -93,10 +92,10 @@ public class JsonFactoryImpl extends EFactoryImpl implements JsonFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Member createMember()
+  public ArrayJsonPoll createArrayJsonPoll()
   {
-    MemberImpl member = new MemberImpl();
-    return member;
+    ArrayJsonPollImpl arrayJsonPoll = new ArrayJsonPollImpl();
+    return arrayJsonPoll;
   }
 
   /**
@@ -104,10 +103,10 @@ public class JsonFactoryImpl extends EFactoryImpl implements JsonFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Value createValue()
+  public JsonPoll createJsonPoll()
   {
-    ValueImpl value = new ValueImpl();
-    return value;
+    JsonPollImpl jsonPoll = new JsonPollImpl();
+    return jsonPoll;
   }
 
   /**
@@ -115,10 +114,43 @@ public class JsonFactoryImpl extends EFactoryImpl implements JsonFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Array createArray()
+  public ArrayJsonQuestion createArrayJsonQuestion()
   {
-    ArrayImpl array = new ArrayImpl();
-    return array;
+    ArrayJsonQuestionImpl arrayJsonQuestion = new ArrayJsonQuestionImpl();
+    return arrayJsonQuestion;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public JsonQuestion createJsonQuestion()
+  {
+    JsonQuestionImpl jsonQuestion = new JsonQuestionImpl();
+    return jsonQuestion;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public ArrayJsonOption createArrayJsonOption()
+  {
+    ArrayJsonOptionImpl arrayJsonOption = new ArrayJsonOptionImpl();
+    return arrayJsonOption;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public JsonOption createJsonOption()
+  {
+    JsonOptionImpl jsonOption = new JsonOptionImpl();
+    return jsonOption;
   }
 
   /**

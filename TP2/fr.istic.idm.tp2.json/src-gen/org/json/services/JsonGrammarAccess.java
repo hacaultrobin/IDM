@@ -18,202 +18,396 @@ import org.eclipse.xtext.common.services.TerminalsGrammarAccess;
 public class JsonGrammarAccess extends AbstractGrammarElementFinder {
 	
 	
-	public class ObjectElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Object");
+	public class JsonPollSystemElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "JsonPollSystem");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftCurlyBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cMembersAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cMembersMemberParserRuleCall_1_0 = (RuleCall)cMembersAssignment_1.eContents().get(0);
-		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
-		private final Keyword cCommaKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
-		private final Assignment cMembersAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final RuleCall cMembersMemberParserRuleCall_2_1_0 = (RuleCall)cMembersAssignment_2_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Keyword cPollsKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Keyword cColonKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final RuleCall cArrayJsonPollParserRuleCall_3 = (RuleCall)cGroup.eContents().get(3);
+		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		
-		//Object:
-		//	"{" members+=Member? ("," members+=Member)* "}";
+		//JsonPollSystem:
+		//	"{" "polls" ":" ArrayJsonPoll "}";
 		public ParserRule getRule() { return rule; }
 
-		//"{" members+=Member? ("," members+=Member)* "}"
+		//"{" "polls" ":" ArrayJsonPoll "}"
 		public Group getGroup() { return cGroup; }
 
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_0() { return cLeftCurlyBracketKeyword_0; }
 
-		//members+=Member?
-		public Assignment getMembersAssignment_1() { return cMembersAssignment_1; }
-
-		//Member
-		public RuleCall getMembersMemberParserRuleCall_1_0() { return cMembersMemberParserRuleCall_1_0; }
-
-		//("," members+=Member)*
-		public Group getGroup_2() { return cGroup_2; }
-
-		//","
-		public Keyword getCommaKeyword_2_0() { return cCommaKeyword_2_0; }
-
-		//members+=Member
-		public Assignment getMembersAssignment_2_1() { return cMembersAssignment_2_1; }
-
-		//Member
-		public RuleCall getMembersMemberParserRuleCall_2_1_0() { return cMembersMemberParserRuleCall_2_1_0; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_3() { return cRightCurlyBracketKeyword_3; }
-	}
-
-	public class MemberElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Member");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cKeyAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final RuleCall cKeySTRINGTerminalRuleCall_0_0 = (RuleCall)cKeyAssignment_0.eContents().get(0);
-		private final Keyword cColonKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cValueAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cValueValueParserRuleCall_2_0 = (RuleCall)cValueAssignment_2.eContents().get(0);
-		
-		//Member:
-		//	key=STRING ":" value=Value;
-		public ParserRule getRule() { return rule; }
-
-		//key=STRING ":" value=Value
-		public Group getGroup() { return cGroup; }
-
-		//key=STRING
-		public Assignment getKeyAssignment_0() { return cKeyAssignment_0; }
-
-		//STRING
-		public RuleCall getKeySTRINGTerminalRuleCall_0_0() { return cKeySTRINGTerminalRuleCall_0_0; }
+		//"polls"
+		public Keyword getPollsKeyword_1() { return cPollsKeyword_1; }
 
 		//":"
-		public Keyword getColonKeyword_1() { return cColonKeyword_1; }
+		public Keyword getColonKeyword_2() { return cColonKeyword_2; }
 
-		//value=Value
-		public Assignment getValueAssignment_2() { return cValueAssignment_2; }
+		//ArrayJsonPoll
+		public RuleCall getArrayJsonPollParserRuleCall_3() { return cArrayJsonPollParserRuleCall_3; }
 
-		//Value
-		public RuleCall getValueValueParserRuleCall_2_0() { return cValueValueParserRuleCall_2_0; }
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_4() { return cRightCurlyBracketKeyword_4; }
 	}
 
-	public class ValueElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Value");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cObjectParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cSTRINGTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cArrayParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
-		private final RuleCall cBooleanParserRuleCall_3 = (RuleCall)cAlternatives.eContents().get(3);
-		private final RuleCall cNullParserRuleCall_4 = (RuleCall)cAlternatives.eContents().get(4);
-		private final RuleCall cNumberTerminalRuleCall_5 = (RuleCall)cAlternatives.eContents().get(5);
-		
-		//Value:
-		//	Object | STRING | Array | Boolean | Null | Number;
-		public ParserRule getRule() { return rule; }
-
-		//Object | STRING | Array | Boolean | Null | Number
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//Object
-		public RuleCall getObjectParserRuleCall_0() { return cObjectParserRuleCall_0; }
-
-		//STRING
-		public RuleCall getSTRINGTerminalRuleCall_1() { return cSTRINGTerminalRuleCall_1; }
-
-		//Array
-		public RuleCall getArrayParserRuleCall_2() { return cArrayParserRuleCall_2; }
-
-		//Boolean
-		public RuleCall getBooleanParserRuleCall_3() { return cBooleanParserRuleCall_3; }
-
-		//Null
-		public RuleCall getNullParserRuleCall_4() { return cNullParserRuleCall_4; }
-
-		//Number
-		public RuleCall getNumberTerminalRuleCall_5() { return cNumberTerminalRuleCall_5; }
-	}
-
-	public class ArrayElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Array");
+	public class ArrayJsonPollElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ArrayJsonPoll");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Assignment cValuesAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cValuesValueParserRuleCall_1_0 = (RuleCall)cValuesAssignment_1.eContents().get(0);
+		private final Assignment cPollsAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cPollsJsonPollParserRuleCall_1_0 = (RuleCall)cPollsAssignment_1.eContents().get(0);
 		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
 		private final Keyword cCommaKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
-		private final Assignment cValuesAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
-		private final RuleCall cValuesValueParserRuleCall_2_1_0 = (RuleCall)cValuesAssignment_2_1.eContents().get(0);
+		private final Assignment cPollsAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cPollsJsonPollParserRuleCall_2_1_0 = (RuleCall)cPollsAssignment_2_1.eContents().get(0);
 		private final Keyword cRightSquareBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
-		//Array:
-		//	"[" values+=Value? ("," values+=Value)* "]";
+		//ArrayJsonPoll:
+		//	"[" polls+=JsonPoll? ("," polls+=JsonPoll)* "]";
 		public ParserRule getRule() { return rule; }
 
-		//"[" values+=Value? ("," values+=Value)* "]"
+		//"[" polls+=JsonPoll? ("," polls+=JsonPoll)* "]"
 		public Group getGroup() { return cGroup; }
 
 		//"["
 		public Keyword getLeftSquareBracketKeyword_0() { return cLeftSquareBracketKeyword_0; }
 
-		//values+=Value?
-		public Assignment getValuesAssignment_1() { return cValuesAssignment_1; }
+		//polls+=JsonPoll?
+		public Assignment getPollsAssignment_1() { return cPollsAssignment_1; }
 
-		//Value
-		public RuleCall getValuesValueParserRuleCall_1_0() { return cValuesValueParserRuleCall_1_0; }
+		//JsonPoll
+		public RuleCall getPollsJsonPollParserRuleCall_1_0() { return cPollsJsonPollParserRuleCall_1_0; }
 
-		//("," values+=Value)*
+		//("," polls+=JsonPoll)*
 		public Group getGroup_2() { return cGroup_2; }
 
 		//","
 		public Keyword getCommaKeyword_2_0() { return cCommaKeyword_2_0; }
 
-		//values+=Value
-		public Assignment getValuesAssignment_2_1() { return cValuesAssignment_2_1; }
+		//polls+=JsonPoll
+		public Assignment getPollsAssignment_2_1() { return cPollsAssignment_2_1; }
 
-		//Value
-		public RuleCall getValuesValueParserRuleCall_2_1_0() { return cValuesValueParserRuleCall_2_1_0; }
+		//JsonPoll
+		public RuleCall getPollsJsonPollParserRuleCall_2_1_0() { return cPollsJsonPollParserRuleCall_2_1_0; }
 
 		//"]"
 		public Keyword getRightSquareBracketKeyword_3() { return cRightSquareBracketKeyword_3; }
 	}
 
-	public class BooleanElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Boolean");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final Keyword cTrueKeyword_0 = (Keyword)cAlternatives.eContents().get(0);
-		private final Keyword cFalseKeyword_1 = (Keyword)cAlternatives.eContents().get(1);
+	public class JsonPollElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "JsonPoll");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLeftCurlyBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Keyword cNameKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Keyword cColonKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
+		private final Assignment cNameAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
+		private final RuleCall cNameSTRINGTerminalRuleCall_1_2_0 = (RuleCall)cNameAssignment_1_2.eContents().get(0);
+		private final Keyword cCommaKeyword_1_3 = (Keyword)cGroup_1.eContents().get(3);
+		private final Keyword cQuestionsKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cColonKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cQuestionsAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cQuestionsArrayJsonQuestionParserRuleCall_4_0 = (RuleCall)cQuestionsAssignment_4.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
 		
-		//Boolean:
-		//	"true" | "false";
+		//JsonPoll:
+		//	"{" ("name" ":" name=STRING ",")? "questions" ":" questions+=ArrayJsonQuestion "}";
 		public ParserRule getRule() { return rule; }
 
-		//"true" | "false"
-		public Alternatives getAlternatives() { return cAlternatives; }
+		//"{" ("name" ":" name=STRING ",")? "questions" ":" questions+=ArrayJsonQuestion "}"
+		public Group getGroup() { return cGroup; }
 
-		//"true"
-		public Keyword getTrueKeyword_0() { return cTrueKeyword_0; }
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_0() { return cLeftCurlyBracketKeyword_0; }
 
-		//"false"
-		public Keyword getFalseKeyword_1() { return cFalseKeyword_1; }
+		//("name" ":" name=STRING ",")?
+		public Group getGroup_1() { return cGroup_1; }
+
+		//"name"
+		public Keyword getNameKeyword_1_0() { return cNameKeyword_1_0; }
+
+		//":"
+		public Keyword getColonKeyword_1_1() { return cColonKeyword_1_1; }
+
+		//name=STRING
+		public Assignment getNameAssignment_1_2() { return cNameAssignment_1_2; }
+
+		//STRING
+		public RuleCall getNameSTRINGTerminalRuleCall_1_2_0() { return cNameSTRINGTerminalRuleCall_1_2_0; }
+
+		//","
+		public Keyword getCommaKeyword_1_3() { return cCommaKeyword_1_3; }
+
+		//"questions"
+		public Keyword getQuestionsKeyword_2() { return cQuestionsKeyword_2; }
+
+		//":"
+		public Keyword getColonKeyword_3() { return cColonKeyword_3; }
+
+		//questions+=ArrayJsonQuestion
+		public Assignment getQuestionsAssignment_4() { return cQuestionsAssignment_4; }
+
+		//ArrayJsonQuestion
+		public RuleCall getQuestionsArrayJsonQuestionParserRuleCall_4_0() { return cQuestionsArrayJsonQuestionParserRuleCall_4_0; }
+
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
 	}
 
-	public class NullElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Null");
-		private final Keyword cNullKeyword = (Keyword)rule.eContents().get(1);
+	public class ArrayJsonQuestionElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ArrayJsonQuestion");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cQuestionAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cQuestionJsonQuestionParserRuleCall_1_0 = (RuleCall)cQuestionAssignment_1.eContents().get(0);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Keyword cCommaKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cQuestionAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cQuestionJsonQuestionParserRuleCall_2_1_0 = (RuleCall)cQuestionAssignment_2_1.eContents().get(0);
+		private final Keyword cRightSquareBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
-		//Null:
-		//	"null";
+		//ArrayJsonQuestion:
+		//	"[" question+=JsonQuestion? ("," question+=JsonQuestion)* "]";
 		public ParserRule getRule() { return rule; }
 
-		//"null"
-		public Keyword getNullKeyword() { return cNullKeyword; }
+		//"[" question+=JsonQuestion? ("," question+=JsonQuestion)* "]"
+		public Group getGroup() { return cGroup; }
+
+		//"["
+		public Keyword getLeftSquareBracketKeyword_0() { return cLeftSquareBracketKeyword_0; }
+
+		//question+=JsonQuestion?
+		public Assignment getQuestionAssignment_1() { return cQuestionAssignment_1; }
+
+		//JsonQuestion
+		public RuleCall getQuestionJsonQuestionParserRuleCall_1_0() { return cQuestionJsonQuestionParserRuleCall_1_0; }
+
+		//("," question+=JsonQuestion)*
+		public Group getGroup_2() { return cGroup_2; }
+
+		//","
+		public Keyword getCommaKeyword_2_0() { return cCommaKeyword_2_0; }
+
+		//question+=JsonQuestion
+		public Assignment getQuestionAssignment_2_1() { return cQuestionAssignment_2_1; }
+
+		//JsonQuestion
+		public RuleCall getQuestionJsonQuestionParserRuleCall_2_1_0() { return cQuestionJsonQuestionParserRuleCall_2_1_0; }
+
+		//"]"
+		public Keyword getRightSquareBracketKeyword_3() { return cRightSquareBracketKeyword_3; }
+	}
+
+	public class JsonQuestionElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "JsonQuestion");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLeftCurlyBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Keyword cQuestionKeyword_1 = (Keyword)cGroup.eContents().get(1);
+		private final Keyword cColonKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cLeftCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Keyword cNameKeyword_4_0 = (Keyword)cGroup_4.eContents().get(0);
+		private final Keyword cColonKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
+		private final Assignment cNameAssignment_4_2 = (Assignment)cGroup_4.eContents().get(2);
+		private final RuleCall cNameSTRINGTerminalRuleCall_4_2_0 = (RuleCall)cNameAssignment_4_2.eContents().get(0);
+		private final Keyword cCommaKeyword_4_3 = (Keyword)cGroup_4.eContents().get(3);
+		private final Keyword cTextKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Keyword cColonKeyword_6 = (Keyword)cGroup.eContents().get(6);
+		private final Assignment cTextAssignment_7 = (Assignment)cGroup.eContents().get(7);
+		private final RuleCall cTextSTRINGTerminalRuleCall_7_0 = (RuleCall)cTextAssignment_7.eContents().get(0);
+		private final Keyword cCommaKeyword_8 = (Keyword)cGroup.eContents().get(8);
+		private final Keyword cOptionsKeyword_9 = (Keyword)cGroup.eContents().get(9);
+		private final Keyword cColonKeyword_10 = (Keyword)cGroup.eContents().get(10);
+		private final Assignment cOptionsAssignment_11 = (Assignment)cGroup.eContents().get(11);
+		private final RuleCall cOptionsArrayJsonOptionParserRuleCall_11_0 = (RuleCall)cOptionsAssignment_11.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_12 = (Keyword)cGroup.eContents().get(12);
+		private final Keyword cRightCurlyBracketKeyword_13 = (Keyword)cGroup.eContents().get(13);
+		
+		//JsonQuestion:
+		//	"{" "question" ":" "{" ("name" ":" name=STRING ",")? "text" ":" text=STRING "," "options" ":" options+=ArrayJsonOption
+		//	"}" "}";
+		public ParserRule getRule() { return rule; }
+
+		//"{" "question" ":" "{" ("name" ":" name=STRING ",")? "text" ":" text=STRING "," "options" ":" options+=ArrayJsonOption
+		//"}" "}"
+		public Group getGroup() { return cGroup; }
+
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_0() { return cLeftCurlyBracketKeyword_0; }
+
+		//"question"
+		public Keyword getQuestionKeyword_1() { return cQuestionKeyword_1; }
+
+		//":"
+		public Keyword getColonKeyword_2() { return cColonKeyword_2; }
+
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_3() { return cLeftCurlyBracketKeyword_3; }
+
+		//("name" ":" name=STRING ",")?
+		public Group getGroup_4() { return cGroup_4; }
+
+		//"name"
+		public Keyword getNameKeyword_4_0() { return cNameKeyword_4_0; }
+
+		//":"
+		public Keyword getColonKeyword_4_1() { return cColonKeyword_4_1; }
+
+		//name=STRING
+		public Assignment getNameAssignment_4_2() { return cNameAssignment_4_2; }
+
+		//STRING
+		public RuleCall getNameSTRINGTerminalRuleCall_4_2_0() { return cNameSTRINGTerminalRuleCall_4_2_0; }
+
+		//","
+		public Keyword getCommaKeyword_4_3() { return cCommaKeyword_4_3; }
+
+		//"text"
+		public Keyword getTextKeyword_5() { return cTextKeyword_5; }
+
+		//":"
+		public Keyword getColonKeyword_6() { return cColonKeyword_6; }
+
+		//text=STRING
+		public Assignment getTextAssignment_7() { return cTextAssignment_7; }
+
+		//STRING
+		public RuleCall getTextSTRINGTerminalRuleCall_7_0() { return cTextSTRINGTerminalRuleCall_7_0; }
+
+		//","
+		public Keyword getCommaKeyword_8() { return cCommaKeyword_8; }
+
+		//"options"
+		public Keyword getOptionsKeyword_9() { return cOptionsKeyword_9; }
+
+		//":"
+		public Keyword getColonKeyword_10() { return cColonKeyword_10; }
+
+		//options+=ArrayJsonOption
+		public Assignment getOptionsAssignment_11() { return cOptionsAssignment_11; }
+
+		//ArrayJsonOption
+		public RuleCall getOptionsArrayJsonOptionParserRuleCall_11_0() { return cOptionsArrayJsonOptionParserRuleCall_11_0; }
+
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_12() { return cRightCurlyBracketKeyword_12; }
+
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_13() { return cRightCurlyBracketKeyword_13; }
+	}
+
+	public class ArrayJsonOptionElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ArrayJsonOption");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLeftSquareBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Assignment cOptionAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cOptionJsonOptionParserRuleCall_1_0 = (RuleCall)cOptionAssignment_1.eContents().get(0);
+		private final Group cGroup_2 = (Group)cGroup.eContents().get(2);
+		private final Keyword cCommaKeyword_2_0 = (Keyword)cGroup_2.eContents().get(0);
+		private final Assignment cOptionAssignment_2_1 = (Assignment)cGroup_2.eContents().get(1);
+		private final RuleCall cOptionJsonOptionParserRuleCall_2_1_0 = (RuleCall)cOptionAssignment_2_1.eContents().get(0);
+		private final Keyword cRightSquareBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		
+		//ArrayJsonOption:
+		//	"[" option+=JsonOption? ("," option+=JsonOption)* "]";
+		public ParserRule getRule() { return rule; }
+
+		//"[" option+=JsonOption? ("," option+=JsonOption)* "]"
+		public Group getGroup() { return cGroup; }
+
+		//"["
+		public Keyword getLeftSquareBracketKeyword_0() { return cLeftSquareBracketKeyword_0; }
+
+		//option+=JsonOption?
+		public Assignment getOptionAssignment_1() { return cOptionAssignment_1; }
+
+		//JsonOption
+		public RuleCall getOptionJsonOptionParserRuleCall_1_0() { return cOptionJsonOptionParserRuleCall_1_0; }
+
+		//("," option+=JsonOption)*
+		public Group getGroup_2() { return cGroup_2; }
+
+		//","
+		public Keyword getCommaKeyword_2_0() { return cCommaKeyword_2_0; }
+
+		//option+=JsonOption
+		public Assignment getOptionAssignment_2_1() { return cOptionAssignment_2_1; }
+
+		//JsonOption
+		public RuleCall getOptionJsonOptionParserRuleCall_2_1_0() { return cOptionJsonOptionParserRuleCall_2_1_0; }
+
+		//"]"
+		public Keyword getRightSquareBracketKeyword_3() { return cRightSquareBracketKeyword_3; }
+	}
+
+	public class JsonOptionElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "JsonOption");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cLeftCurlyBracketKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final Group cGroup_1 = (Group)cGroup.eContents().get(1);
+		private final Keyword cIdKeyword_1_0 = (Keyword)cGroup_1.eContents().get(0);
+		private final Keyword cColonKeyword_1_1 = (Keyword)cGroup_1.eContents().get(1);
+		private final Assignment cIdAssignment_1_2 = (Assignment)cGroup_1.eContents().get(2);
+		private final RuleCall cIdSTRINGTerminalRuleCall_1_2_0 = (RuleCall)cIdAssignment_1_2.eContents().get(0);
+		private final Keyword cCommaKeyword_1_3 = (Keyword)cGroup_1.eContents().get(3);
+		private final Keyword cTestKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final Keyword cColonKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cTextAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cTextSTRINGTerminalRuleCall_4_0 = (RuleCall)cTextAssignment_4.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		
+		//JsonOption:
+		//	"{" ("id" ":" id=STRING ",")? "test" ":" text=STRING "}";
+		public ParserRule getRule() { return rule; }
+
+		//"{" ("id" ":" id=STRING ",")? "test" ":" text=STRING "}"
+		public Group getGroup() { return cGroup; }
+
+		//"{"
+		public Keyword getLeftCurlyBracketKeyword_0() { return cLeftCurlyBracketKeyword_0; }
+
+		//("id" ":" id=STRING ",")?
+		public Group getGroup_1() { return cGroup_1; }
+
+		//"id"
+		public Keyword getIdKeyword_1_0() { return cIdKeyword_1_0; }
+
+		//":"
+		public Keyword getColonKeyword_1_1() { return cColonKeyword_1_1; }
+
+		//id=STRING
+		public Assignment getIdAssignment_1_2() { return cIdAssignment_1_2; }
+
+		//STRING
+		public RuleCall getIdSTRINGTerminalRuleCall_1_2_0() { return cIdSTRINGTerminalRuleCall_1_2_0; }
+
+		//","
+		public Keyword getCommaKeyword_1_3() { return cCommaKeyword_1_3; }
+
+		//"test"
+		public Keyword getTestKeyword_2() { return cTestKeyword_2; }
+
+		//":"
+		public Keyword getColonKeyword_3() { return cColonKeyword_3; }
+
+		//text=STRING
+		public Assignment getTextAssignment_4() { return cTextAssignment_4; }
+
+		//STRING
+		public RuleCall getTextSTRINGTerminalRuleCall_4_0() { return cTextSTRINGTerminalRuleCall_4_0; }
+
+		//"}"
+		public Keyword getRightCurlyBracketKeyword_5() { return cRightCurlyBracketKeyword_5; }
 	}
 	
 	
-	private final ObjectElements pObject;
-	private final MemberElements pMember;
-	private final ValueElements pValue;
-	private final ArrayElements pArray;
-	private final BooleanElements pBoolean;
-	private final NullElements pNull;
-	private final TerminalRule tNumber;
+	private final JsonPollSystemElements pJsonPollSystem;
+	private final ArrayJsonPollElements pArrayJsonPoll;
+	private final JsonPollElements pJsonPoll;
+	private final ArrayJsonQuestionElements pArrayJsonQuestion;
+	private final JsonQuestionElements pJsonQuestion;
+	private final ArrayJsonOptionElements pArrayJsonOption;
+	private final JsonOptionElements pJsonOption;
 	
 	private final Grammar grammar;
 
@@ -224,13 +418,13 @@ public class JsonGrammarAccess extends AbstractGrammarElementFinder {
 		TerminalsGrammarAccess gaTerminals) {
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
-		this.pObject = new ObjectElements();
-		this.pMember = new MemberElements();
-		this.pValue = new ValueElements();
-		this.pArray = new ArrayElements();
-		this.pBoolean = new BooleanElements();
-		this.pNull = new NullElements();
-		this.tNumber = (TerminalRule) GrammarUtil.findRuleForName(getGrammar(), "Number");
+		this.pJsonPollSystem = new JsonPollSystemElements();
+		this.pArrayJsonPoll = new ArrayJsonPollElements();
+		this.pJsonPoll = new JsonPollElements();
+		this.pArrayJsonQuestion = new ArrayJsonQuestionElements();
+		this.pJsonQuestion = new JsonQuestionElements();
+		this.pArrayJsonOption = new ArrayJsonOptionElements();
+		this.pJsonOption = new JsonOptionElements();
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -260,71 +454,76 @@ public class JsonGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	
-	//Object:
-	//	"{" members+=Member? ("," members+=Member)* "}";
-	public ObjectElements getObjectAccess() {
-		return pObject;
+	//JsonPollSystem:
+	//	"{" "polls" ":" ArrayJsonPoll "}";
+	public JsonPollSystemElements getJsonPollSystemAccess() {
+		return pJsonPollSystem;
 	}
 	
-	public ParserRule getObjectRule() {
-		return getObjectAccess().getRule();
+	public ParserRule getJsonPollSystemRule() {
+		return getJsonPollSystemAccess().getRule();
 	}
 
-	//Member:
-	//	key=STRING ":" value=Value;
-	public MemberElements getMemberAccess() {
-		return pMember;
+	//ArrayJsonPoll:
+	//	"[" polls+=JsonPoll? ("," polls+=JsonPoll)* "]";
+	public ArrayJsonPollElements getArrayJsonPollAccess() {
+		return pArrayJsonPoll;
 	}
 	
-	public ParserRule getMemberRule() {
-		return getMemberAccess().getRule();
+	public ParserRule getArrayJsonPollRule() {
+		return getArrayJsonPollAccess().getRule();
 	}
 
-	//Value:
-	//	Object | STRING | Array | Boolean | Null | Number;
-	public ValueElements getValueAccess() {
-		return pValue;
+	//JsonPoll:
+	//	"{" ("name" ":" name=STRING ",")? "questions" ":" questions+=ArrayJsonQuestion "}";
+	public JsonPollElements getJsonPollAccess() {
+		return pJsonPoll;
 	}
 	
-	public ParserRule getValueRule() {
-		return getValueAccess().getRule();
+	public ParserRule getJsonPollRule() {
+		return getJsonPollAccess().getRule();
 	}
 
-	//Array:
-	//	"[" values+=Value? ("," values+=Value)* "]";
-	public ArrayElements getArrayAccess() {
-		return pArray;
+	//ArrayJsonQuestion:
+	//	"[" question+=JsonQuestion? ("," question+=JsonQuestion)* "]";
+	public ArrayJsonQuestionElements getArrayJsonQuestionAccess() {
+		return pArrayJsonQuestion;
 	}
 	
-	public ParserRule getArrayRule() {
-		return getArrayAccess().getRule();
+	public ParserRule getArrayJsonQuestionRule() {
+		return getArrayJsonQuestionAccess().getRule();
 	}
 
-	//Boolean:
-	//	"true" | "false";
-	public BooleanElements getBooleanAccess() {
-		return pBoolean;
+	//JsonQuestion:
+	//	"{" "question" ":" "{" ("name" ":" name=STRING ",")? "text" ":" text=STRING "," "options" ":" options+=ArrayJsonOption
+	//	"}" "}";
+	public JsonQuestionElements getJsonQuestionAccess() {
+		return pJsonQuestion;
 	}
 	
-	public ParserRule getBooleanRule() {
-		return getBooleanAccess().getRule();
+	public ParserRule getJsonQuestionRule() {
+		return getJsonQuestionAccess().getRule();
 	}
 
-	//Null:
-	//	"null";
-	public NullElements getNullAccess() {
-		return pNull;
+	//ArrayJsonOption:
+	//	"[" option+=JsonOption? ("," option+=JsonOption)* "]";
+	public ArrayJsonOptionElements getArrayJsonOptionAccess() {
+		return pArrayJsonOption;
 	}
 	
-	public ParserRule getNullRule() {
-		return getNullAccess().getRule();
+	public ParserRule getArrayJsonOptionRule() {
+		return getArrayJsonOptionAccess().getRule();
 	}
 
-	//terminal Number:
-	//	"-"? INT? "." INT (("E" | "e") "-"? INT)?;
-	public TerminalRule getNumberRule() {
-		return tNumber;
-	} 
+	//JsonOption:
+	//	"{" ("id" ":" id=STRING ",")? "test" ":" text=STRING "}";
+	public JsonOptionElements getJsonOptionAccess() {
+		return pJsonOption;
+	}
+	
+	public ParserRule getJsonOptionRule() {
+		return getJsonOptionAccess().getRule();
+	}
 
 	//terminal ID:
 	//	"^"? ("a".."z" | "A".."Z" | "_") ("a".."z" | "A".."Z" | "_" | "0".."9")*;

@@ -7,10 +7,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import org.json.json.Array;
-import org.json.json.JsonPackage;
-import org.json.json.Member;
-import org.json.json.Value;
+import org.json.json.*;
 
 /**
  * <!-- begin-user-doc -->
@@ -75,33 +72,53 @@ public class JsonSwitch<T> extends Switch<T>
   {
     switch (classifierID)
     {
-      case JsonPackage.OBJECT:
+      case JsonPackage.JSON_POLL_SYSTEM:
       {
-        org.json.json.Object object = (org.json.json.Object)theEObject;
-        T result = caseObject(object);
-        if (result == null) result = caseValue(object);
+        JsonPollSystem jsonPollSystem = (JsonPollSystem)theEObject;
+        T result = caseJsonPollSystem(jsonPollSystem);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case JsonPackage.MEMBER:
+      case JsonPackage.ARRAY_JSON_POLL:
       {
-        Member member = (Member)theEObject;
-        T result = caseMember(member);
+        ArrayJsonPoll arrayJsonPoll = (ArrayJsonPoll)theEObject;
+        T result = caseArrayJsonPoll(arrayJsonPoll);
+        if (result == null) result = caseJsonPollSystem(arrayJsonPoll);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case JsonPackage.VALUE:
+      case JsonPackage.JSON_POLL:
       {
-        Value value = (Value)theEObject;
-        T result = caseValue(value);
+        JsonPoll jsonPoll = (JsonPoll)theEObject;
+        T result = caseJsonPoll(jsonPoll);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
-      case JsonPackage.ARRAY:
+      case JsonPackage.ARRAY_JSON_QUESTION:
       {
-        Array array = (Array)theEObject;
-        T result = caseArray(array);
-        if (result == null) result = caseValue(array);
+        ArrayJsonQuestion arrayJsonQuestion = (ArrayJsonQuestion)theEObject;
+        T result = caseArrayJsonQuestion(arrayJsonQuestion);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case JsonPackage.JSON_QUESTION:
+      {
+        JsonQuestion jsonQuestion = (JsonQuestion)theEObject;
+        T result = caseJsonQuestion(jsonQuestion);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case JsonPackage.ARRAY_JSON_OPTION:
+      {
+        ArrayJsonOption arrayJsonOption = (ArrayJsonOption)theEObject;
+        T result = caseArrayJsonOption(arrayJsonOption);
+        if (result == null) result = defaultCase(theEObject);
+        return result;
+      }
+      case JsonPackage.JSON_OPTION:
+      {
+        JsonOption jsonOption = (JsonOption)theEObject;
+        T result = caseJsonOption(jsonOption);
         if (result == null) result = defaultCase(theEObject);
         return result;
       }
@@ -110,65 +127,113 @@ public class JsonSwitch<T> extends Switch<T>
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Object</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Poll System</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Object</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Poll System</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseObject(org.json.json.Object object)
+  public T caseJsonPollSystem(JsonPollSystem object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Member</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Array Json Poll</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Member</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Array Json Poll</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseMember(Member object)
+  public T caseArrayJsonPoll(ArrayJsonPoll object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Value</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Poll</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Value</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Poll</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseValue(Value object)
+  public T caseJsonPoll(JsonPoll object)
   {
     return null;
   }
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Array</em>'.
+   * Returns the result of interpreting the object as an instance of '<em>Array Json Question</em>'.
    * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
    * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Array</em>'.
+   * @return the result of interpreting the object as an instance of '<em>Array Json Question</em>'.
    * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
    * @generated
    */
-  public T caseArray(Array object)
+  public T caseArrayJsonQuestion(ArrayJsonQuestion object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Question</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Question</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseJsonQuestion(JsonQuestion object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Array Json Option</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Array Json Option</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseArrayJsonOption(ArrayJsonOption object)
+  {
+    return null;
+  }
+
+  /**
+   * Returns the result of interpreting the object as an instance of '<em>Option</em>'.
+   * <!-- begin-user-doc -->
+   * This implementation returns null;
+   * returning a non-null result will terminate the switch.
+   * <!-- end-user-doc -->
+   * @param object the target of the switch.
+   * @return the result of interpreting the object as an instance of '<em>Option</em>'.
+   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+   * @generated
+   */
+  public T caseJsonOption(JsonOption object)
   {
     return null;
   }

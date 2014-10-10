@@ -9,11 +9,15 @@ import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import org.json.json.Array;
+import org.json.json.ArrayJsonOption;
+import org.json.json.ArrayJsonPoll;
+import org.json.json.ArrayJsonQuestion;
 import org.json.json.JsonFactory;
+import org.json.json.JsonOption;
 import org.json.json.JsonPackage;
-import org.json.json.Member;
-import org.json.json.Value;
+import org.json.json.JsonPoll;
+import org.json.json.JsonPollSystem;
+import org.json.json.JsonQuestion;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,28 +32,49 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass objectEClass = null;
+  private EClass jsonPollSystemEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass memberEClass = null;
+  private EClass arrayJsonPollEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass valueEClass = null;
+  private EClass jsonPollEClass = null;
 
   /**
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass arrayEClass = null;
+  private EClass arrayJsonQuestionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass jsonQuestionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass arrayJsonOptionEClass = null;
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  private EClass jsonOptionEClass = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -119,9 +144,9 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getObject()
+  public EClass getJsonPollSystem()
   {
-    return objectEClass;
+    return jsonPollSystemEClass;
   }
 
   /**
@@ -129,9 +154,9 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getObject_Members()
+  public EClass getArrayJsonPoll()
   {
-    return (EReference)objectEClass.getEStructuralFeatures().get(0);
+    return arrayJsonPollEClass;
   }
 
   /**
@@ -139,9 +164,9 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getMember()
+  public EReference getArrayJsonPoll_Polls()
   {
-    return memberEClass;
+    return (EReference)arrayJsonPollEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -149,9 +174,9 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getMember_Key()
+  public EClass getJsonPoll()
   {
-    return (EAttribute)memberEClass.getEStructuralFeatures().get(0);
+    return jsonPollEClass;
   }
 
   /**
@@ -159,9 +184,9 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getMember_Value()
+  public EAttribute getJsonPoll_Name()
   {
-    return (EReference)memberEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)jsonPollEClass.getEStructuralFeatures().get(0);
   }
 
   /**
@@ -169,9 +194,9 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getValue()
+  public EReference getJsonPoll_Questions()
   {
-    return valueEClass;
+    return (EReference)jsonPollEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -179,9 +204,9 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getArray()
+  public EClass getArrayJsonQuestion()
   {
-    return arrayEClass;
+    return arrayJsonQuestionEClass;
   }
 
   /**
@@ -189,9 +214,99 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getArray_Values()
+  public EReference getArrayJsonQuestion_Question()
   {
-    return (EReference)arrayEClass.getEStructuralFeatures().get(0);
+    return (EReference)arrayJsonQuestionEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getJsonQuestion()
+  {
+    return jsonQuestionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getJsonQuestion_Name()
+  {
+    return (EAttribute)jsonQuestionEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getJsonQuestion_Text()
+  {
+    return (EAttribute)jsonQuestionEClass.getEStructuralFeatures().get(1);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getJsonQuestion_Options()
+  {
+    return (EReference)jsonQuestionEClass.getEStructuralFeatures().get(2);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getArrayJsonOption()
+  {
+    return arrayJsonOptionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EReference getArrayJsonOption_Option()
+  {
+    return (EReference)arrayJsonOptionEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EClass getJsonOption()
+  {
+    return jsonOptionEClass;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getJsonOption_Id()
+  {
+    return (EAttribute)jsonOptionEClass.getEStructuralFeatures().get(0);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public EAttribute getJsonOption_Text()
+  {
+    return (EAttribute)jsonOptionEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -224,17 +339,29 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
     isCreated = true;
 
     // Create classes and their features
-    objectEClass = createEClass(OBJECT);
-    createEReference(objectEClass, OBJECT__MEMBERS);
+    jsonPollSystemEClass = createEClass(JSON_POLL_SYSTEM);
 
-    memberEClass = createEClass(MEMBER);
-    createEAttribute(memberEClass, MEMBER__KEY);
-    createEReference(memberEClass, MEMBER__VALUE);
+    arrayJsonPollEClass = createEClass(ARRAY_JSON_POLL);
+    createEReference(arrayJsonPollEClass, ARRAY_JSON_POLL__POLLS);
 
-    valueEClass = createEClass(VALUE);
+    jsonPollEClass = createEClass(JSON_POLL);
+    createEAttribute(jsonPollEClass, JSON_POLL__NAME);
+    createEReference(jsonPollEClass, JSON_POLL__QUESTIONS);
 
-    arrayEClass = createEClass(ARRAY);
-    createEReference(arrayEClass, ARRAY__VALUES);
+    arrayJsonQuestionEClass = createEClass(ARRAY_JSON_QUESTION);
+    createEReference(arrayJsonQuestionEClass, ARRAY_JSON_QUESTION__QUESTION);
+
+    jsonQuestionEClass = createEClass(JSON_QUESTION);
+    createEAttribute(jsonQuestionEClass, JSON_QUESTION__NAME);
+    createEAttribute(jsonQuestionEClass, JSON_QUESTION__TEXT);
+    createEReference(jsonQuestionEClass, JSON_QUESTION__OPTIONS);
+
+    arrayJsonOptionEClass = createEClass(ARRAY_JSON_OPTION);
+    createEReference(arrayJsonOptionEClass, ARRAY_JSON_OPTION__OPTION);
+
+    jsonOptionEClass = createEClass(JSON_OPTION);
+    createEAttribute(jsonOptionEClass, JSON_OPTION__ID);
+    createEAttribute(jsonOptionEClass, JSON_OPTION__TEXT);
   }
 
   /**
@@ -266,21 +393,32 @@ public class JsonPackageImpl extends EPackageImpl implements JsonPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
-    objectEClass.getESuperTypes().add(this.getValue());
-    arrayEClass.getESuperTypes().add(this.getValue());
+    arrayJsonPollEClass.getESuperTypes().add(this.getJsonPollSystem());
 
     // Initialize classes and features; add operations and parameters
-    initEClass(objectEClass, org.json.json.Object.class, "Object", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getObject_Members(), this.getMember(), null, "members", null, 0, -1, org.json.json.Object.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(jsonPollSystemEClass, JsonPollSystem.class, "JsonPollSystem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-    initEClass(memberEClass, Member.class, "Member", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getMember_Key(), ecorePackage.getEString(), "key", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getMember_Value(), this.getValue(), null, "value", null, 0, 1, Member.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(arrayJsonPollEClass, ArrayJsonPoll.class, "ArrayJsonPoll", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getArrayJsonPoll_Polls(), this.getJsonPoll(), null, "polls", null, 0, -1, ArrayJsonPoll.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(valueEClass, Value.class, "Value", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEClass(jsonPollEClass, JsonPoll.class, "JsonPoll", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getJsonPoll_Name(), ecorePackage.getEString(), "name", null, 0, 1, JsonPoll.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getJsonPoll_Questions(), this.getArrayJsonQuestion(), null, "questions", null, 0, -1, JsonPoll.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(arrayEClass, Array.class, "Array", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getArray_Values(), this.getValue(), null, "values", null, 0, -1, Array.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEClass(arrayJsonQuestionEClass, ArrayJsonQuestion.class, "ArrayJsonQuestion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getArrayJsonQuestion_Question(), this.getJsonQuestion(), null, "question", null, 0, -1, ArrayJsonQuestion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(jsonQuestionEClass, JsonQuestion.class, "JsonQuestion", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getJsonQuestion_Name(), ecorePackage.getEString(), "name", null, 0, 1, JsonQuestion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getJsonQuestion_Text(), ecorePackage.getEString(), "text", null, 0, 1, JsonQuestion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getJsonQuestion_Options(), this.getArrayJsonOption(), null, "options", null, 0, -1, JsonQuestion.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(arrayJsonOptionEClass, ArrayJsonOption.class, "ArrayJsonOption", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEReference(getArrayJsonOption_Option(), this.getJsonOption(), null, "option", null, 0, -1, ArrayJsonOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+    initEClass(jsonOptionEClass, JsonOption.class, "JsonOption", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+    initEAttribute(getJsonOption_Id(), ecorePackage.getEString(), "id", null, 0, 1, JsonOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getJsonOption_Text(), ecorePackage.getEString(), "text", null, 0, 1, JsonOption.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

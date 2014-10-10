@@ -37,19 +37,32 @@ public class JsonParser extends AbstractContentAssistParser {
 			nameMappings = new HashMap<AbstractElement, String>() {
 				private static final long serialVersionUID = 1L;
 				{
-					put(grammarAccess.getValueAccess().getAlternatives(), "rule__Value__Alternatives");
-					put(grammarAccess.getBooleanAccess().getAlternatives(), "rule__Boolean__Alternatives");
-					put(grammarAccess.getObjectAccess().getGroup(), "rule__Object__Group__0");
-					put(grammarAccess.getObjectAccess().getGroup_2(), "rule__Object__Group_2__0");
-					put(grammarAccess.getMemberAccess().getGroup(), "rule__Member__Group__0");
-					put(grammarAccess.getArrayAccess().getGroup(), "rule__Array__Group__0");
-					put(grammarAccess.getArrayAccess().getGroup_2(), "rule__Array__Group_2__0");
-					put(grammarAccess.getObjectAccess().getMembersAssignment_1(), "rule__Object__MembersAssignment_1");
-					put(grammarAccess.getObjectAccess().getMembersAssignment_2_1(), "rule__Object__MembersAssignment_2_1");
-					put(grammarAccess.getMemberAccess().getKeyAssignment_0(), "rule__Member__KeyAssignment_0");
-					put(grammarAccess.getMemberAccess().getValueAssignment_2(), "rule__Member__ValueAssignment_2");
-					put(grammarAccess.getArrayAccess().getValuesAssignment_1(), "rule__Array__ValuesAssignment_1");
-					put(grammarAccess.getArrayAccess().getValuesAssignment_2_1(), "rule__Array__ValuesAssignment_2_1");
+					put(grammarAccess.getJsonPollSystemAccess().getGroup(), "rule__JsonPollSystem__Group__0");
+					put(grammarAccess.getArrayJsonPollAccess().getGroup(), "rule__ArrayJsonPoll__Group__0");
+					put(grammarAccess.getArrayJsonPollAccess().getGroup_2(), "rule__ArrayJsonPoll__Group_2__0");
+					put(grammarAccess.getJsonPollAccess().getGroup(), "rule__JsonPoll__Group__0");
+					put(grammarAccess.getJsonPollAccess().getGroup_1(), "rule__JsonPoll__Group_1__0");
+					put(grammarAccess.getArrayJsonQuestionAccess().getGroup(), "rule__ArrayJsonQuestion__Group__0");
+					put(grammarAccess.getArrayJsonQuestionAccess().getGroup_2(), "rule__ArrayJsonQuestion__Group_2__0");
+					put(grammarAccess.getJsonQuestionAccess().getGroup(), "rule__JsonQuestion__Group__0");
+					put(grammarAccess.getJsonQuestionAccess().getGroup_4(), "rule__JsonQuestion__Group_4__0");
+					put(grammarAccess.getArrayJsonOptionAccess().getGroup(), "rule__ArrayJsonOption__Group__0");
+					put(grammarAccess.getArrayJsonOptionAccess().getGroup_2(), "rule__ArrayJsonOption__Group_2__0");
+					put(grammarAccess.getJsonOptionAccess().getGroup(), "rule__JsonOption__Group__0");
+					put(grammarAccess.getJsonOptionAccess().getGroup_1(), "rule__JsonOption__Group_1__0");
+					put(grammarAccess.getArrayJsonPollAccess().getPollsAssignment_1(), "rule__ArrayJsonPoll__PollsAssignment_1");
+					put(grammarAccess.getArrayJsonPollAccess().getPollsAssignment_2_1(), "rule__ArrayJsonPoll__PollsAssignment_2_1");
+					put(grammarAccess.getJsonPollAccess().getNameAssignment_1_2(), "rule__JsonPoll__NameAssignment_1_2");
+					put(grammarAccess.getJsonPollAccess().getQuestionsAssignment_4(), "rule__JsonPoll__QuestionsAssignment_4");
+					put(grammarAccess.getArrayJsonQuestionAccess().getQuestionAssignment_1(), "rule__ArrayJsonQuestion__QuestionAssignment_1");
+					put(grammarAccess.getArrayJsonQuestionAccess().getQuestionAssignment_2_1(), "rule__ArrayJsonQuestion__QuestionAssignment_2_1");
+					put(grammarAccess.getJsonQuestionAccess().getNameAssignment_4_2(), "rule__JsonQuestion__NameAssignment_4_2");
+					put(grammarAccess.getJsonQuestionAccess().getTextAssignment_7(), "rule__JsonQuestion__TextAssignment_7");
+					put(grammarAccess.getJsonQuestionAccess().getOptionsAssignment_11(), "rule__JsonQuestion__OptionsAssignment_11");
+					put(grammarAccess.getArrayJsonOptionAccess().getOptionAssignment_1(), "rule__ArrayJsonOption__OptionAssignment_1");
+					put(grammarAccess.getArrayJsonOptionAccess().getOptionAssignment_2_1(), "rule__ArrayJsonOption__OptionAssignment_2_1");
+					put(grammarAccess.getJsonOptionAccess().getIdAssignment_1_2(), "rule__JsonOption__IdAssignment_1_2");
+					put(grammarAccess.getJsonOptionAccess().getTextAssignment_4(), "rule__JsonOption__TextAssignment_4");
 				}
 			};
 		}
@@ -60,7 +73,7 @@ public class JsonParser extends AbstractContentAssistParser {
 	protected Collection<FollowElement> getFollowElements(AbstractInternalContentAssistParser parser) {
 		try {
 			org.json.ui.contentassist.antlr.internal.InternalJsonParser typedParser = (org.json.ui.contentassist.antlr.internal.InternalJsonParser) parser;
-			typedParser.entryRuleObject();
+			typedParser.entryRuleJsonPollSystem();
 			return typedParser.getFollowElements();
 		} catch(RecognitionException ex) {
 			throw new RuntimeException(ex);

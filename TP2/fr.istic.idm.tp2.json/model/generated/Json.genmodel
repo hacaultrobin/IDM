@@ -7,16 +7,28 @@
     editorPluginID="fr.istic.idm.tp2.json.editor" runtimeVersion="2.10">
   <genPackages prefix="Json" basePackage="org.json" disposableProviderFactory="true"
       fileExtensions="json" ecorePackage="Json.ecore#/">
-    <genClasses ecoreClass="Json.ecore#//Object">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Json.ecore#//Object/members"/>
+    <genClasses ecoreClass="Json.ecore#//JsonPollSystem"/>
+    <genClasses ecoreClass="Json.ecore#//ArrayJsonPoll">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Json.ecore#//ArrayJsonPoll/polls"/>
     </genClasses>
-    <genClasses ecoreClass="Json.ecore#//Member">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Json.ecore#//Member/key"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Json.ecore#//Member/value"/>
+    <genClasses ecoreClass="Json.ecore#//JsonPoll">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Json.ecore#//JsonPoll/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Json.ecore#//JsonPoll/questions"/>
     </genClasses>
-    <genClasses ecoreClass="Json.ecore#//Value"/>
-    <genClasses ecoreClass="Json.ecore#//Array">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Json.ecore#//Array/values"/>
+    <genClasses ecoreClass="Json.ecore#//ArrayJsonQuestion">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Json.ecore#//ArrayJsonQuestion/question"/>
+    </genClasses>
+    <genClasses ecoreClass="Json.ecore#//JsonQuestion">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Json.ecore#//JsonQuestion/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Json.ecore#//JsonQuestion/text"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Json.ecore#//JsonQuestion/options"/>
+    </genClasses>
+    <genClasses ecoreClass="Json.ecore#//ArrayJsonOption">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Json.ecore#//ArrayJsonOption/option"/>
+    </genClasses>
+    <genClasses ecoreClass="Json.ecore#//JsonOption">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Json.ecore#//JsonOption/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Json.ecore#//JsonOption/text"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -2,26 +2,37 @@ grammar org.json.Json with org.eclipse.xtext.common.Terminals
 
 generate json "http://www.json.org/Json"
 
-Object:
+JsonPollSystem:
 	'{'
-		(members+=Member)?
-		(',' members+=Member)*
+		"polls" ':' ArrayJsonPoll
+	'}';
+
+ArrayJsonPoll:
+	'[' (polls+=JsonPoll)? (',' polls+=JsonPoll)* ']';
+
+JsonPoll:
+	'{'
+		("name" ':' name=STRING ',')?
+		"questions" ':' questions+=ArrayJsonQuestion
 	'}';
 	
-Member:
-	key=STRING ':' value=Value;
+ArrayJsonQuestion:
+	'[' (question+=JsonQuestion)? (',' question+=JsonQuestion)* ']';
 	
-Value:
-	 Object | STRING | Array | Boolean | Null | Number;
-	 
-Array:
-	'[' (values+=Value)? (',' values+=Value)* ']';
+JsonQuestion:
+	'{'
+		"question" ':' '{'
+			("name" ':' name=STRING ',')?
+			"text" ':' text=STRING ','
+			"options" ':' options+=ArrayJsonOption
+		'}'
+	'}';
 	
-Boolean:
-	'true' | 'false';
+ArrayJsonOption:
+	'[' (option+=JsonOption)? (',' option+=JsonOption)* ']';
 
-Null:
-	'null';
-	
-terminal Number:
-	'-'? INT? '.' INT (('E'|'e') '-'? INT)?;
+JsonOption:
+	'{'
+		("id" ':' id=STRING ',')?
+		"test" ':' text=STRING
+	'}';
