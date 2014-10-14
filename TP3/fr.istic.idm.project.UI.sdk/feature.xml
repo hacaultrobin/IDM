@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="fr.istic.idm.project.UI.sdk"
+	label="UIDsl SDK Feature "
+	version="1.0.0.qualifier">
+	<plugin
+			id="fr.istic.idm.project.UI"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+	<plugin
+			id="fr.istic.idm.project.UI.ui"
+			download-size="0"
+			install-size="0"
+			version="0.0.0"
+			unpack="false"/>
+</feature>

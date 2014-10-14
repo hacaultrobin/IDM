@@ -1,0 +1,43 @@
+grammar fr.istic.idm.project.UIDsl with org.eclipse.xtext.common.Terminals
+
+generate uIDsl "http://www.istic.fr/idm/project/UIDsl"
+
+Model:
+	polls+=Poll*
+;
+	
+Poll:
+	'Poll' name=ID? '{' questions+=Question+ '}'
+;
+
+Question:
+	'Question' id=ID? '{' content=STRING 'options' '{' options+=Option+ '}'
+;
+
+Option:
+	(id=ID '->')? content=STRING type=Type
+;
+
+Type:
+	CheckBox | RadioButton | ComboBox | TextBox | Image
+;
+
+CheckBox:
+	checkBox = 'Checkbox {' default=ID? '}'
+;
+
+RadioButton:
+	radioButton = 'RadioButton {' default=ID? '}'
+;
+
+ComboBox:
+	comboBox = 'ComboBox {' default=ID? '}'
+;
+
+TextBox:
+	textBox = 'TextBox {' default=ID? '}'
+;
+
+Image:
+	'Image {' default=ID? url=STRING '}'
+;
