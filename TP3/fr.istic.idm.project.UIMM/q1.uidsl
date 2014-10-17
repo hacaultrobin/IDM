@@ -1,0 +1,15 @@
+Poll {
+	Question q1 {
+		options
+			RadioButton {}
+			RadioButton {}
+			TextBox {}
+	}
+	
+	Question q2 {
+		options
+			ComboBoxItem {}
+			ComboBoxItem {}
+			ComboBoxItem {}
+	}
+}

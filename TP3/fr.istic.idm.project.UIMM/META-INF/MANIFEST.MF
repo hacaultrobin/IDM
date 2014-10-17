@@ -5,4 +5,10 @@ Bundle-SymbolicName: fr.istic.idm.project.UIMM; singleton:=true
 Bundle-Version: 0.1.0.qualifier
 Require-Bundle: org.eclipse.emf.ecore,
  org.eclipse.xtext.xbase.lib,
- org.eclipse.emf.ecore.xcore.lib
+ org.eclipse.emf.ecore.xcore.lib,
+ fr.istic.idm.project.Poll;bundle-version="1.0.0",
+ fr.istic.idm.project.Poll.tests;bundle-version="1.0.0",
+ fr.istic.idm.project.Poll.ui;bundle-version="1.0.0",
+ fr.istic.idm.project.UI;bundle-version="1.0.0",
+ fr.istic.idm.project.UI.tests;bundle-version="1.0.0",
+ fr.istic.idm.project.UI.ui;bundle-version="1.0.0"

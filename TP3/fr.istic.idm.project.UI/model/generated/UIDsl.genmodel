@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/fr.istic.idm.project.UI/src-gen" editDirectory="/fr.istic.idm.project.UI.edit/src"
+    editorDirectory="/fr.istic.idm.project.UI.editor/src" modelPluginID="fr.istic.idm.project.UI"
+    forceOverwrite="true" modelName="UIDsl" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="fr.istic.idm.project.UI.edit"
+    editorPluginID="fr.istic.idm.project.UI.editor" runtimeVersion="2.10">
+  <genPackages prefix="UIDsl" basePackage="fr.istic.idm.project" disposableProviderFactory="true"
+      fileExtensions="uidsl" ecorePackage="UIDsl.ecore#/">
+    <genClasses ecoreClass="UIDsl.ecore#//PollSystem">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIDsl.ecore#//PollSystem/polls"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//Poll">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Poll/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIDsl.ecore#//Poll/questions"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//Question">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Question/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIDsl.ecore#//Question/options"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//Option">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Option/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIDsl.ecore#//Option/type"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//Type">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Type/default"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//CheckBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//CheckBox/checkBox"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//RadioButton">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//RadioButton/radioButton"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//ComboBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//ComboBox/comboBox"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//TextBox">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//TextBox/textBox"/>
+    </genClasses>
+    <genClasses ecoreClass="UIDsl.ecore#//Image">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Image/url"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

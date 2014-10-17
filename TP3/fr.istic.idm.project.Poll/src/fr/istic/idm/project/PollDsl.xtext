@@ -1,0 +1,22 @@
+grammar fr.istic.idm.project.PollDsl with org.eclipse.xtext.common.Terminals
+
+generate pollDsl "http://www.istic.fr/idm/project/PollDsl"
+
+PollSystem:
+	polls+=Poll*;
+	
+Poll:
+	'Poll' name=ID? '{' questions+=Question+ '}'
+;
+
+Question:
+	'Question' id=ID? '{' 
+		content=STRING 
+		'options' 
+			(options+=Option)+ 
+	'}'
+;
+
+Option:
+	(id=ID '->')? content=STRING
+;

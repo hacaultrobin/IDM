@@ -8,6 +8,19 @@ Bundle-ActivationPolicy: lazy
 Require-Bundle: fr.istic.idm.project.UI;visibility:=reexport,
  org.eclipse.xtext.ui,
  org.eclipse.ui.editors;bundle-version="3.5.0",
- org.eclipse.ui.ide;bundle-version="3.5.0"
+ org.eclipse.ui.ide;bundle-version="3.5.0",
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.ui,
+ org.eclipse.xtext.builder,
+ org.eclipse.xtext.xbase.lib,
+ org.antlr.runtime,
+ org.eclipse.xtext.common.types.ui,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.compare
 Import-Package: org.apache.log4j
 Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: fr.istic.idm.project.ui.quickfix,
+ fr.istic.idm.project.ui.contentassist,
+ fr.istic.idm.project.ui.contentassist.antlr,
+ fr.istic.idm.project.ui.internal
+Bundle-Activator: fr.istic.idm.project.ui.internal.UIDslActivator

@@ -1,0 +1,17 @@
+Poll {
+	Question q1 {
+		"Agree?"
+		options
+			"Oui"
+			"Non"
+			"Pourquoi"
+	}
+	
+	Question q2 {
+		"What is p2?"
+		options
+			"Reponse A"
+			"Reponse B"
+			"Reponse C"
+	}
+}
