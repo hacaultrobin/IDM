@@ -126,7 +126,7 @@ public class UIDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final RuleCall cIdIDTerminalRuleCall_0_0_0 = (RuleCall)cIdAssignment_0_0.eContents().get(0);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_0_1 = (Keyword)cGroup_0.eContents().get(1);
 		private final Assignment cTypeAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cTypeTypeParserRuleCall_1_0 = (RuleCall)cTypeAssignment_1.eContents().get(0);
+		private final RuleCall cTypeTypeEnumRuleCall_1_0 = (RuleCall)cTypeAssignment_1.eContents().get(0);
 		
 		//Option:
 		//	(id=ID "->")? type=Type;
@@ -151,236 +151,85 @@ public class UIDslGrammarAccess extends AbstractGrammarElementFinder {
 		public Assignment getTypeAssignment_1() { return cTypeAssignment_1; }
 
 		//Type
-		public RuleCall getTypeTypeParserRuleCall_1_0() { return cTypeTypeParserRuleCall_1_0; }
-	}
-
-	public class TypeElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Type");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cCheckBoxParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cRadioButtonParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cComboBoxParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
-		private final RuleCall cTextBoxParserRuleCall_3 = (RuleCall)cAlternatives.eContents().get(3);
-		private final RuleCall cImageParserRuleCall_4 = (RuleCall)cAlternatives.eContents().get(4);
-		
-		//Type:
-		//	CheckBox | RadioButton | ComboBox | TextBox | Image;
-		public ParserRule getRule() { return rule; }
-
-		//CheckBox | RadioButton | ComboBox | TextBox | Image
-		public Alternatives getAlternatives() { return cAlternatives; }
-
-		//CheckBox
-		public RuleCall getCheckBoxParserRuleCall_0() { return cCheckBoxParserRuleCall_0; }
-
-		//RadioButton
-		public RuleCall getRadioButtonParserRuleCall_1() { return cRadioButtonParserRuleCall_1; }
-
-		//ComboBox
-		public RuleCall getComboBoxParserRuleCall_2() { return cComboBoxParserRuleCall_2; }
-
-		//TextBox
-		public RuleCall getTextBoxParserRuleCall_3() { return cTextBoxParserRuleCall_3; }
-
-		//Image
-		public RuleCall getImageParserRuleCall_4() { return cImageParserRuleCall_4; }
-	}
-
-	public class CheckBoxElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "CheckBox");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cCheckBoxAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Keyword cCheckBoxCheckboxKeyword_0_0 = (Keyword)cCheckBoxAssignment_0.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cDefaultAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cDefaultIDTerminalRuleCall_2_0 = (RuleCall)cDefaultAssignment_2.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//CheckBox:
-		//	checkBox="Checkbox" "{" default=ID? "}";
-		public ParserRule getRule() { return rule; }
-
-		//checkBox="Checkbox" "{" default=ID? "}"
-		public Group getGroup() { return cGroup; }
-
-		//checkBox="Checkbox"
-		public Assignment getCheckBoxAssignment_0() { return cCheckBoxAssignment_0; }
-
-		//"Checkbox"
-		public Keyword getCheckBoxCheckboxKeyword_0_0() { return cCheckBoxCheckboxKeyword_0_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_1() { return cLeftCurlyBracketKeyword_1; }
-
-		//default=ID?
-		public Assignment getDefaultAssignment_2() { return cDefaultAssignment_2; }
-
-		//ID
-		public RuleCall getDefaultIDTerminalRuleCall_2_0() { return cDefaultIDTerminalRuleCall_2_0; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_3() { return cRightCurlyBracketKeyword_3; }
-	}
-
-	public class RadioButtonElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "RadioButton");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cRadioButtonAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Keyword cRadioButtonRadioButtonKeyword_0_0 = (Keyword)cRadioButtonAssignment_0.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cDefaultAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cDefaultIDTerminalRuleCall_2_0 = (RuleCall)cDefaultAssignment_2.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//RadioButton:
-		//	radioButton="RadioButton" "{" default=ID? "}";
-		public ParserRule getRule() { return rule; }
-
-		//radioButton="RadioButton" "{" default=ID? "}"
-		public Group getGroup() { return cGroup; }
-
-		//radioButton="RadioButton"
-		public Assignment getRadioButtonAssignment_0() { return cRadioButtonAssignment_0; }
-
-		//"RadioButton"
-		public Keyword getRadioButtonRadioButtonKeyword_0_0() { return cRadioButtonRadioButtonKeyword_0_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_1() { return cLeftCurlyBracketKeyword_1; }
-
-		//default=ID?
-		public Assignment getDefaultAssignment_2() { return cDefaultAssignment_2; }
-
-		//ID
-		public RuleCall getDefaultIDTerminalRuleCall_2_0() { return cDefaultIDTerminalRuleCall_2_0; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_3() { return cRightCurlyBracketKeyword_3; }
-	}
-
-	public class ComboBoxElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "ComboBox");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cComboBoxAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Keyword cComboBoxComboBoxItemKeyword_0_0 = (Keyword)cComboBoxAssignment_0.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cDefaultAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cDefaultIDTerminalRuleCall_2_0 = (RuleCall)cDefaultAssignment_2.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//ComboBox:
-		//	comboBox="ComboBoxItem" "{" default=ID? "}";
-		public ParserRule getRule() { return rule; }
-
-		//comboBox="ComboBoxItem" "{" default=ID? "}"
-		public Group getGroup() { return cGroup; }
-
-		//comboBox="ComboBoxItem"
-		public Assignment getComboBoxAssignment_0() { return cComboBoxAssignment_0; }
-
-		//"ComboBoxItem"
-		public Keyword getComboBoxComboBoxItemKeyword_0_0() { return cComboBoxComboBoxItemKeyword_0_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_1() { return cLeftCurlyBracketKeyword_1; }
-
-		//default=ID?
-		public Assignment getDefaultAssignment_2() { return cDefaultAssignment_2; }
-
-		//ID
-		public RuleCall getDefaultIDTerminalRuleCall_2_0() { return cDefaultIDTerminalRuleCall_2_0; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_3() { return cRightCurlyBracketKeyword_3; }
-	}
-
-	public class TextBoxElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "TextBox");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Assignment cTextBoxAssignment_0 = (Assignment)cGroup.eContents().get(0);
-		private final Keyword cTextBoxTextBoxKeyword_0_0 = (Keyword)cTextBoxAssignment_0.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cDefaultAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cDefaultIDTerminalRuleCall_2_0 = (RuleCall)cDefaultAssignment_2.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		
-		//TextBox:
-		//	textBox="TextBox" "{" default=ID? "}";
-		public ParserRule getRule() { return rule; }
-
-		//textBox="TextBox" "{" default=ID? "}"
-		public Group getGroup() { return cGroup; }
-
-		//textBox="TextBox"
-		public Assignment getTextBoxAssignment_0() { return cTextBoxAssignment_0; }
-
-		//"TextBox"
-		public Keyword getTextBoxTextBoxKeyword_0_0() { return cTextBoxTextBoxKeyword_0_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_1() { return cLeftCurlyBracketKeyword_1; }
-
-		//default=ID?
-		public Assignment getDefaultAssignment_2() { return cDefaultAssignment_2; }
-
-		//ID
-		public RuleCall getDefaultIDTerminalRuleCall_2_0() { return cDefaultIDTerminalRuleCall_2_0; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_3() { return cRightCurlyBracketKeyword_3; }
-	}
-
-	public class ImageElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "Image");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cImageKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cDefaultAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cDefaultIDTerminalRuleCall_2_0 = (RuleCall)cDefaultAssignment_2.eContents().get(0);
-		private final Assignment cUrlAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cUrlSTRINGTerminalRuleCall_3_0 = (RuleCall)cUrlAssignment_3.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_4 = (Keyword)cGroup.eContents().get(4);
-		
-		//Image:
-		//	"Image" "{" default=ID? url=STRING "}";
-		public ParserRule getRule() { return rule; }
-
-		//"Image" "{" default=ID? url=STRING "}"
-		public Group getGroup() { return cGroup; }
-
-		//"Image"
-		public Keyword getImageKeyword_0() { return cImageKeyword_0; }
-
-		//"{"
-		public Keyword getLeftCurlyBracketKeyword_1() { return cLeftCurlyBracketKeyword_1; }
-
-		//default=ID?
-		public Assignment getDefaultAssignment_2() { return cDefaultAssignment_2; }
-
-		//ID
-		public RuleCall getDefaultIDTerminalRuleCall_2_0() { return cDefaultIDTerminalRuleCall_2_0; }
-
-		//url=STRING
-		public Assignment getUrlAssignment_3() { return cUrlAssignment_3; }
-
-		//STRING
-		public RuleCall getUrlSTRINGTerminalRuleCall_3_0() { return cUrlSTRINGTerminalRuleCall_3_0; }
-
-		//"}"
-		public Keyword getRightCurlyBracketKeyword_4() { return cRightCurlyBracketKeyword_4; }
+		public RuleCall getTypeTypeEnumRuleCall_1_0() { return cTypeTypeEnumRuleCall_1_0; }
 	}
 	
+	
+	public class TypeElements extends AbstractEnumRuleElementFinder {
+		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "Type");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final EnumLiteralDeclaration cCheckBoxEnumLiteralDeclaration_0 = (EnumLiteralDeclaration)cAlternatives.eContents().get(0);
+		private final Keyword cCheckBox0Keyword_0_0 = (Keyword)cCheckBoxEnumLiteralDeclaration_0.eContents().get(0);
+		private final EnumLiteralDeclaration cRadioButtonEnumLiteralDeclaration_1 = (EnumLiteralDeclaration)cAlternatives.eContents().get(1);
+		private final Keyword cRadioButton1Keyword_1_0 = (Keyword)cRadioButtonEnumLiteralDeclaration_1.eContents().get(0);
+		private final EnumLiteralDeclaration cComboBoxEnumLiteralDeclaration_2 = (EnumLiteralDeclaration)cAlternatives.eContents().get(2);
+		private final Keyword cComboBox2Keyword_2_0 = (Keyword)cComboBoxEnumLiteralDeclaration_2.eContents().get(0);
+		private final EnumLiteralDeclaration cTextBoxEnumLiteralDeclaration_3 = (EnumLiteralDeclaration)cAlternatives.eContents().get(3);
+		private final Keyword cTextBox3Keyword_3_0 = (Keyword)cTextBoxEnumLiteralDeclaration_3.eContents().get(0);
+		private final EnumLiteralDeclaration cImageEnumLiteralDeclaration_4 = (EnumLiteralDeclaration)cAlternatives.eContents().get(4);
+		private final Keyword cImage4Keyword_4_0 = (Keyword)cImageEnumLiteralDeclaration_4.eContents().get(0);
+		
+		////CheckBox:
+		////	checkBox = 'Checkbox' '{' default=ID? '}'
+		////;
+		////
+		////RadioButton:
+		////	radioButton = 'RadioButton' '{' default=ID? '}'
+		////;
+		////
+		////ComboBox:
+		////	comboBox = 'ComboBoxItem' '{' default=ID? '}'
+		////;
+		////
+		////TextBox:
+		////	textBox = 'TextBox' '{' default=ID? '}'
+		////;
+		////
+		////Image:
+		////	'Image' '{' default=ID? url=STRING '}'
+		////; enum Type:
+		//	CheckBox="0" | RadioButton="1" | ComboBox="2" | TextBox="3" | Image="4";
+		public EnumRule getRule() { return rule; }
+
+		//CheckBox="0" | RadioButton="1" | ComboBox="2" | TextBox="3" | Image="4"
+		public Alternatives getAlternatives() { return cAlternatives; }
+
+		//CheckBox="0"
+		public EnumLiteralDeclaration getCheckBoxEnumLiteralDeclaration_0() { return cCheckBoxEnumLiteralDeclaration_0; }
+
+		//"0"
+		public Keyword getCheckBox0Keyword_0_0() { return cCheckBox0Keyword_0_0; }
+
+		//RadioButton="1"
+		public EnumLiteralDeclaration getRadioButtonEnumLiteralDeclaration_1() { return cRadioButtonEnumLiteralDeclaration_1; }
+
+		//"1"
+		public Keyword getRadioButton1Keyword_1_0() { return cRadioButton1Keyword_1_0; }
+
+		//ComboBox="2"
+		public EnumLiteralDeclaration getComboBoxEnumLiteralDeclaration_2() { return cComboBoxEnumLiteralDeclaration_2; }
+
+		//"2"
+		public Keyword getComboBox2Keyword_2_0() { return cComboBox2Keyword_2_0; }
+
+		//TextBox="3"
+		public EnumLiteralDeclaration getTextBoxEnumLiteralDeclaration_3() { return cTextBoxEnumLiteralDeclaration_3; }
+
+		//"3"
+		public Keyword getTextBox3Keyword_3_0() { return cTextBox3Keyword_3_0; }
+
+		//Image="4"
+		public EnumLiteralDeclaration getImageEnumLiteralDeclaration_4() { return cImageEnumLiteralDeclaration_4; }
+
+		//"4"
+		public Keyword getImage4Keyword_4_0() { return cImage4Keyword_4_0; }
+	}
 	
 	private final PollSystemElements pPollSystem;
 	private final PollElements pPoll;
 	private final QuestionElements pQuestion;
 	private final OptionElements pOption;
-	private final TypeElements pType;
-	private final CheckBoxElements pCheckBox;
-	private final RadioButtonElements pRadioButton;
-	private final ComboBoxElements pComboBox;
-	private final TextBoxElements pTextBox;
-	private final ImageElements pImage;
+	private final TypeElements unknownRuleType;
 	
 	private final Grammar grammar;
 
@@ -395,12 +244,7 @@ public class UIDslGrammarAccess extends AbstractGrammarElementFinder {
 		this.pPoll = new PollElements();
 		this.pQuestion = new QuestionElements();
 		this.pOption = new OptionElements();
-		this.pType = new TypeElements();
-		this.pCheckBox = new CheckBoxElements();
-		this.pRadioButton = new RadioButtonElements();
-		this.pComboBox = new ComboBoxElements();
-		this.pTextBox = new TextBoxElements();
-		this.pImage = new ImageElements();
+		this.unknownRuleType = new TypeElements();
 	}
 	
 	protected Grammar internalFindGrammar(GrammarProvider grammarProvider) {
@@ -470,64 +314,32 @@ public class UIDslGrammarAccess extends AbstractGrammarElementFinder {
 		return getOptionAccess().getRule();
 	}
 
-	//Type:
-	//	CheckBox | RadioButton | ComboBox | TextBox | Image;
+	////CheckBox:
+	////	checkBox = 'Checkbox' '{' default=ID? '}'
+	////;
+	////
+	////RadioButton:
+	////	radioButton = 'RadioButton' '{' default=ID? '}'
+	////;
+	////
+	////ComboBox:
+	////	comboBox = 'ComboBoxItem' '{' default=ID? '}'
+	////;
+	////
+	////TextBox:
+	////	textBox = 'TextBox' '{' default=ID? '}'
+	////;
+	////
+	////Image:
+	////	'Image' '{' default=ID? url=STRING '}'
+	////; enum Type:
+	//	CheckBox="0" | RadioButton="1" | ComboBox="2" | TextBox="3" | Image="4";
 	public TypeElements getTypeAccess() {
-		return pType;
+		return unknownRuleType;
 	}
 	
-	public ParserRule getTypeRule() {
+	public EnumRule getTypeRule() {
 		return getTypeAccess().getRule();
-	}
-
-	//CheckBox:
-	//	checkBox="Checkbox" "{" default=ID? "}";
-	public CheckBoxElements getCheckBoxAccess() {
-		return pCheckBox;
-	}
-	
-	public ParserRule getCheckBoxRule() {
-		return getCheckBoxAccess().getRule();
-	}
-
-	//RadioButton:
-	//	radioButton="RadioButton" "{" default=ID? "}";
-	public RadioButtonElements getRadioButtonAccess() {
-		return pRadioButton;
-	}
-	
-	public ParserRule getRadioButtonRule() {
-		return getRadioButtonAccess().getRule();
-	}
-
-	//ComboBox:
-	//	comboBox="ComboBoxItem" "{" default=ID? "}";
-	public ComboBoxElements getComboBoxAccess() {
-		return pComboBox;
-	}
-	
-	public ParserRule getComboBoxRule() {
-		return getComboBoxAccess().getRule();
-	}
-
-	//TextBox:
-	//	textBox="TextBox" "{" default=ID? "}";
-	public TextBoxElements getTextBoxAccess() {
-		return pTextBox;
-	}
-	
-	public ParserRule getTextBoxRule() {
-		return getTextBoxAccess().getRule();
-	}
-
-	//Image:
-	//	"Image" "{" default=ID? url=STRING "}";
-	public ImageElements getImageAccess() {
-		return pImage;
-	}
-	
-	public ParserRule getImageRule() {
-		return getImageAccess().getRule();
 	}
 
 	//terminal ID:

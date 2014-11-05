@@ -24,6 +24,7 @@ import org.eclipse.xtext.parser.*;
 import org.eclipse.xtext.parser.impl.*;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.common.util.Enumerator;
 import org.eclipse.xtext.parser.antlr.AbstractInternalAntlrParser;
 import org.eclipse.xtext.parser.antlr.XtextTokenStream;
 import org.eclipse.xtext.parser.antlr.XtextTokenStream.HiddenTokens;
@@ -283,7 +284,7 @@ ruleOption returns [EObject current=null]
 )?(
 (
 		{ 
-	        newCompositeNode(grammarAccess.getOptionAccess().getTypeTypeParserRuleCall_1_0()); 
+	        newCompositeNode(grammarAccess.getOptionAccess().getTypeTypeEnumRuleCall_1_0()); 
 	    }
 		lv_type_2_0=ruleType		{
 	        if ($current==null) {
@@ -305,390 +306,40 @@ ruleOption returns [EObject current=null]
 
 
 
-// Entry rule entryRuleType
-entryRuleType returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getTypeRule()); }
-	 iv_ruleType=ruleType 
-	 { $current=$iv_ruleType.current; } 
-	 EOF 
-;
-
 // Rule Type
-ruleType returns [EObject current=null] 
-    @init { enterRule(); 
-    }
+ruleType returns [Enumerator current=null] 
+    @init { enterRule(); }
     @after { leaveRule(); }:
-(
-    { 
-        newCompositeNode(grammarAccess.getTypeAccess().getCheckBoxParserRuleCall_0()); 
-    }
-    this_CheckBox_0=ruleCheckBox
-    { 
-        $current = $this_CheckBox_0.current; 
-        afterParserOrEnumRuleCall();
-    }
-
-    |
-    { 
-        newCompositeNode(grammarAccess.getTypeAccess().getRadioButtonParserRuleCall_1()); 
-    }
-    this_RadioButton_1=ruleRadioButton
-    { 
-        $current = $this_RadioButton_1.current; 
-        afterParserOrEnumRuleCall();
-    }
-
-    |
-    { 
-        newCompositeNode(grammarAccess.getTypeAccess().getComboBoxParserRuleCall_2()); 
-    }
-    this_ComboBox_2=ruleComboBox
-    { 
-        $current = $this_ComboBox_2.current; 
-        afterParserOrEnumRuleCall();
-    }
-
-    |
-    { 
-        newCompositeNode(grammarAccess.getTypeAccess().getTextBoxParserRuleCall_3()); 
-    }
-    this_TextBox_3=ruleTextBox
-    { 
-        $current = $this_TextBox_3.current; 
-        afterParserOrEnumRuleCall();
-    }
-
-    |
-    { 
-        newCompositeNode(grammarAccess.getTypeAccess().getImageParserRuleCall_4()); 
-    }
-    this_Image_4=ruleImage
-    { 
-        $current = $this_Image_4.current; 
-        afterParserOrEnumRuleCall();
+((	enumLiteral_0='0' 
+	{
+        $current = grammarAccess.getTypeAccess().getCheckBoxEnumLiteralDeclaration_0().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_0, grammarAccess.getTypeAccess().getCheckBoxEnumLiteralDeclaration_0()); 
     }
 )
-;
-
-
-
-
-
-// Entry rule entryRuleCheckBox
-entryRuleCheckBox returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getCheckBoxRule()); }
-	 iv_ruleCheckBox=ruleCheckBox 
-	 { $current=$iv_ruleCheckBox.current; } 
-	 EOF 
-;
-
-// Rule CheckBox
-ruleCheckBox returns [EObject current=null] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-((
-(
-		lv_checkBox_0_0=	'Checkbox' 
-    {
-        newLeafNode(lv_checkBox_0_0, grammarAccess.getCheckBoxAccess().getCheckBoxCheckboxKeyword_0_0());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getCheckBoxRule());
-	        }
-       		setWithLastConsumed($current, "checkBox", lv_checkBox_0_0, "Checkbox");
-	    }
-
-)
-)	otherlv_1='{' 
-    {
-    	newLeafNode(otherlv_1, grammarAccess.getCheckBoxAccess().getLeftCurlyBracketKeyword_1());
-    }
-(
-(
-		lv_default_2_0=RULE_ID
-		{
-			newLeafNode(lv_default_2_0, grammarAccess.getCheckBoxAccess().getDefaultIDTerminalRuleCall_2_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getCheckBoxRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"default",
-        		lv_default_2_0, 
-        		"ID");
-	    }
-
-)
-)?	otherlv_3='}' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getCheckBoxAccess().getRightCurlyBracketKeyword_3());
+    |(	enumLiteral_1='1' 
+	{
+        $current = grammarAccess.getTypeAccess().getRadioButtonEnumLiteralDeclaration_1().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_1, grammarAccess.getTypeAccess().getRadioButtonEnumLiteralDeclaration_1()); 
     }
 )
-;
-
-
-
-
-
-// Entry rule entryRuleRadioButton
-entryRuleRadioButton returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getRadioButtonRule()); }
-	 iv_ruleRadioButton=ruleRadioButton 
-	 { $current=$iv_ruleRadioButton.current; } 
-	 EOF 
-;
-
-// Rule RadioButton
-ruleRadioButton returns [EObject current=null] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-((
-(
-		lv_radioButton_0_0=	'RadioButton' 
-    {
-        newLeafNode(lv_radioButton_0_0, grammarAccess.getRadioButtonAccess().getRadioButtonRadioButtonKeyword_0_0());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getRadioButtonRule());
-	        }
-       		setWithLastConsumed($current, "radioButton", lv_radioButton_0_0, "RadioButton");
-	    }
-
-)
-)	otherlv_1='{' 
-    {
-    	newLeafNode(otherlv_1, grammarAccess.getRadioButtonAccess().getLeftCurlyBracketKeyword_1());
-    }
-(
-(
-		lv_default_2_0=RULE_ID
-		{
-			newLeafNode(lv_default_2_0, grammarAccess.getRadioButtonAccess().getDefaultIDTerminalRuleCall_2_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getRadioButtonRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"default",
-        		lv_default_2_0, 
-        		"ID");
-	    }
-
-)
-)?	otherlv_3='}' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getRadioButtonAccess().getRightCurlyBracketKeyword_3());
+    |(	enumLiteral_2='2' 
+	{
+        $current = grammarAccess.getTypeAccess().getComboBoxEnumLiteralDeclaration_2().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_2, grammarAccess.getTypeAccess().getComboBoxEnumLiteralDeclaration_2()); 
     }
 )
-;
-
-
-
-
-
-// Entry rule entryRuleComboBox
-entryRuleComboBox returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getComboBoxRule()); }
-	 iv_ruleComboBox=ruleComboBox 
-	 { $current=$iv_ruleComboBox.current; } 
-	 EOF 
-;
-
-// Rule ComboBox
-ruleComboBox returns [EObject current=null] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-((
-(
-		lv_comboBox_0_0=	'ComboBoxItem' 
-    {
-        newLeafNode(lv_comboBox_0_0, grammarAccess.getComboBoxAccess().getComboBoxComboBoxItemKeyword_0_0());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getComboBoxRule());
-	        }
-       		setWithLastConsumed($current, "comboBox", lv_comboBox_0_0, "ComboBoxItem");
-	    }
-
-)
-)	otherlv_1='{' 
-    {
-    	newLeafNode(otherlv_1, grammarAccess.getComboBoxAccess().getLeftCurlyBracketKeyword_1());
-    }
-(
-(
-		lv_default_2_0=RULE_ID
-		{
-			newLeafNode(lv_default_2_0, grammarAccess.getComboBoxAccess().getDefaultIDTerminalRuleCall_2_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getComboBoxRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"default",
-        		lv_default_2_0, 
-        		"ID");
-	    }
-
-)
-)?	otherlv_3='}' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getComboBoxAccess().getRightCurlyBracketKeyword_3());
+    |(	enumLiteral_3='3' 
+	{
+        $current = grammarAccess.getTypeAccess().getTextBoxEnumLiteralDeclaration_3().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_3, grammarAccess.getTypeAccess().getTextBoxEnumLiteralDeclaration_3()); 
     }
 )
-;
-
-
-
-
-
-// Entry rule entryRuleTextBox
-entryRuleTextBox returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getTextBoxRule()); }
-	 iv_ruleTextBox=ruleTextBox 
-	 { $current=$iv_ruleTextBox.current; } 
-	 EOF 
-;
-
-// Rule TextBox
-ruleTextBox returns [EObject current=null] 
-    @init { enterRule(); 
+    |(	enumLiteral_4='4' 
+	{
+        $current = grammarAccess.getTypeAccess().getImageEnumLiteralDeclaration_4().getEnumLiteral().getInstance();
+        newLeafNode(enumLiteral_4, grammarAccess.getTypeAccess().getImageEnumLiteralDeclaration_4()); 
     }
-    @after { leaveRule(); }:
-((
-(
-		lv_textBox_0_0=	'TextBox' 
-    {
-        newLeafNode(lv_textBox_0_0, grammarAccess.getTextBoxAccess().getTextBoxTextBoxKeyword_0_0());
-    }
- 
-	    {
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getTextBoxRule());
-	        }
-       		setWithLastConsumed($current, "textBox", lv_textBox_0_0, "TextBox");
-	    }
-
-)
-)	otherlv_1='{' 
-    {
-    	newLeafNode(otherlv_1, grammarAccess.getTextBoxAccess().getLeftCurlyBracketKeyword_1());
-    }
-(
-(
-		lv_default_2_0=RULE_ID
-		{
-			newLeafNode(lv_default_2_0, grammarAccess.getTextBoxAccess().getDefaultIDTerminalRuleCall_2_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getTextBoxRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"default",
-        		lv_default_2_0, 
-        		"ID");
-	    }
-
-)
-)?	otherlv_3='}' 
-    {
-    	newLeafNode(otherlv_3, grammarAccess.getTextBoxAccess().getRightCurlyBracketKeyword_3());
-    }
-)
-;
-
-
-
-
-
-// Entry rule entryRuleImage
-entryRuleImage returns [EObject current=null] 
-	:
-	{ newCompositeNode(grammarAccess.getImageRule()); }
-	 iv_ruleImage=ruleImage 
-	 { $current=$iv_ruleImage.current; } 
-	 EOF 
-;
-
-// Rule Image
-ruleImage returns [EObject current=null] 
-    @init { enterRule(); 
-    }
-    @after { leaveRule(); }:
-(	otherlv_0='Image' 
-    {
-    	newLeafNode(otherlv_0, grammarAccess.getImageAccess().getImageKeyword_0());
-    }
-	otherlv_1='{' 
-    {
-    	newLeafNode(otherlv_1, grammarAccess.getImageAccess().getLeftCurlyBracketKeyword_1());
-    }
-(
-(
-		lv_default_2_0=RULE_ID
-		{
-			newLeafNode(lv_default_2_0, grammarAccess.getImageAccess().getDefaultIDTerminalRuleCall_2_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getImageRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"default",
-        		lv_default_2_0, 
-        		"ID");
-	    }
-
-)
-)?(
-(
-		lv_url_3_0=RULE_STRING
-		{
-			newLeafNode(lv_url_3_0, grammarAccess.getImageAccess().getUrlSTRINGTerminalRuleCall_3_0()); 
-		}
-		{
-	        if ($current==null) {
-	            $current = createModelElement(grammarAccess.getImageRule());
-	        }
-       		setWithLastConsumed(
-       			$current, 
-       			"url",
-        		lv_url_3_0, 
-        		"STRING");
-	    }
-
-)
-)	otherlv_4='}' 
-    {
-    	newLeafNode(otherlv_4, grammarAccess.getImageAccess().getRightCurlyBracketKeyword_4());
-    }
-)
-;
-
-
+));
 
 
 

@@ -55,7 +55,7 @@ public class PollDslSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (id=ID? text=STRING)
+	 *     (id=ID? content=STRING)
 	 */
 	protected void sequence_Option(EObject context, Option semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -82,7 +82,7 @@ public class PollDslSemanticSequencer extends AbstractDelegatingSemanticSequence
 	
 	/**
 	 * Constraint:
-	 *     (id=ID? text=STRING options+=Option+)
+	 *     (id=ID? content=STRING options+=Option+)
 	 */
 	protected void sequence_Question(EObject context, Question semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

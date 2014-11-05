@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class InternalUIDslLexer extends Lexer {
     public static final int T__19=19;
     public static final int RULE_ID=4;
-    public static final int RULE_STRING=5;
+    public static final int RULE_STRING=6;
     public static final int T__16=16;
     public static final int T__15=15;
     public static final int T__18=18;
@@ -26,7 +26,7 @@ public class InternalUIDslLexer extends Lexer {
     public static final int RULE_ANY_OTHER=10;
     public static final int T__21=21;
     public static final int T__20=20;
-    public static final int RULE_INT=6;
+    public static final int RULE_INT=5;
     public static final int RULE_WS=9;
     public static final int RULE_SL_COMMENT=8;
     public static final int EOF=-1;
@@ -174,11 +174,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:17:7: ( 'Checkbox' )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:17:9: 'Checkbox'
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:17:7: ( '0' )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:17:9: '0'
             {
-            match("Checkbox"); 
-
+            match('0'); 
 
             }
 
@@ -195,11 +194,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:18:7: ( 'RadioButton' )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:18:9: 'RadioButton'
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:18:7: ( '1' )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:18:9: '1'
             {
-            match("RadioButton"); 
-
+            match('1'); 
 
             }
 
@@ -216,11 +214,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:19:7: ( 'ComboBoxItem' )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:19:9: 'ComboBoxItem'
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:19:7: ( '2' )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:19:9: '2'
             {
-            match("ComboBoxItem"); 
-
+            match('2'); 
 
             }
 
@@ -237,11 +234,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:20:7: ( 'TextBox' )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:20:9: 'TextBox'
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:20:7: ( '3' )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:20:9: '3'
             {
-            match("TextBox"); 
-
+            match('3'); 
 
             }
 
@@ -258,11 +254,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:21:7: ( 'Image' )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:21:9: 'Image'
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:21:7: ( '4' )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:21:9: '4'
             {
-            match("Image"); 
-
+            match('4'); 
 
             }
 
@@ -279,10 +274,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:695:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:695:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:346:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:346:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:695:11: ( '^' )?
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:346:11: ( '^' )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -291,7 +286,7 @@ public class InternalUIDslLexer extends Lexer {
             }
             switch (alt1) {
                 case 1 :
-                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:695:11: '^'
+                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:346:11: '^'
                     {
                     match('^'); 
 
@@ -309,7 +304,7 @@ public class InternalUIDslLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:695:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:346:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop2:
             do {
                 int alt2=2;
@@ -358,10 +353,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:697:10: ( ( '0' .. '9' )+ )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:697:12: ( '0' .. '9' )+
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:348:10: ( ( '0' .. '9' )+ )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:348:12: ( '0' .. '9' )+
             {
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:697:12: ( '0' .. '9' )+
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:348:12: ( '0' .. '9' )+
             int cnt3=0;
             loop3:
             do {
@@ -375,7 +370,7 @@ public class InternalUIDslLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:697:13: '0' .. '9'
+            	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:348:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -407,10 +402,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:13: ( ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:15: ( '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -428,10 +423,10 @@ public class InternalUIDslLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:16: '\"' ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:20: ( '\\\\' . | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop4:
                     do {
                         int alt4=3;
@@ -447,7 +442,7 @@ public class InternalUIDslLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:21: '\\\\' .
+                    	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:21: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -455,7 +450,7 @@ public class InternalUIDslLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:28: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:28: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -480,10 +475,10 @@ public class InternalUIDslLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:48: '\\'' ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:53: ( '\\\\' . | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop5:
                     do {
                         int alt5=3;
@@ -499,7 +494,7 @@ public class InternalUIDslLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:54: '\\\\' .
+                    	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:54: '\\\\' .
                     	    {
                     	    match('\\'); 
                     	    matchAny(); 
@@ -507,7 +502,7 @@ public class InternalUIDslLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:699:61: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:350:61: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -550,12 +545,12 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:701:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:701:19: '/*' ( options {greedy=false; } : . )* '*/'
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:352:17: ( '/*' ( options {greedy=false; } : . )* '*/' )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:352:19: '/*' ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:701:24: ( options {greedy=false; } : . )*
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:352:24: ( options {greedy=false; } : . )*
             loop7:
             do {
                 int alt7=2;
@@ -580,7 +575,7 @@ public class InternalUIDslLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:701:52: .
+            	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:352:52: .
             	    {
             	    matchAny(); 
 
@@ -610,12 +605,12 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:703:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:703:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:354:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:354:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:703:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:354:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop8:
             do {
                 int alt8=2;
@@ -628,7 +623,7 @@ public class InternalUIDslLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:703:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:354:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -648,7 +643,7 @@ public class InternalUIDslLexer extends Lexer {
                 }
             } while (true);
 
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:703:40: ( ( '\\r' )? '\\n' )?
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:354:40: ( ( '\\r' )? '\\n' )?
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -657,9 +652,9 @@ public class InternalUIDslLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:703:41: ( '\\r' )? '\\n'
+                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:354:41: ( '\\r' )? '\\n'
                     {
-                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:703:41: ( '\\r' )?
+                    // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:354:41: ( '\\r' )?
                     int alt9=2;
                     int LA9_0 = input.LA(1);
 
@@ -668,7 +663,7 @@ public class InternalUIDslLexer extends Lexer {
                     }
                     switch (alt9) {
                         case 1 :
-                            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:703:41: '\\r'
+                            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:354:41: '\\r'
                             {
                             match('\r'); 
 
@@ -700,10 +695,10 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:705:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:705:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:356:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:356:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:705:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:356:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt11=0;
             loop11:
             do {
@@ -757,8 +752,8 @@ public class InternalUIDslLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:707:16: ( . )
-            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:707:18: .
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:358:16: ( . )
+            // ../fr.istic.idm.project.UI/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalUIDsl.g:358:18: .
             {
             matchAny(); 
 
@@ -911,106 +906,69 @@ public class InternalUIDslLexer extends Lexer {
 
     protected DFA12 dfa12 = new DFA12(this);
     static final String DFA12_eotS =
-        "\1\uffff\1\24\2\uffff\2\24\1\22\4\24\1\22\2\uffff\3\22\2\uffff\1\24\3\uffff\2\24\1\uffff\5\24\5\uffff\10\24\1\64\7\24\1\uffff\6\24\1\102\6\24\1\uffff\1\24\1\112\3\24\1\116\1\117\1\uffff\1\120\2\24\3\uffff\5\24\1\130\1\131\2\uffff";
+        "\1\uffff\1\25\2\uffff\2\25\1\23\1\33\1\35\1\36\1\37\1\40\1\23\2\uffff\3\23\2\uffff\1\25\3\uffff\2\25\13\uffff\3\25\1\53\2\25\1\uffff\5\25\1\63\1\64\2\uffff";
     static final String DFA12_eofS =
-        "\132\uffff";
+        "\65\uffff";
     static final String DFA12_minS =
-        "\1\0\1\157\2\uffff\1\165\1\160\1\76\1\150\1\141\1\145\1\155\1\101\2\uffff\2\0\1\52\2\uffff\1\154\3\uffff\1\145\1\164\1\uffff\1\145\1\155\1\144\1\170\1\141\5\uffff\1\154\1\163\1\151\1\143\1\142\1\151\1\164\1\147\1\60\1\164\1\157\1\153\2\157\1\102\1\145\1\uffff\1\151\1\156\1\142\2\102\1\157\1\60\1\157\1\163\2\157\1\165\1\170\1\uffff\1\156\1\60\2\170\1\164\2\60\1\uffff\1\60\1\111\1\164\3\uffff\1\164\1\157\1\145\1\156\1\155\2\60\2\uffff";
+        "\1\0\1\157\2\uffff\1\165\1\160\1\76\5\60\1\101\2\uffff\2\0\1\52\2\uffff\1\154\3\uffff\1\145\1\164\13\uffff\1\154\1\163\1\151\1\60\1\164\1\157\1\uffff\1\151\1\156\1\157\1\163\1\156\2\60\2\uffff";
     static final String DFA12_maxS =
-        "\1\uffff\1\157\2\uffff\1\165\1\160\1\76\1\157\1\141\1\145\1\155\1\172\2\uffff\2\uffff\1\57\2\uffff\1\154\3\uffff\1\145\1\164\1\uffff\1\145\1\155\1\144\1\170\1\141\5\uffff\1\154\1\163\1\151\1\143\1\142\1\151\1\164\1\147\1\172\1\164\1\157\1\153\2\157\1\102\1\145\1\uffff\1\151\1\156\1\142\2\102\1\157\1\172\1\157\1\163\2\157\1\165\1\170\1\uffff\1\156\1\172\2\170\1\164\2\172\1\uffff\1\172\1\111\1\164\3\uffff\1\164\1\157\1\145\1\156\1\155\2\172\2\uffff";
+        "\1\uffff\1\157\2\uffff\1\165\1\160\1\76\5\71\1\172\2\uffff\2\uffff\1\57\2\uffff\1\154\3\uffff\1\145\1\164\13\uffff\1\154\1\163\1\151\1\172\1\164\1\157\1\uffff\1\151\1\156\1\157\1\163\1\156\2\172\2\uffff";
     static final String DFA12_acceptS =
-        "\2\uffff\1\2\1\3\10\uffff\1\14\1\15\3\uffff\1\21\1\22\1\uffff\1\14\1\2\1\3\2\uffff\1\6\5\uffff\1\15\1\16\1\17\1\20\1\21\20\uffff\1\1\15\uffff\1\13\7\uffff\1\5\3\uffff\1\12\1\4\1\7\7\uffff\1\10\1\11";
+        "\2\uffff\1\2\1\3\11\uffff\1\14\1\15\3\uffff\1\21\1\22\1\uffff\1\14\1\2\1\3\2\uffff\1\6\1\7\1\15\1\10\1\11\1\12\1\13\1\16\1\17\1\20\1\21\6\uffff\1\1\7\uffff\1\5\1\4";
     static final String DFA12_specialS =
-        "\1\2\15\uffff\1\0\1\1\112\uffff}>";
+        "\1\2\16\uffff\1\1\1\0\44\uffff}>";
     static final String[] DFA12_transitionS = {
-            "\11\22\2\21\2\22\1\21\22\22\1\21\1\22\1\16\4\22\1\17\5\22\1\6\1\22\1\20\12\15\7\22\2\14\1\7\5\14\1\12\6\14\1\1\1\4\1\10\1\14\1\11\6\14\3\22\1\13\1\14\1\22\16\14\1\5\13\14\1\2\1\22\1\3\uff82\22",
-            "\1\23",
+            "\11\23\2\22\2\23\1\22\22\23\1\22\1\23\1\17\4\23\1\20\5\23\1\6\1\23\1\21\1\7\1\10\1\11\1\12\1\13\5\16\7\23\17\15\1\1\1\4\11\15\3\23\1\14\1\15\1\23\16\15\1\5\13\15\1\2\1\23\1\3\uff82\23",
+            "\1\24",
             "",
             "",
-            "\1\27",
             "\1\30",
             "\1\31",
-            "\1\32\6\uffff\1\33",
-            "\1\34",
-            "\1\35",
-            "\1\36",
-            "\32\24\4\uffff\1\24\1\uffff\32\24",
+            "\1\32",
+            "\12\34",
+            "\12\34",
+            "\12\34",
+            "\12\34",
+            "\12\34",
+            "\32\25\4\uffff\1\25\1\uffff\32\25",
             "",
             "",
-            "\0\40",
-            "\0\40",
-            "\1\41\4\uffff\1\42",
-            "",
-            "",
-            "\1\44",
-            "",
+            "\0\41",
+            "\0\41",
+            "\1\42\4\uffff\1\43",
             "",
             "",
             "\1\45",
-            "\1\46",
             "",
+            "",
+            "",
+            "\1\46",
             "\1\47",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\50",
             "\1\51",
             "\1\52",
-            "\1\53",
-            "",
-            "",
-            "",
-            "",
-            "",
+            "\12\25\7\uffff\32\25\4\uffff\1\25\1\uffff\32\25",
             "\1\54",
             "\1\55",
+            "",
             "\1\56",
             "\1\57",
             "\1\60",
             "\1\61",
             "\1\62",
-            "\1\63",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\1\65",
-            "\1\66",
-            "\1\67",
-            "\1\70",
-            "\1\71",
-            "\1\72",
-            "\1\73",
-            "",
-            "\1\74",
-            "\1\75",
-            "\1\76",
-            "\1\77",
-            "\1\100",
-            "\1\101",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\1\103",
-            "\1\104",
-            "\1\105",
-            "\1\106",
-            "\1\107",
-            "\1\110",
-            "",
-            "\1\111",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\1\113",
-            "\1\114",
-            "\1\115",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\1\121",
-            "\1\122",
-            "",
-            "",
-            "",
-            "\1\123",
-            "\1\124",
-            "\1\125",
-            "\1\126",
-            "\1\127",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
-            "\12\24\7\uffff\32\24\4\uffff\1\24\1\uffff\32\24",
+            "\12\25\7\uffff\32\25\4\uffff\1\25\1\uffff\32\25",
+            "\12\25\7\uffff\32\25\4\uffff\1\25\1\uffff\32\25",
             "",
             ""
     };
@@ -1052,12 +1010,12 @@ public class InternalUIDslLexer extends Lexer {
         	int _s = s;
             switch ( s ) {
                     case 0 : 
-                        int LA12_14 = input.LA(1);
+                        int LA12_16 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_14>='\u0000' && LA12_14<='\uFFFF')) ) {s = 32;}
+                        if ( ((LA12_16>='\u0000' && LA12_16<='\uFFFF')) ) {s = 33;}
 
-                        else s = 18;
+                        else s = 19;
 
                         if ( s>=0 ) return s;
                         break;
@@ -1065,9 +1023,9 @@ public class InternalUIDslLexer extends Lexer {
                         int LA12_15 = input.LA(1);
 
                         s = -1;
-                        if ( ((LA12_15>='\u0000' && LA12_15<='\uFFFF')) ) {s = 32;}
+                        if ( ((LA12_15>='\u0000' && LA12_15<='\uFFFF')) ) {s = 33;}
 
-                        else s = 18;
+                        else s = 19;
 
                         if ( s>=0 ) return s;
                         break;
@@ -1087,29 +1045,31 @@ public class InternalUIDslLexer extends Lexer {
 
                         else if ( (LA12_0=='-') ) {s = 6;}
 
-                        else if ( (LA12_0=='C') ) {s = 7;}
+                        else if ( (LA12_0=='0') ) {s = 7;}
 
-                        else if ( (LA12_0=='R') ) {s = 8;}
+                        else if ( (LA12_0=='1') ) {s = 8;}
 
-                        else if ( (LA12_0=='T') ) {s = 9;}
+                        else if ( (LA12_0=='2') ) {s = 9;}
 
-                        else if ( (LA12_0=='I') ) {s = 10;}
+                        else if ( (LA12_0=='3') ) {s = 10;}
 
-                        else if ( (LA12_0=='^') ) {s = 11;}
+                        else if ( (LA12_0=='4') ) {s = 11;}
 
-                        else if ( ((LA12_0>='A' && LA12_0<='B')||(LA12_0>='D' && LA12_0<='H')||(LA12_0>='J' && LA12_0<='O')||LA12_0=='S'||(LA12_0>='U' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='n')||(LA12_0>='p' && LA12_0<='z')) ) {s = 12;}
+                        else if ( (LA12_0=='^') ) {s = 12;}
 
-                        else if ( ((LA12_0>='0' && LA12_0<='9')) ) {s = 13;}
+                        else if ( ((LA12_0>='A' && LA12_0<='O')||(LA12_0>='R' && LA12_0<='Z')||LA12_0=='_'||(LA12_0>='a' && LA12_0<='n')||(LA12_0>='p' && LA12_0<='z')) ) {s = 13;}
 
-                        else if ( (LA12_0=='\"') ) {s = 14;}
+                        else if ( ((LA12_0>='5' && LA12_0<='9')) ) {s = 14;}
 
-                        else if ( (LA12_0=='\'') ) {s = 15;}
+                        else if ( (LA12_0=='\"') ) {s = 15;}
 
-                        else if ( (LA12_0=='/') ) {s = 16;}
+                        else if ( (LA12_0=='\'') ) {s = 16;}
 
-                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 17;}
+                        else if ( (LA12_0=='/') ) {s = 17;}
 
-                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='(' && LA12_0<=',')||LA12_0=='.'||(LA12_0>=':' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 18;}
+                        else if ( ((LA12_0>='\t' && LA12_0<='\n')||LA12_0=='\r'||LA12_0==' ') ) {s = 18;}
+
+                        else if ( ((LA12_0>='\u0000' && LA12_0<='\b')||(LA12_0>='\u000B' && LA12_0<='\f')||(LA12_0>='\u000E' && LA12_0<='\u001F')||LA12_0=='!'||(LA12_0>='#' && LA12_0<='&')||(LA12_0>='(' && LA12_0<=',')||LA12_0=='.'||(LA12_0>=':' && LA12_0<='@')||(LA12_0>='[' && LA12_0<=']')||LA12_0=='`'||LA12_0=='|'||(LA12_0>='~' && LA12_0<='\uFFFF')) ) {s = 19;}
 
                         if ( s>=0 ) return s;
                         break;

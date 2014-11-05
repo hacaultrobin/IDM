@@ -16,12 +16,12 @@
     </genClasses>
     <genClasses ecoreClass="PollDsl.ecore#//Question">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollDsl.ecore#//Question/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollDsl.ecore#//Question/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollDsl.ecore#//Question/content"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference PollDsl.ecore#//Question/options"/>
     </genClasses>
     <genClasses ecoreClass="PollDsl.ecore#//Option">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollDsl.ecore#//Option/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollDsl.ecore#//Option/text"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute PollDsl.ecore#//Option/content"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

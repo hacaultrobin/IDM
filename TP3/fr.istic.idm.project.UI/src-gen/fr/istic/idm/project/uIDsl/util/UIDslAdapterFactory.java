@@ -95,36 +95,6 @@ public class UIDslAdapterFactory extends AdapterFactoryImpl
         return createOptionAdapter();
       }
       @Override
-      public Adapter caseType(Type object)
-      {
-        return createTypeAdapter();
-      }
-      @Override
-      public Adapter caseCheckBox(CheckBox object)
-      {
-        return createCheckBoxAdapter();
-      }
-      @Override
-      public Adapter caseRadioButton(RadioButton object)
-      {
-        return createRadioButtonAdapter();
-      }
-      @Override
-      public Adapter caseComboBox(ComboBox object)
-      {
-        return createComboBoxAdapter();
-      }
-      @Override
-      public Adapter caseTextBox(TextBox object)
-      {
-        return createTextBoxAdapter();
-      }
-      @Override
-      public Adapter caseImage(Image object)
-      {
-        return createImageAdapter();
-      }
-      @Override
       public Adapter defaultCase(EObject object)
       {
         return createEObjectAdapter();
@@ -202,96 +172,6 @@ public class UIDslAdapterFactory extends AdapterFactoryImpl
    * @generated
    */
   public Adapter createOptionAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.istic.idm.project.uIDsl.Type <em>Type</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.istic.idm.project.uIDsl.Type
-   * @generated
-   */
-  public Adapter createTypeAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.istic.idm.project.uIDsl.CheckBox <em>Check Box</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.istic.idm.project.uIDsl.CheckBox
-   * @generated
-   */
-  public Adapter createCheckBoxAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.istic.idm.project.uIDsl.RadioButton <em>Radio Button</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.istic.idm.project.uIDsl.RadioButton
-   * @generated
-   */
-  public Adapter createRadioButtonAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.istic.idm.project.uIDsl.ComboBox <em>Combo Box</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.istic.idm.project.uIDsl.ComboBox
-   * @generated
-   */
-  public Adapter createComboBoxAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.istic.idm.project.uIDsl.TextBox <em>Text Box</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.istic.idm.project.uIDsl.TextBox
-   * @generated
-   */
-  public Adapter createTextBoxAdapter()
-  {
-    return null;
-  }
-
-  /**
-   * Creates a new adapter for an object of class '{@link fr.istic.idm.project.uIDsl.Image <em>Image</em>}'.
-   * <!-- begin-user-doc -->
-   * This default implementation returns null so that we can easily ignore cases;
-   * it's useful to ignore a case when inheritance will catch all the cases anyway.
-   * <!-- end-user-doc -->
-   * @return the new adapter.
-   * @see fr.istic.idm.project.uIDsl.Image
-   * @generated
-   */
-  public Adapter createImageAdapter()
   {
     return null;
   }

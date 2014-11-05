@@ -7,6 +7,13 @@
     editorPluginID="fr.istic.idm.project.UI.editor" runtimeVersion="2.10">
   <genPackages prefix="UIDsl" basePackage="fr.istic.idm.project" disposableProviderFactory="true"
       fileExtensions="uidsl" ecorePackage="UIDsl.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="UIDsl.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="UIDsl.ecore#//Type/CheckBox"/>
+      <genEnumLiterals ecoreEnumLiteral="UIDsl.ecore#//Type/RadioButton"/>
+      <genEnumLiterals ecoreEnumLiteral="UIDsl.ecore#//Type/ComboBox"/>
+      <genEnumLiterals ecoreEnumLiteral="UIDsl.ecore#//Type/TextBox"/>
+      <genEnumLiterals ecoreEnumLiteral="UIDsl.ecore#//Type/Image"/>
+    </genEnums>
     <genClasses ecoreClass="UIDsl.ecore#//PollSystem">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIDsl.ecore#//PollSystem/polls"/>
     </genClasses>
@@ -20,25 +27,7 @@
     </genClasses>
     <genClasses ecoreClass="UIDsl.ecore#//Option">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Option/id"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIDsl.ecore#//Option/type"/>
-    </genClasses>
-    <genClasses ecoreClass="UIDsl.ecore#//Type">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Type/default"/>
-    </genClasses>
-    <genClasses ecoreClass="UIDsl.ecore#//CheckBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//CheckBox/checkBox"/>
-    </genClasses>
-    <genClasses ecoreClass="UIDsl.ecore#//RadioButton">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//RadioButton/radioButton"/>
-    </genClasses>
-    <genClasses ecoreClass="UIDsl.ecore#//ComboBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//ComboBox/comboBox"/>
-    </genClasses>
-    <genClasses ecoreClass="UIDsl.ecore#//TextBox">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//TextBox/textBox"/>
-    </genClasses>
-    <genClasses ecoreClass="UIDsl.ecore#//Image">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Image/url"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIDsl.ecore#//Option/type"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

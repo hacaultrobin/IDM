@@ -213,9 +213,9 @@ ruleQuestion returns [EObject current=null]
     }
 (
 (
-		lv_text_3_0=RULE_STRING
+		lv_content_3_0=RULE_STRING
 		{
-			newLeafNode(lv_text_3_0, grammarAccess.getQuestionAccess().getTextSTRINGTerminalRuleCall_3_0()); 
+			newLeafNode(lv_content_3_0, grammarAccess.getQuestionAccess().getContentSTRINGTerminalRuleCall_3_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -223,8 +223,8 @@ ruleQuestion returns [EObject current=null]
 	        }
        		setWithLastConsumed(
        			$current, 
-       			"text",
-        		lv_text_3_0, 
+       			"content",
+        		lv_content_3_0, 
         		"STRING");
 	    }
 
@@ -300,9 +300,9 @@ ruleOption returns [EObject current=null]
     }
 )?(
 (
-		lv_text_2_0=RULE_STRING
+		lv_content_2_0=RULE_STRING
 		{
-			newLeafNode(lv_text_2_0, grammarAccess.getOptionAccess().getTextSTRINGTerminalRuleCall_1_0()); 
+			newLeafNode(lv_content_2_0, grammarAccess.getOptionAccess().getContentSTRINGTerminalRuleCall_1_0()); 
 		}
 		{
 	        if ($current==null) {
@@ -310,8 +310,8 @@ ruleOption returns [EObject current=null]
 	        }
        		setWithLastConsumed(
        			$current, 
-       			"text",
-        		lv_text_2_0, 
+       			"content",
+        		lv_content_2_0, 
         		"STRING");
 	    }
 

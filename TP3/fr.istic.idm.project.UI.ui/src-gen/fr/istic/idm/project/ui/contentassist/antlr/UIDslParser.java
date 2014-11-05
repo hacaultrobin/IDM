@@ -42,11 +42,6 @@ public class UIDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getQuestionAccess().getGroup(), "rule__Question__Group__0");
 					put(grammarAccess.getOptionAccess().getGroup(), "rule__Option__Group__0");
 					put(grammarAccess.getOptionAccess().getGroup_0(), "rule__Option__Group_0__0");
-					put(grammarAccess.getCheckBoxAccess().getGroup(), "rule__CheckBox__Group__0");
-					put(grammarAccess.getRadioButtonAccess().getGroup(), "rule__RadioButton__Group__0");
-					put(grammarAccess.getComboBoxAccess().getGroup(), "rule__ComboBox__Group__0");
-					put(grammarAccess.getTextBoxAccess().getGroup(), "rule__TextBox__Group__0");
-					put(grammarAccess.getImageAccess().getGroup(), "rule__Image__Group__0");
 					put(grammarAccess.getPollSystemAccess().getPollsAssignment(), "rule__PollSystem__PollsAssignment");
 					put(grammarAccess.getPollAccess().getNameAssignment_1(), "rule__Poll__NameAssignment_1");
 					put(grammarAccess.getPollAccess().getQuestionsAssignment_3(), "rule__Poll__QuestionsAssignment_3");
@@ -54,16 +49,6 @@ public class UIDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getQuestionAccess().getOptionsAssignment_4(), "rule__Question__OptionsAssignment_4");
 					put(grammarAccess.getOptionAccess().getIdAssignment_0_0(), "rule__Option__IdAssignment_0_0");
 					put(grammarAccess.getOptionAccess().getTypeAssignment_1(), "rule__Option__TypeAssignment_1");
-					put(grammarAccess.getCheckBoxAccess().getCheckBoxAssignment_0(), "rule__CheckBox__CheckBoxAssignment_0");
-					put(grammarAccess.getCheckBoxAccess().getDefaultAssignment_2(), "rule__CheckBox__DefaultAssignment_2");
-					put(grammarAccess.getRadioButtonAccess().getRadioButtonAssignment_0(), "rule__RadioButton__RadioButtonAssignment_0");
-					put(grammarAccess.getRadioButtonAccess().getDefaultAssignment_2(), "rule__RadioButton__DefaultAssignment_2");
-					put(grammarAccess.getComboBoxAccess().getComboBoxAssignment_0(), "rule__ComboBox__ComboBoxAssignment_0");
-					put(grammarAccess.getComboBoxAccess().getDefaultAssignment_2(), "rule__ComboBox__DefaultAssignment_2");
-					put(grammarAccess.getTextBoxAccess().getTextBoxAssignment_0(), "rule__TextBox__TextBoxAssignment_0");
-					put(grammarAccess.getTextBoxAccess().getDefaultAssignment_2(), "rule__TextBox__DefaultAssignment_2");
-					put(grammarAccess.getImageAccess().getDefaultAssignment_2(), "rule__Image__DefaultAssignment_2");
-					put(grammarAccess.getImageAccess().getUrlAssignment_3(), "rule__Image__UrlAssignment_3");
 				}
 			};
 		}

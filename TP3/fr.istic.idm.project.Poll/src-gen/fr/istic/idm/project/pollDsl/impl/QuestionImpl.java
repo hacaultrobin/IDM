@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * <ul>
  *   <li>{@link fr.istic.idm.project.pollDsl.impl.QuestionImpl#getId <em>Id</em>}</li>
- *   <li>{@link fr.istic.idm.project.pollDsl.impl.QuestionImpl#getText <em>Text</em>}</li>
+ *   <li>{@link fr.istic.idm.project.pollDsl.impl.QuestionImpl#getContent <em>Content</em>}</li>
  *   <li>{@link fr.istic.idm.project.pollDsl.impl.QuestionImpl#getOptions <em>Options</em>}</li>
  * </ul>
  * </p>
@@ -60,24 +60,24 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
   protected String id = ID_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getText() <em>Text</em>}' attribute.
+   * The default value of the '{@link #getContent() <em>Content</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getText()
+   * @see #getContent()
    * @generated
    * @ordered
    */
-  protected static final String TEXT_EDEFAULT = null;
+  protected static final String CONTENT_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getText() <em>Text</em>}' attribute.
+   * The cached value of the '{@link #getContent() <em>Content</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getText()
+   * @see #getContent()
    * @generated
    * @ordered
    */
-  protected String text = TEXT_EDEFAULT;
+  protected String content = CONTENT_EDEFAULT;
 
   /**
    * The cached value of the '{@link #getOptions() <em>Options</em>}' containment reference list.
@@ -138,9 +138,9 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getText()
+  public String getContent()
   {
-    return text;
+    return content;
   }
 
   /**
@@ -148,12 +148,12 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setText(String newText)
+  public void setContent(String newContent)
   {
-    String oldText = text;
-    text = newText;
+    String oldContent = content;
+    content = newContent;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PollDslPackage.QUESTION__TEXT, oldText, text));
+      eNotify(new ENotificationImpl(this, Notification.SET, PollDslPackage.QUESTION__CONTENT, oldContent, content));
   }
 
   /**
@@ -198,8 +198,8 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
     {
       case PollDslPackage.QUESTION__ID:
         return getId();
-      case PollDslPackage.QUESTION__TEXT:
-        return getText();
+      case PollDslPackage.QUESTION__CONTENT:
+        return getContent();
       case PollDslPackage.QUESTION__OPTIONS:
         return getOptions();
     }
@@ -220,8 +220,8 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
       case PollDslPackage.QUESTION__ID:
         setId((String)newValue);
         return;
-      case PollDslPackage.QUESTION__TEXT:
-        setText((String)newValue);
+      case PollDslPackage.QUESTION__CONTENT:
+        setContent((String)newValue);
         return;
       case PollDslPackage.QUESTION__OPTIONS:
         getOptions().clear();
@@ -244,8 +244,8 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
       case PollDslPackage.QUESTION__ID:
         setId(ID_EDEFAULT);
         return;
-      case PollDslPackage.QUESTION__TEXT:
-        setText(TEXT_EDEFAULT);
+      case PollDslPackage.QUESTION__CONTENT:
+        setContent(CONTENT_EDEFAULT);
         return;
       case PollDslPackage.QUESTION__OPTIONS:
         getOptions().clear();
@@ -266,8 +266,8 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
     {
       case PollDslPackage.QUESTION__ID:
         return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-      case PollDslPackage.QUESTION__TEXT:
-        return TEXT_EDEFAULT == null ? text != null : !TEXT_EDEFAULT.equals(text);
+      case PollDslPackage.QUESTION__CONTENT:
+        return CONTENT_EDEFAULT == null ? content != null : !CONTENT_EDEFAULT.equals(content);
       case PollDslPackage.QUESTION__OPTIONS:
         return options != null && !options.isEmpty();
     }
@@ -287,8 +287,8 @@ public class QuestionImpl extends MinimalEObjectImpl.Container implements Questi
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (id: ");
     result.append(id);
-    result.append(", text: ");
-    result.append(text);
+    result.append(", content: ");
+    result.append(content);
     result.append(')');
     return result.toString();
   }

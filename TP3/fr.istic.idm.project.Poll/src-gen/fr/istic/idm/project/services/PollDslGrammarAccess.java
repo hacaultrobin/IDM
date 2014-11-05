@@ -81,18 +81,18 @@ public class PollDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cIdAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cIdIDTerminalRuleCall_1_0 = (RuleCall)cIdAssignment_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Assignment cTextAssignment_3 = (Assignment)cGroup.eContents().get(3);
-		private final RuleCall cTextSTRINGTerminalRuleCall_3_0 = (RuleCall)cTextAssignment_3.eContents().get(0);
+		private final Assignment cContentAssignment_3 = (Assignment)cGroup.eContents().get(3);
+		private final RuleCall cContentSTRINGTerminalRuleCall_3_0 = (RuleCall)cContentAssignment_3.eContents().get(0);
 		private final Keyword cOptionsKeyword_4 = (Keyword)cGroup.eContents().get(4);
 		private final Assignment cOptionsAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final RuleCall cOptionsOptionParserRuleCall_5_0 = (RuleCall)cOptionsAssignment_5.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
 		//Question:
-		//	"Question" id=ID? "{" text=STRING "options" options+=Option+ "}";
+		//	"Question" id=ID? "{" content=STRING "options" options+=Option+ "}";
 		public ParserRule getRule() { return rule; }
 
-		//"Question" id=ID? "{" text=STRING "options" options+=Option+ "}"
+		//"Question" id=ID? "{" content=STRING "options" options+=Option+ "}"
 		public Group getGroup() { return cGroup; }
 
 		//"Question"
@@ -107,11 +107,11 @@ public class PollDslGrammarAccess extends AbstractGrammarElementFinder {
 		//"{"
 		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 
-		//text=STRING
-		public Assignment getTextAssignment_3() { return cTextAssignment_3; }
+		//content=STRING
+		public Assignment getContentAssignment_3() { return cContentAssignment_3; }
 
 		//STRING
-		public RuleCall getTextSTRINGTerminalRuleCall_3_0() { return cTextSTRINGTerminalRuleCall_3_0; }
+		public RuleCall getContentSTRINGTerminalRuleCall_3_0() { return cContentSTRINGTerminalRuleCall_3_0; }
 
 		//"options"
 		public Keyword getOptionsKeyword_4() { return cOptionsKeyword_4; }
@@ -133,14 +133,14 @@ public class PollDslGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cIdAssignment_0_0 = (Assignment)cGroup_0.eContents().get(0);
 		private final RuleCall cIdIDTerminalRuleCall_0_0_0 = (RuleCall)cIdAssignment_0_0.eContents().get(0);
 		private final Keyword cHyphenMinusGreaterThanSignKeyword_0_1 = (Keyword)cGroup_0.eContents().get(1);
-		private final Assignment cTextAssignment_1 = (Assignment)cGroup.eContents().get(1);
-		private final RuleCall cTextSTRINGTerminalRuleCall_1_0 = (RuleCall)cTextAssignment_1.eContents().get(0);
+		private final Assignment cContentAssignment_1 = (Assignment)cGroup.eContents().get(1);
+		private final RuleCall cContentSTRINGTerminalRuleCall_1_0 = (RuleCall)cContentAssignment_1.eContents().get(0);
 		
 		//Option:
-		//	(id=ID "->")? text=STRING;
+		//	(id=ID "->")? content=STRING;
 		public ParserRule getRule() { return rule; }
 
-		//(id=ID "->")? text=STRING
+		//(id=ID "->")? content=STRING
 		public Group getGroup() { return cGroup; }
 
 		//(id=ID "->")?
@@ -155,11 +155,11 @@ public class PollDslGrammarAccess extends AbstractGrammarElementFinder {
 		//"->"
 		public Keyword getHyphenMinusGreaterThanSignKeyword_0_1() { return cHyphenMinusGreaterThanSignKeyword_0_1; }
 
-		//text=STRING
-		public Assignment getTextAssignment_1() { return cTextAssignment_1; }
+		//content=STRING
+		public Assignment getContentAssignment_1() { return cContentAssignment_1; }
 
 		//STRING
-		public RuleCall getTextSTRINGTerminalRuleCall_1_0() { return cTextSTRINGTerminalRuleCall_1_0; }
+		public RuleCall getContentSTRINGTerminalRuleCall_1_0() { return cContentSTRINGTerminalRuleCall_1_0; }
 	}
 	
 	
@@ -231,7 +231,7 @@ public class PollDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Question:
-	//	"Question" id=ID? "{" text=STRING "options" options+=Option+ "}";
+	//	"Question" id=ID? "{" content=STRING "options" options+=Option+ "}";
 	public QuestionElements getQuestionAccess() {
 		return pQuestion;
 	}
@@ -241,7 +241,7 @@ public class PollDslGrammarAccess extends AbstractGrammarElementFinder {
 	}
 
 	//Option:
-	//	(id=ID "->")? text=STRING;
+	//	(id=ID "->")? content=STRING;
 	public OptionElements getOptionAccess() {
 		return pOption;
 	}

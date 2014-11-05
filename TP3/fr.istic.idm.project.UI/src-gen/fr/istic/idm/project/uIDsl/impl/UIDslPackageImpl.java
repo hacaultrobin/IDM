@@ -2,21 +2,17 @@
  */
 package fr.istic.idm.project.uIDsl.impl;
 
-import fr.istic.idm.project.uIDsl.CheckBox;
-import fr.istic.idm.project.uIDsl.ComboBox;
-import fr.istic.idm.project.uIDsl.Image;
 import fr.istic.idm.project.uIDsl.Option;
 import fr.istic.idm.project.uIDsl.Poll;
 import fr.istic.idm.project.uIDsl.PollSystem;
 import fr.istic.idm.project.uIDsl.Question;
-import fr.istic.idm.project.uIDsl.RadioButton;
-import fr.istic.idm.project.uIDsl.TextBox;
 import fr.istic.idm.project.uIDsl.Type;
 import fr.istic.idm.project.uIDsl.UIDslFactory;
 import fr.istic.idm.project.uIDsl.UIDslPackage;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -63,42 +59,7 @@ public class UIDslPackageImpl extends EPackageImpl implements UIDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  private EClass typeEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass checkBoxEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass radioButtonEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass comboBoxEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass textBoxEClass = null;
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  private EClass imageEClass = null;
+  private EEnum typeEEnum = null;
 
   /**
    * Creates an instance of the model <b>Package</b>, registered with
@@ -268,9 +229,9 @@ public class UIDslPackageImpl extends EPackageImpl implements UIDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getOption_Type()
+  public EAttribute getOption_Type()
   {
-    return (EReference)optionEClass.getEStructuralFeatures().get(1);
+    return (EAttribute)optionEClass.getEStructuralFeatures().get(1);
   }
 
   /**
@@ -278,119 +239,9 @@ public class UIDslPackageImpl extends EPackageImpl implements UIDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EClass getType()
+  public EEnum getType()
   {
-    return typeEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getType_Default()
-  {
-    return (EAttribute)typeEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getCheckBox()
-  {
-    return checkBoxEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getCheckBox_CheckBox()
-  {
-    return (EAttribute)checkBoxEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getRadioButton()
-  {
-    return radioButtonEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getRadioButton_RadioButton()
-  {
-    return (EAttribute)radioButtonEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getComboBox()
-  {
-    return comboBoxEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getComboBox_ComboBox()
-  {
-    return (EAttribute)comboBoxEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getTextBox()
-  {
-    return textBoxEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getTextBox_TextBox()
-  {
-    return (EAttribute)textBoxEClass.getEStructuralFeatures().get(0);
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EClass getImage()
-  {
-    return imageEClass;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public EAttribute getImage_Url()
-  {
-    return (EAttribute)imageEClass.getEStructuralFeatures().get(0);
+    return typeEEnum;
   }
 
   /**
@@ -436,25 +287,10 @@ public class UIDslPackageImpl extends EPackageImpl implements UIDslPackage
 
     optionEClass = createEClass(OPTION);
     createEAttribute(optionEClass, OPTION__ID);
-    createEReference(optionEClass, OPTION__TYPE);
+    createEAttribute(optionEClass, OPTION__TYPE);
 
-    typeEClass = createEClass(TYPE);
-    createEAttribute(typeEClass, TYPE__DEFAULT);
-
-    checkBoxEClass = createEClass(CHECK_BOX);
-    createEAttribute(checkBoxEClass, CHECK_BOX__CHECK_BOX);
-
-    radioButtonEClass = createEClass(RADIO_BUTTON);
-    createEAttribute(radioButtonEClass, RADIO_BUTTON__RADIO_BUTTON);
-
-    comboBoxEClass = createEClass(COMBO_BOX);
-    createEAttribute(comboBoxEClass, COMBO_BOX__COMBO_BOX);
-
-    textBoxEClass = createEClass(TEXT_BOX);
-    createEAttribute(textBoxEClass, TEXT_BOX__TEXT_BOX);
-
-    imageEClass = createEClass(IMAGE);
-    createEAttribute(imageEClass, IMAGE__URL);
+    // Create enums
+    typeEEnum = createEEnum(TYPE);
   }
 
   /**
@@ -486,11 +322,6 @@ public class UIDslPackageImpl extends EPackageImpl implements UIDslPackage
     // Set bounds for type parameters
 
     // Add supertypes to classes
-    checkBoxEClass.getESuperTypes().add(this.getType());
-    radioButtonEClass.getESuperTypes().add(this.getType());
-    comboBoxEClass.getESuperTypes().add(this.getType());
-    textBoxEClass.getESuperTypes().add(this.getType());
-    imageEClass.getESuperTypes().add(this.getType());
 
     // Initialize classes and features; add operations and parameters
     initEClass(pollSystemEClass, PollSystem.class, "PollSystem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -506,25 +337,15 @@ public class UIDslPackageImpl extends EPackageImpl implements UIDslPackage
 
     initEClass(optionEClass, Option.class, "Option", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getOption_Id(), ecorePackage.getEString(), "id", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getOption_Type(), this.getType(), null, "type", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getOption_Type(), this.getType(), "type", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-    initEClass(typeEClass, Type.class, "Type", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getType_Default(), ecorePackage.getEString(), "default", null, 0, 1, Type.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(checkBoxEClass, CheckBox.class, "CheckBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getCheckBox_CheckBox(), ecorePackage.getEString(), "checkBox", null, 0, 1, CheckBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(radioButtonEClass, RadioButton.class, "RadioButton", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getRadioButton_RadioButton(), ecorePackage.getEString(), "radioButton", null, 0, 1, RadioButton.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(comboBoxEClass, ComboBox.class, "ComboBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getComboBox_ComboBox(), ecorePackage.getEString(), "comboBox", null, 0, 1, ComboBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(textBoxEClass, TextBox.class, "TextBox", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getTextBox_TextBox(), ecorePackage.getEString(), "textBox", null, 0, 1, TextBox.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-    initEClass(imageEClass, Image.class, "Image", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEAttribute(getImage_Url(), ecorePackage.getEString(), "url", null, 0, 1, Image.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    // Initialize enums and add enum literals
+    initEEnum(typeEEnum, Type.class, "Type");
+    addEEnumLiteral(typeEEnum, Type.CHECK_BOX);
+    addEEnumLiteral(typeEEnum, Type.RADIO_BUTTON);
+    addEEnumLiteral(typeEEnum, Type.COMBO_BOX);
+    addEEnumLiteral(typeEEnum, Type.TEXT_BOX);
+    addEEnumLiteral(typeEEnum, Type.IMAGE);
 
     // Create resource
     createResource(eNS_URI);

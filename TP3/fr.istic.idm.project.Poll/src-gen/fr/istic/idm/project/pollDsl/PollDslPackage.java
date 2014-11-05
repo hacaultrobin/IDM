@@ -141,13 +141,13 @@ public interface PollDslPackage extends EPackage
   int QUESTION__ID = 0;
 
   /**
-   * The feature id for the '<em><b>Text</b></em>' attribute.
+   * The feature id for the '<em><b>Content</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int QUESTION__TEXT = 1;
+  int QUESTION__CONTENT = 1;
 
   /**
    * The feature id for the '<em><b>Options</b></em>' containment reference list.
@@ -187,13 +187,13 @@ public interface PollDslPackage extends EPackage
   int OPTION__ID = 0;
 
   /**
-   * The feature id for the '<em><b>Text</b></em>' attribute.
+   * The feature id for the '<em><b>Content</b></em>' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int OPTION__TEXT = 1;
+  int OPTION__CONTENT = 1;
 
   /**
    * The number of structural features of the '<em>Option</em>' class.
@@ -280,15 +280,15 @@ public interface PollDslPackage extends EPackage
   EAttribute getQuestion_Id();
 
   /**
-   * Returns the meta object for the attribute '{@link fr.istic.idm.project.pollDsl.Question#getText <em>Text</em>}'.
+   * Returns the meta object for the attribute '{@link fr.istic.idm.project.pollDsl.Question#getContent <em>Content</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Text</em>'.
-   * @see fr.istic.idm.project.pollDsl.Question#getText()
+   * @return the meta object for the attribute '<em>Content</em>'.
+   * @see fr.istic.idm.project.pollDsl.Question#getContent()
    * @see #getQuestion()
    * @generated
    */
-  EAttribute getQuestion_Text();
+  EAttribute getQuestion_Content();
 
   /**
    * Returns the meta object for the containment reference list '{@link fr.istic.idm.project.pollDsl.Question#getOptions <em>Options</em>}'.
@@ -323,15 +323,15 @@ public interface PollDslPackage extends EPackage
   EAttribute getOption_Id();
 
   /**
-   * Returns the meta object for the attribute '{@link fr.istic.idm.project.pollDsl.Option#getText <em>Text</em>}'.
+   * Returns the meta object for the attribute '{@link fr.istic.idm.project.pollDsl.Option#getContent <em>Content</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the attribute '<em>Text</em>'.
-   * @see fr.istic.idm.project.pollDsl.Option#getText()
+   * @return the meta object for the attribute '<em>Content</em>'.
+   * @see fr.istic.idm.project.pollDsl.Option#getContent()
    * @see #getOption()
    * @generated
    */
-  EAttribute getOption_Text();
+  EAttribute getOption_Content();
 
   /**
    * Returns the factory that creates the instances of the model.
@@ -419,12 +419,12 @@ public interface PollDslPackage extends EPackage
     EAttribute QUESTION__ID = eINSTANCE.getQuestion_Id();
 
     /**
-     * The meta object literal for the '<em><b>Text</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Content</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute QUESTION__TEXT = eINSTANCE.getQuestion_Text();
+    EAttribute QUESTION__CONTENT = eINSTANCE.getQuestion_Content();
 
     /**
      * The meta object literal for the '<em><b>Options</b></em>' containment reference list feature.
@@ -453,12 +453,12 @@ public interface PollDslPackage extends EPackage
     EAttribute OPTION__ID = eINSTANCE.getOption_Id();
 
     /**
-     * The meta object literal for the '<em><b>Text</b></em>' attribute feature.
+     * The meta object literal for the '<em><b>Content</b></em>' attribute feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EAttribute OPTION__TEXT = eINSTANCE.getOption_Text();
+    EAttribute OPTION__CONTENT = eINSTANCE.getOption_Content();
 
   }
 

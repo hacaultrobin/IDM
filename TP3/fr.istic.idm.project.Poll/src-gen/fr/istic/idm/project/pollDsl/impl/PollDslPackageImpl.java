@@ -190,7 +190,7 @@ public class PollDslPackageImpl extends EPackageImpl implements PollDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getQuestion_Text()
+  public EAttribute getQuestion_Content()
   {
     return (EAttribute)questionEClass.getEStructuralFeatures().get(1);
   }
@@ -230,7 +230,7 @@ public class PollDslPackageImpl extends EPackageImpl implements PollDslPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EAttribute getOption_Text()
+  public EAttribute getOption_Content()
   {
     return (EAttribute)optionEClass.getEStructuralFeatures().get(1);
   }
@@ -274,12 +274,12 @@ public class PollDslPackageImpl extends EPackageImpl implements PollDslPackage
 
     questionEClass = createEClass(QUESTION);
     createEAttribute(questionEClass, QUESTION__ID);
-    createEAttribute(questionEClass, QUESTION__TEXT);
+    createEAttribute(questionEClass, QUESTION__CONTENT);
     createEReference(questionEClass, QUESTION__OPTIONS);
 
     optionEClass = createEClass(OPTION);
     createEAttribute(optionEClass, OPTION__ID);
-    createEAttribute(optionEClass, OPTION__TEXT);
+    createEAttribute(optionEClass, OPTION__CONTENT);
   }
 
   /**
@@ -322,12 +322,12 @@ public class PollDslPackageImpl extends EPackageImpl implements PollDslPackage
 
     initEClass(questionEClass, Question.class, "Question", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getQuestion_Id(), ecorePackage.getEString(), "id", null, 0, 1, Question.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getQuestion_Text(), ecorePackage.getEString(), "text", null, 0, 1, Question.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getQuestion_Content(), ecorePackage.getEString(), "content", null, 0, 1, Question.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getQuestion_Options(), this.getOption(), null, "options", null, 0, -1, Question.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(optionEClass, Option.class, "Option", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getOption_Id(), ecorePackage.getEString(), "id", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEAttribute(getOption_Text(), ecorePackage.getEString(), "text", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getOption_Content(), ecorePackage.getEString(), "content", null, 0, 1, Option.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
     createResource(eNS_URI);

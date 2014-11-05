@@ -59,60 +59,6 @@ public interface UIDslFactory extends EFactory
   Option createOption();
 
   /**
-   * Returns a new object of class '<em>Type</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Type</em>'.
-   * @generated
-   */
-  Type createType();
-
-  /**
-   * Returns a new object of class '<em>Check Box</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Check Box</em>'.
-   * @generated
-   */
-  CheckBox createCheckBox();
-
-  /**
-   * Returns a new object of class '<em>Radio Button</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Radio Button</em>'.
-   * @generated
-   */
-  RadioButton createRadioButton();
-
-  /**
-   * Returns a new object of class '<em>Combo Box</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Combo Box</em>'.
-   * @generated
-   */
-  ComboBox createComboBox();
-
-  /**
-   * Returns a new object of class '<em>Text Box</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Text Box</em>'.
-   * @generated
-   */
-  TextBox createTextBox();
-
-  /**
-   * Returns a new object of class '<em>Image</em>'.
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @return a new object of class '<em>Image</em>'.
-   * @generated
-   */
-  Image createImage();
-
-  /**
    * Returns the package supported by this factory.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->

@@ -20,7 +20,7 @@ import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
  * The following features are implemented:
  * <ul>
  *   <li>{@link fr.istic.idm.project.pollDsl.impl.OptionImpl#getId <em>Id</em>}</li>
- *   <li>{@link fr.istic.idm.project.pollDsl.impl.OptionImpl#getText <em>Text</em>}</li>
+ *   <li>{@link fr.istic.idm.project.pollDsl.impl.OptionImpl#getContent <em>Content</em>}</li>
  * </ul>
  * </p>
  *
@@ -49,24 +49,24 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
   protected String id = ID_EDEFAULT;
 
   /**
-   * The default value of the '{@link #getText() <em>Text</em>}' attribute.
+   * The default value of the '{@link #getContent() <em>Content</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getText()
+   * @see #getContent()
    * @generated
    * @ordered
    */
-  protected static final String TEXT_EDEFAULT = null;
+  protected static final String CONTENT_EDEFAULT = null;
 
   /**
-   * The cached value of the '{@link #getText() <em>Text</em>}' attribute.
+   * The cached value of the '{@link #getContent() <em>Content</em>}' attribute.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getText()
+   * @see #getContent()
    * @generated
    * @ordered
    */
-  protected String text = TEXT_EDEFAULT;
+  protected String content = CONTENT_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -117,9 +117,9 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * <!-- end-user-doc -->
    * @generated
    */
-  public String getText()
+  public String getContent()
   {
-    return text;
+    return content;
   }
 
   /**
@@ -127,12 +127,12 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setText(String newText)
+  public void setContent(String newContent)
   {
-    String oldText = text;
-    text = newText;
+    String oldContent = content;
+    content = newContent;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, PollDslPackage.OPTION__TEXT, oldText, text));
+      eNotify(new ENotificationImpl(this, Notification.SET, PollDslPackage.OPTION__CONTENT, oldContent, content));
   }
 
   /**
@@ -147,8 +147,8 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
     {
       case PollDslPackage.OPTION__ID:
         return getId();
-      case PollDslPackage.OPTION__TEXT:
-        return getText();
+      case PollDslPackage.OPTION__CONTENT:
+        return getContent();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -166,8 +166,8 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
       case PollDslPackage.OPTION__ID:
         setId((String)newValue);
         return;
-      case PollDslPackage.OPTION__TEXT:
-        setText((String)newValue);
+      case PollDslPackage.OPTION__CONTENT:
+        setContent((String)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -186,8 +186,8 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
       case PollDslPackage.OPTION__ID:
         setId(ID_EDEFAULT);
         return;
-      case PollDslPackage.OPTION__TEXT:
-        setText(TEXT_EDEFAULT);
+      case PollDslPackage.OPTION__CONTENT:
+        setContent(CONTENT_EDEFAULT);
         return;
     }
     super.eUnset(featureID);
@@ -205,8 +205,8 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
     {
       case PollDslPackage.OPTION__ID:
         return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-      case PollDslPackage.OPTION__TEXT:
-        return TEXT_EDEFAULT == null ? text != null : !TEXT_EDEFAULT.equals(text);
+      case PollDslPackage.OPTION__CONTENT:
+        return CONTENT_EDEFAULT == null ? content != null : !CONTENT_EDEFAULT.equals(content);
     }
     return super.eIsSet(featureID);
   }
@@ -224,8 +224,8 @@ public class OptionImpl extends MinimalEObjectImpl.Container implements Option
     StringBuffer result = new StringBuffer(super.toString());
     result.append(" (id: ");
     result.append(id);
-    result.append(", text: ");
-    result.append(text);
+    result.append(", content: ");
+    result.append(content);
     result.append(')');
     return result.toString();
   }

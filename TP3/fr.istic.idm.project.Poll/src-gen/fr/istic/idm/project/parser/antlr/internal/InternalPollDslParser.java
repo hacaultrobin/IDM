@@ -409,14 +409,14 @@ public class InternalPollDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleQuestion"
-    // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:184:1: ruleQuestion returns [EObject current=null] : (otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_text_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}' ) ;
+    // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:184:1: ruleQuestion returns [EObject current=null] : (otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_content_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}' ) ;
     public final EObject ruleQuestion() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token lv_id_1_0=null;
         Token otherlv_2=null;
-        Token lv_text_3_0=null;
+        Token lv_content_3_0=null;
         Token otherlv_4=null;
         Token otherlv_6=null;
         EObject lv_options_5_0 = null;
@@ -425,11 +425,11 @@ public class InternalPollDslParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:187:28: ( (otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_text_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}' ) )
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:188:1: (otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_text_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}' )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:187:28: ( (otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_content_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}' ) )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:188:1: (otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_content_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}' )
             {
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:188:1: (otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_text_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}' )
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:188:3: otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_text_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}'
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:188:1: (otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_content_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}' )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:188:3: otherlv_0= 'Question' ( (lv_id_1_0= RULE_ID ) )? otherlv_2= '{' ( (lv_content_3_0= RULE_STRING ) ) otherlv_4= 'options' ( (lv_options_5_0= ruleOption ) )+ otherlv_6= '}'
             {
             otherlv_0=(Token)match(input,14,FOLLOW_14_in_ruleQuestion365); 
 
@@ -476,15 +476,15 @@ public class InternalPollDslParser extends AbstractInternalAntlrParser {
 
                 	newLeafNode(otherlv_2, grammarAccess.getQuestionAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:214:1: ( (lv_text_3_0= RULE_STRING ) )
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:215:1: (lv_text_3_0= RULE_STRING )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:214:1: ( (lv_content_3_0= RULE_STRING ) )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:215:1: (lv_content_3_0= RULE_STRING )
             {
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:215:1: (lv_text_3_0= RULE_STRING )
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:216:3: lv_text_3_0= RULE_STRING
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:215:1: (lv_content_3_0= RULE_STRING )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:216:3: lv_content_3_0= RULE_STRING
             {
-            lv_text_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleQuestion417); 
+            lv_content_3_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleQuestion417); 
 
-            			newLeafNode(lv_text_3_0, grammarAccess.getQuestionAccess().getTextSTRINGTerminalRuleCall_3_0()); 
+            			newLeafNode(lv_content_3_0, grammarAccess.getQuestionAccess().getContentSTRINGTerminalRuleCall_3_0()); 
             		
 
             	        if (current==null) {
@@ -492,8 +492,8 @@ public class InternalPollDslParser extends AbstractInternalAntlrParser {
             	        }
                    		setWithLastConsumed(
                    			current, 
-                   			"text",
-                    		lv_text_3_0, 
+                   			"content",
+                    		lv_content_3_0, 
                     		"STRING");
             	    
 
@@ -621,22 +621,22 @@ public class InternalPollDslParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleOption"
-    // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:275:1: ruleOption returns [EObject current=null] : ( ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_text_2_0= RULE_STRING ) ) ) ;
+    // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:275:1: ruleOption returns [EObject current=null] : ( ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_content_2_0= RULE_STRING ) ) ) ;
     public final EObject ruleOption() throws RecognitionException {
         EObject current = null;
 
         Token lv_id_0_0=null;
         Token otherlv_1=null;
-        Token lv_text_2_0=null;
+        Token lv_content_2_0=null;
 
          enterRule(); 
             
         try {
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:278:28: ( ( ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_text_2_0= RULE_STRING ) ) ) )
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:279:1: ( ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_text_2_0= RULE_STRING ) ) )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:278:28: ( ( ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_content_2_0= RULE_STRING ) ) ) )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:279:1: ( ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_content_2_0= RULE_STRING ) ) )
             {
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:279:1: ( ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_text_2_0= RULE_STRING ) ) )
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:279:2: ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_text_2_0= RULE_STRING ) )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:279:1: ( ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_content_2_0= RULE_STRING ) ) )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:279:2: ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )? ( (lv_content_2_0= RULE_STRING ) )
             {
             // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:279:2: ( ( (lv_id_0_0= RULE_ID ) ) otherlv_1= '->' )?
             int alt6=2;
@@ -685,15 +685,15 @@ public class InternalPollDslParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:301:3: ( (lv_text_2_0= RULE_STRING ) )
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:302:1: (lv_text_2_0= RULE_STRING )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:301:3: ( (lv_content_2_0= RULE_STRING ) )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:302:1: (lv_content_2_0= RULE_STRING )
             {
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:302:1: (lv_text_2_0= RULE_STRING )
-            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:303:3: lv_text_2_0= RULE_STRING
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:302:1: (lv_content_2_0= RULE_STRING )
+            // ../fr.istic.idm.project.Poll/src-gen/fr/istic/idm/project/parser/antlr/internal/InternalPollDsl.g:303:3: lv_content_2_0= RULE_STRING
             {
-            lv_text_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleOption593); 
+            lv_content_2_0=(Token)match(input,RULE_STRING,FOLLOW_RULE_STRING_in_ruleOption593); 
 
-            			newLeafNode(lv_text_2_0, grammarAccess.getOptionAccess().getTextSTRINGTerminalRuleCall_1_0()); 
+            			newLeafNode(lv_content_2_0, grammarAccess.getOptionAccess().getContentSTRINGTerminalRuleCall_1_0()); 
             		
 
             	        if (current==null) {
@@ -701,8 +701,8 @@ public class InternalPollDslParser extends AbstractInternalAntlrParser {
             	        }
                    		setWithLastConsumed(
                    			current, 
-                   			"text",
-                    		lv_text_2_0, 
+                   			"content",
+                    		lv_content_2_0, 
                     		"STRING");
             	    
 

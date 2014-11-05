@@ -1131,31 +1131,31 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Question__Group__3__Impl"
-    // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:444:1: rule__Question__Group__3__Impl : ( ( rule__Question__TextAssignment_3 ) ) ;
+    // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:444:1: rule__Question__Group__3__Impl : ( ( rule__Question__ContentAssignment_3 ) ) ;
     public final void rule__Question__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:448:1: ( ( ( rule__Question__TextAssignment_3 ) ) )
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:449:1: ( ( rule__Question__TextAssignment_3 ) )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:448:1: ( ( ( rule__Question__ContentAssignment_3 ) ) )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:449:1: ( ( rule__Question__ContentAssignment_3 ) )
             {
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:449:1: ( ( rule__Question__TextAssignment_3 ) )
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:450:1: ( rule__Question__TextAssignment_3 )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:449:1: ( ( rule__Question__ContentAssignment_3 ) )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:450:1: ( rule__Question__ContentAssignment_3 )
             {
-             before(grammarAccess.getQuestionAccess().getTextAssignment_3()); 
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:451:1: ( rule__Question__TextAssignment_3 )
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:451:2: rule__Question__TextAssignment_3
+             before(grammarAccess.getQuestionAccess().getContentAssignment_3()); 
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:451:1: ( rule__Question__ContentAssignment_3 )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:451:2: rule__Question__ContentAssignment_3
             {
-            pushFollow(FOLLOW_rule__Question__TextAssignment_3_in_rule__Question__Group__3__Impl855);
-            rule__Question__TextAssignment_3();
+            pushFollow(FOLLOW_rule__Question__ContentAssignment_3_in_rule__Question__Group__3__Impl855);
+            rule__Question__ContentAssignment_3();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getQuestionAccess().getTextAssignment_3()); 
+             after(grammarAccess.getQuestionAccess().getContentAssignment_3()); 
 
             }
 
@@ -1580,31 +1580,31 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
 
 
     // $ANTLR start "rule__Option__Group__1__Impl"
-    // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:612:1: rule__Option__Group__1__Impl : ( ( rule__Option__TextAssignment_1 ) ) ;
+    // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:612:1: rule__Option__Group__1__Impl : ( ( rule__Option__ContentAssignment_1 ) ) ;
     public final void rule__Option__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
         try {
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:616:1: ( ( ( rule__Option__TextAssignment_1 ) ) )
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:617:1: ( ( rule__Option__TextAssignment_1 ) )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:616:1: ( ( ( rule__Option__ContentAssignment_1 ) ) )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:617:1: ( ( rule__Option__ContentAssignment_1 ) )
             {
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:617:1: ( ( rule__Option__TextAssignment_1 ) )
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:618:1: ( rule__Option__TextAssignment_1 )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:617:1: ( ( rule__Option__ContentAssignment_1 ) )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:618:1: ( rule__Option__ContentAssignment_1 )
             {
-             before(grammarAccess.getOptionAccess().getTextAssignment_1()); 
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:619:1: ( rule__Option__TextAssignment_1 )
-            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:619:2: rule__Option__TextAssignment_1
+             before(grammarAccess.getOptionAccess().getContentAssignment_1()); 
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:619:1: ( rule__Option__ContentAssignment_1 )
+            // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:619:2: rule__Option__ContentAssignment_1
             {
-            pushFollow(FOLLOW_rule__Option__TextAssignment_1_in_rule__Option__Group__1__Impl1185);
-            rule__Option__TextAssignment_1();
+            pushFollow(FOLLOW_rule__Option__ContentAssignment_1_in_rule__Option__Group__1__Impl1185);
+            rule__Option__ContentAssignment_1();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getOptionAccess().getTextAssignment_1()); 
+             after(grammarAccess.getOptionAccess().getContentAssignment_1()); 
 
             }
 
@@ -1937,9 +1937,9 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Question__IdAssignment_1"
 
 
-    // $ANTLR start "rule__Question__TextAssignment_3"
-    // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:757:1: rule__Question__TextAssignment_3 : ( RULE_STRING ) ;
-    public final void rule__Question__TextAssignment_3() throws RecognitionException {
+    // $ANTLR start "rule__Question__ContentAssignment_3"
+    // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:757:1: rule__Question__ContentAssignment_3 : ( RULE_STRING ) ;
+    public final void rule__Question__ContentAssignment_3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -1950,9 +1950,9 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:762:1: ( RULE_STRING )
             // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:763:1: RULE_STRING
             {
-             before(grammarAccess.getQuestionAccess().getTextSTRINGTerminalRuleCall_3_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Question__TextAssignment_31471); 
-             after(grammarAccess.getQuestionAccess().getTextSTRINGTerminalRuleCall_3_0()); 
+             before(grammarAccess.getQuestionAccess().getContentSTRINGTerminalRuleCall_3_0()); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Question__ContentAssignment_31471); 
+             after(grammarAccess.getQuestionAccess().getContentSTRINGTerminalRuleCall_3_0()); 
 
             }
 
@@ -1971,7 +1971,7 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Question__TextAssignment_3"
+    // $ANTLR end "rule__Question__ContentAssignment_3"
 
 
     // $ANTLR start "rule__Question__OptionsAssignment_5"
@@ -2052,9 +2052,9 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
     // $ANTLR end "rule__Option__IdAssignment_0_0"
 
 
-    // $ANTLR start "rule__Option__TextAssignment_1"
-    // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:802:1: rule__Option__TextAssignment_1 : ( RULE_STRING ) ;
-    public final void rule__Option__TextAssignment_1() throws RecognitionException {
+    // $ANTLR start "rule__Option__ContentAssignment_1"
+    // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:802:1: rule__Option__ContentAssignment_1 : ( RULE_STRING ) ;
+    public final void rule__Option__ContentAssignment_1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
             
@@ -2065,9 +2065,9 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
             // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:807:1: ( RULE_STRING )
             // ../fr.istic.idm.project.Poll.ui/src-gen/fr/istic/idm/project/ui/contentassist/antlr/internal/InternalPollDsl.g:808:1: RULE_STRING
             {
-             before(grammarAccess.getOptionAccess().getTextSTRINGTerminalRuleCall_1_0()); 
-            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Option__TextAssignment_11564); 
-             after(grammarAccess.getOptionAccess().getTextSTRINGTerminalRuleCall_1_0()); 
+             before(grammarAccess.getOptionAccess().getContentSTRINGTerminalRuleCall_1_0()); 
+            match(input,RULE_STRING,FOLLOW_RULE_STRING_in_rule__Option__ContentAssignment_11564); 
+             after(grammarAccess.getOptionAccess().getContentSTRINGTerminalRuleCall_1_0()); 
 
             }
 
@@ -2086,7 +2086,7 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
         }
         return ;
     }
-    // $ANTLR end "rule__Option__TextAssignment_1"
+    // $ANTLR end "rule__Option__ContentAssignment_1"
 
     // Delegated rules
 
@@ -2131,7 +2131,7 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_12_in_rule__Question__Group__2__Impl794 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Question__Group__3__Impl_in_rule__Question__Group__3825 = new BitSet(new long[]{0x0000000000008000L});
     public static final BitSet FOLLOW_rule__Question__Group__4_in_rule__Question__Group__3828 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Question__TextAssignment_3_in_rule__Question__Group__3__Impl855 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Question__ContentAssignment_3_in_rule__Question__Group__3__Impl855 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Question__Group__4__Impl_in_rule__Question__Group__4885 = new BitSet(new long[]{0x0000000000000030L});
     public static final BitSet FOLLOW_rule__Question__Group__5_in_rule__Question__Group__4888 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_15_in_rule__Question__Group__4__Impl916 = new BitSet(new long[]{0x0000000000000002L});
@@ -2145,7 +2145,7 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_rule__Option__Group__1_in_rule__Option__Group__01100 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Option__Group_0__0_in_rule__Option__Group__0__Impl1127 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Option__Group__1__Impl_in_rule__Option__Group__11158 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rule__Option__TextAssignment_1_in_rule__Option__Group__1__Impl1185 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rule__Option__ContentAssignment_1_in_rule__Option__Group__1__Impl1185 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Option__Group_0__0__Impl_in_rule__Option__Group_0__01219 = new BitSet(new long[]{0x0000000000010000L});
     public static final BitSet FOLLOW_rule__Option__Group_0__1_in_rule__Option__Group_0__01222 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_rule__Option__IdAssignment_0_0_in_rule__Option__Group_0__0__Impl1249 = new BitSet(new long[]{0x0000000000000002L});
@@ -2155,9 +2155,9 @@ public class InternalPollDslParser extends AbstractInternalContentAssistParser {
     public static final BitSet FOLLOW_RULE_ID_in_rule__Poll__NameAssignment_11378 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleQuestion_in_rule__Poll__QuestionsAssignment_31409 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Question__IdAssignment_11440 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Question__TextAssignment_31471 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Question__ContentAssignment_31471 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_ruleOption_in_rule__Question__OptionsAssignment_51502 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_RULE_ID_in_rule__Option__IdAssignment_0_01533 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_STRING_in_rule__Option__TextAssignment_11564 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_STRING_in_rule__Option__ContentAssignment_11564 = new BitSet(new long[]{0x0000000000000002L});
 
 }

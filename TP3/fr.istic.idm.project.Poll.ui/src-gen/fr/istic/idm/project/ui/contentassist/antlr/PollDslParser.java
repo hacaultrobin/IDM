@@ -45,10 +45,10 @@ public class PollDslParser extends AbstractContentAssistParser {
 					put(grammarAccess.getPollAccess().getNameAssignment_1(), "rule__Poll__NameAssignment_1");
 					put(grammarAccess.getPollAccess().getQuestionsAssignment_3(), "rule__Poll__QuestionsAssignment_3");
 					put(grammarAccess.getQuestionAccess().getIdAssignment_1(), "rule__Question__IdAssignment_1");
-					put(grammarAccess.getQuestionAccess().getTextAssignment_3(), "rule__Question__TextAssignment_3");
+					put(grammarAccess.getQuestionAccess().getContentAssignment_3(), "rule__Question__ContentAssignment_3");
 					put(grammarAccess.getQuestionAccess().getOptionsAssignment_5(), "rule__Question__OptionsAssignment_5");
 					put(grammarAccess.getOptionAccess().getIdAssignment_0_0(), "rule__Option__IdAssignment_0_0");
-					put(grammarAccess.getOptionAccess().getTextAssignment_1(), "rule__Option__TextAssignment_1");
+					put(grammarAccess.getOptionAccess().getContentAssignment_1(), "rule__Option__ContentAssignment_1");
 				}
 			};
 		}

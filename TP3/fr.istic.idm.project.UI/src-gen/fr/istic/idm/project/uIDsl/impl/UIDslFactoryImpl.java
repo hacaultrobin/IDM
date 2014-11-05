@@ -5,6 +5,7 @@ package fr.istic.idm.project.uIDsl.impl;
 import fr.istic.idm.project.uIDsl.*;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -68,14 +69,42 @@ public class UIDslFactoryImpl extends EFactoryImpl implements UIDslFactory
       case UIDslPackage.POLL: return createPoll();
       case UIDslPackage.QUESTION: return createQuestion();
       case UIDslPackage.OPTION: return createOption();
-      case UIDslPackage.TYPE: return createType();
-      case UIDslPackage.CHECK_BOX: return createCheckBox();
-      case UIDslPackage.RADIO_BUTTON: return createRadioButton();
-      case UIDslPackage.COMBO_BOX: return createComboBox();
-      case UIDslPackage.TEXT_BOX: return createTextBox();
-      case UIDslPackage.IMAGE: return createImage();
       default:
         throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+    }
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public Object createFromString(EDataType eDataType, String initialValue)
+  {
+    switch (eDataType.getClassifierID())
+    {
+      case UIDslPackage.TYPE:
+        return createTypeFromString(eDataType, initialValue);
+      default:
+        throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+    }
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public String convertToString(EDataType eDataType, Object instanceValue)
+  {
+    switch (eDataType.getClassifierID())
+    {
+      case UIDslPackage.TYPE:
+        return convertTypeToString(eDataType, instanceValue);
+      default:
+        throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
     }
   }
 
@@ -128,10 +157,11 @@ public class UIDslFactoryImpl extends EFactoryImpl implements UIDslFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public Type createType()
+  public Type createTypeFromString(EDataType eDataType, String initialValue)
   {
-    TypeImpl type = new TypeImpl();
-    return type;
+    Type result = Type.get(initialValue);
+    if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+    return result;
   }
 
   /**
@@ -139,54 +169,9 @@ public class UIDslFactoryImpl extends EFactoryImpl implements UIDslFactory
    * <!-- end-user-doc -->
    * @generated
    */
-  public CheckBox createCheckBox()
+  public String convertTypeToString(EDataType eDataType, Object instanceValue)
   {
-    CheckBoxImpl checkBox = new CheckBoxImpl();
-    return checkBox;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public RadioButton createRadioButton()
-  {
-    RadioButtonImpl radioButton = new RadioButtonImpl();
-    return radioButton;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public ComboBox createComboBox()
-  {
-    ComboBoxImpl comboBox = new ComboBoxImpl();
-    return comboBox;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public TextBox createTextBox()
-  {
-    TextBoxImpl textBox = new TextBoxImpl();
-    return textBox;
-  }
-
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public Image createImage()
-  {
-    ImageImpl image = new ImageImpl();
-    return image;
+    return instanceValue == null ? null : instanceValue.toString();
   }
 
   /**

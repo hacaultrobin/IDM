@@ -18,26 +18,26 @@ Option:
 	(id=ID '->')? type=Type
 ;
 
-Type:
-	CheckBox | RadioButton | ComboBox | TextBox | Image
+enum Type:
+	CheckBox = '0' | RadioButton = '1' | ComboBox = '2' | TextBox = '3' | Image = '4'
 ;
 
-CheckBox:
-	checkBox = 'Checkbox' '{' default=ID? '}'
-;
-
-RadioButton:
-	radioButton = 'RadioButton' '{' default=ID? '}'
-;
-
-ComboBox:
-	comboBox = 'ComboBoxItem' '{' default=ID? '}'
-;
-
-TextBox:
-	textBox = 'TextBox' '{' default=ID? '}'
-;
-
-Image:
-	'Image' '{' default=ID? url=STRING '}'
-;
+//CheckBox:
+//	checkBox = 'Checkbox' '{' default=ID? '}'
+//;
+//
+//RadioButton:
+//	radioButton = 'RadioButton' '{' default=ID? '}'
+//;
+//
+//ComboBox:
+//	comboBox = 'ComboBoxItem' '{' default=ID? '}'
+//;
+//
+//TextBox:
+//	textBox = 'TextBox' '{' default=ID? '}'
+//;
+//
+//Image:
+//	'Image' '{' default=ID? url=STRING '}'
+//;
