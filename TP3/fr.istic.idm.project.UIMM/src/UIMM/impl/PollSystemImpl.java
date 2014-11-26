@@ -5,16 +5,14 @@ package UIMM.impl;
 import UIMM.Poll;
 import UIMM.PollSystem;
 import UIMM.UIMMPackage;
-
 import java.util.Collection;
-
+import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
-
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectResolvingEList;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +29,7 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  */
 public class PollSystemImpl extends MinimalEObjectImpl.Container implements PollSystem {
 	/**
-	 * The cached value of the '{@link #getPolls() <em>Polls</em>}' reference list.
+	 * The cached value of the '{@link #getPolls() <em>Polls</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPolls()
@@ -66,9 +64,23 @@ public class PollSystemImpl extends MinimalEObjectImpl.Container implements Poll
 	 */
 	public EList<Poll> getPolls() {
 		if (polls == null) {
-			polls = new EObjectResolvingEList<Poll>(Poll.class, this, UIMMPackage.POLL_SYSTEM__POLLS);
+			polls = new EObjectContainmentEList<Poll>(Poll.class, this, UIMMPackage.POLL_SYSTEM__POLLS);
 		}
 		return polls;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case UIMMPackage.POLL_SYSTEM__POLLS:
+				return ((InternalEList<?>)getPolls()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**

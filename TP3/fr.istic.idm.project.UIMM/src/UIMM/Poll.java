@@ -14,8 +14,8 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link UIMM.Poll#getQuestions <em>Questions</em>}</li>
  *   <li>{@link UIMM.Poll#getName <em>Name</em>}</li>
+ *   <li>{@link UIMM.Poll#getQuestions <em>Questions</em>}</li>
  * </ul>
  * </p>
  *
@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Poll extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Questions</b></em>' reference list.
+	 * Returns the value of the '<em><b>Questions</b></em>' containment reference list.
 	 * The list contents are of type {@link UIMM.Question}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -33,9 +33,9 @@ public interface Poll extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Questions</em>' reference list.
+	 * @return the value of the '<em>Questions</em>' containment reference list.
 	 * @see UIMM.UIMMPackage#getPoll_Questions()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Question> getQuestions();

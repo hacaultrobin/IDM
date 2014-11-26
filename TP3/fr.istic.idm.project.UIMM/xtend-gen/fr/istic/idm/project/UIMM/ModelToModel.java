@@ -8,11 +8,13 @@ import fr.istic.idm.project.uIDsl.Poll;
 import fr.istic.idm.project.uIDsl.PollSystem;
 import fr.istic.idm.project.uIDsl.Question;
 import fr.istic.idm.project.uIDsl.Type;
+import java.util.HashMap;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.xtext.xbase.lib.Exceptions;
 import org.eclipse.xtext.xbase.lib.InputOutput;
 
 @SuppressWarnings("all")
@@ -43,6 +45,19 @@ public class ModelToModel {
       _xblockexpression = ((fr.istic.idm.project.pollDsl.PollSystem) _get);
     }
     return _xblockexpression;
+  }
+  
+  public void save(final URI uri, final UIMM.PollSystem pollS) {
+    try {
+      ResourceSetImpl _resourceSetImpl = new ResourceSetImpl();
+      Resource res = _resourceSetImpl.createResource(uri);
+      EList<EObject> _contents = res.getContents();
+      _contents.add(pollS);
+      HashMap<Object, Object> _hashMap = new HashMap<Object, Object>();
+      res.save(_hashMap);
+    } catch (Throwable _e) {
+      throw Exceptions.sneakyThrow(_e);
+    }
   }
   
   public String mergeModel(final UIMM.PollSystem modelGlobal, final PollSystem modelUI, final fr.istic.idm.project.pollDsl.PollSystem modelPivot) {
@@ -137,8 +152,8 @@ public class ModelToModel {
   
   public void mergeOption(final UIMM.Option optionGlobal, final Option optionUI, final fr.istic.idm.project.pollDsl.Option optionPivot) {
     Type _type = optionUI.getType();
-    String _literal = _type.getLiteral();
-    UIMM.Type _get = UIMM.Type.get(_literal);
+    int _value = _type.getValue();
+    UIMM.Type _get = UIMM.Type.get(_value);
     optionGlobal.setType(_get);
     String _id = optionPivot.getId();
     optionGlobal.setId(_id);
@@ -149,10 +164,13 @@ public class ModelToModel {
   public static void main(final String[] args) {
     ModelToModel mm = new ModelToModel();
     UIMM.PollSystem modelGlobal = UIMMFactory.eINSTANCE.createPollSystem();
-    URI _createURI = URI.createURI("q1.ui");
+    URI _createURI = URI.createURI("q1.uidsl");
     PollSystem modelUI = mm.loadUI(_createURI);
     URI _createURI_1 = URI.createURI("q1.polldsl");
     fr.istic.idm.project.pollDsl.PollSystem modelPivot = mm.loadPoll(_createURI_1);
     mm.mergeModel(modelGlobal, modelUI, modelPivot);
+    URI _createURI_2 = URI.createURI("q1.xmi");
+    mm.save(_createURI_2, modelGlobal);
+    InputOutput.<String>println("done");
   }
 }

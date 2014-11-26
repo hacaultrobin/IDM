@@ -68,7 +68,7 @@ public interface UIMMPackage extends EPackage {
 	int POLL_SYSTEM = 0;
 
 	/**
-	 * The feature id for the '<em><b>Polls</b></em>' reference list.
+	 * The feature id for the '<em><b>Polls</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -105,22 +105,22 @@ public interface UIMMPackage extends EPackage {
 	int POLL = 1;
 
 	/**
-	 * The feature id for the '<em><b>Questions</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int POLL__QUESTIONS = 0;
-
-	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int POLL__NAME = 1;
+	int POLL__NAME = 0;
+
+	/**
+	 * The feature id for the '<em><b>Questions</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int POLL__QUESTIONS = 1;
 
 	/**
 	 * The number of structural features of the '<em>Poll</em>' class.
@@ -169,7 +169,7 @@ public interface UIMMPackage extends EPackage {
 	int QUESTION__CONTENT = 1;
 
 	/**
-	 * The feature id for the '<em><b>Options</b></em>' reference list.
+	 * The feature id for the '<em><b>Options</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -272,10 +272,10 @@ public interface UIMMPackage extends EPackage {
 	EClass getPollSystem();
 
 	/**
-	 * Returns the meta object for the reference list '{@link UIMM.PollSystem#getPolls <em>Polls</em>}'.
+	 * Returns the meta object for the containment reference list '{@link UIMM.PollSystem#getPolls <em>Polls</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Polls</em>'.
+	 * @return the meta object for the containment reference list '<em>Polls</em>'.
 	 * @see UIMM.PollSystem#getPolls()
 	 * @see #getPollSystem()
 	 * @generated
@@ -293,10 +293,10 @@ public interface UIMMPackage extends EPackage {
 	EClass getPoll();
 
 	/**
-	 * Returns the meta object for the reference list '{@link UIMM.Poll#getQuestions <em>Questions</em>}'.
+	 * Returns the meta object for the containment reference list '{@link UIMM.Poll#getQuestions <em>Questions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Questions</em>'.
+	 * @return the meta object for the containment reference list '<em>Questions</em>'.
 	 * @see UIMM.Poll#getQuestions()
 	 * @see #getPoll()
 	 * @generated
@@ -347,10 +347,10 @@ public interface UIMMPackage extends EPackage {
 	EAttribute getQuestion_Content();
 
 	/**
-	 * Returns the meta object for the reference list '{@link UIMM.Question#getOptions <em>Options</em>}'.
+	 * Returns the meta object for the containment reference list '{@link UIMM.Question#getOptions <em>Options</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Options</em>'.
+	 * @return the meta object for the containment reference list '<em>Options</em>'.
 	 * @see UIMM.Question#getOptions()
 	 * @see #getQuestion()
 	 * @generated
@@ -444,7 +444,7 @@ public interface UIMMPackage extends EPackage {
 		EClass POLL_SYSTEM = eINSTANCE.getPollSystem();
 
 		/**
-		 * The meta object literal for the '<em><b>Polls</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Polls</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -462,7 +462,7 @@ public interface UIMMPackage extends EPackage {
 		EClass POLL = eINSTANCE.getPoll();
 
 		/**
-		 * The meta object literal for the '<em><b>Questions</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Questions</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -504,7 +504,7 @@ public interface UIMMPackage extends EPackage {
 		EAttribute QUESTION__CONTENT = eINSTANCE.getQuestion_Content();
 
 		/**
-		 * The meta object literal for the '<em><b>Options</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Options</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

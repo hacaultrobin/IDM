@@ -4,7 +4,7 @@
     modelName="UIMM" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false"
     operationReflection="true" importOrganizing="true">
-  <foreignModel>model/UIMM.ecore</foreignModel>
+  <foreignModel>UIMM.ecore</foreignModel>
   <genPackages prefix="UIMM" disposableProviderFactory="true" ecorePackage="UIMM.ecore#/">
     <genEnums typeSafeEnumCompatible="false" ecoreEnum="UIMM.ecore#//Type">
       <genEnumLiterals ecoreEnumLiteral="UIMM.ecore#//Type/CheckBox"/>
@@ -14,16 +14,16 @@
       <genEnumLiterals ecoreEnumLiteral="UIMM.ecore#//Type/Image"/>
     </genEnums>
     <genClasses ecoreClass="UIMM.ecore#//PollSystem">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UIMM.ecore#//PollSystem/polls"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIMM.ecore#//PollSystem/polls"/>
     </genClasses>
     <genClasses ecoreClass="UIMM.ecore#//Poll">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UIMM.ecore#//Poll/questions"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIMM.ecore#//Poll/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIMM.ecore#//Poll/questions"/>
     </genClasses>
     <genClasses ecoreClass="UIMM.ecore#//Question">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIMM.ecore#//Question/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIMM.ecore#//Question/content"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference UIMM.ecore#//Question/options"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference UIMM.ecore#//Question/options"/>
     </genClasses>
     <genClasses ecoreClass="UIMM.ecore#//Option">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UIMM.ecore#//Option/id"/>

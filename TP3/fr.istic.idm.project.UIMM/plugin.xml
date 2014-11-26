@@ -11,7 +11,7 @@
       <package
             uri="fr.istic.idm.project.UI"
             class="UIMM.UIMMPackage"
-            genModel="UIMM.genmodel"/>
+            genModel="model/UIMM.genmodel"/>
    </extension>
 
 </plugin>

@@ -1,15 +1,15 @@
 Poll {
 	Question q1 {
 		options
-			RadioButton {}
-			RadioButton {}
-			TextBox {}
+			RadioButton->1
+			RadioButton->1
+			TextBox->3
 	}
 	
 	Question q2 {
 		options
-			ComboBoxItem {}
-			ComboBoxItem {}
-			ComboBoxItem {}
+			ComboBoxItem->2
+			ComboBoxItem->2
+			ComboBoxItem->2
 	}
 }

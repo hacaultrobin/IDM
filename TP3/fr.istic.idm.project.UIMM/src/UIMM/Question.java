@@ -78,7 +78,7 @@ public interface Question extends EObject {
 	void setContent(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Options</b></em>' reference list.
+	 * Returns the value of the '<em><b>Options</b></em>' containment reference list.
 	 * The list contents are of type {@link UIMM.Option}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -86,9 +86,9 @@ public interface Question extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Options</em>' reference list.
+	 * @return the value of the '<em>Options</em>' containment reference list.
 	 * @see UIMM.UIMMPackage#getQuestion_Options()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Option> getOptions();

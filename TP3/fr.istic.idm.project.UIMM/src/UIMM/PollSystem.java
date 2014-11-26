@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface PollSystem extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Polls</b></em>' reference list.
+	 * Returns the value of the '<em><b>Polls</b></em>' containment reference list.
 	 * The list contents are of type {@link UIMM.Poll}.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -32,9 +32,9 @@ public interface PollSystem extends EObject {
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Polls</em>' reference list.
+	 * @return the value of the '<em>Polls</em>' containment reference list.
 	 * @see UIMM.UIMMPackage#getPollSystem_Polls()
-	 * @model
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Poll> getPolls();

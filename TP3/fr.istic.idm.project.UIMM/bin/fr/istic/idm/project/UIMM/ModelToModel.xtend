@@ -5,20 +5,27 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl
 import fr.istic.idm.project.UIDslStandaloneSetupGenerated
 import fr.istic.idm.project.PollDslStandaloneSetupGenerated
 import UIMM.UIMMFactory
-import UIMM.impl.UIMMFactoryImpl
+import UIMM.PollSystem
+import java.util.HashMap
 
 class ModelToModel {
 	
 	def loadUI(URI uri) {
-		new UIDslStandaloneSetupGenerated().createInjectorAndDoEMFRegistration()
+		new UIDslStandaloneSetupGenerated().createInjectorAndDoEMFRegistration();
 		var res = new ResourceSetImpl().getResource(uri, true);
-		res.contents.get(0) as fr.istic.idm.project.uIDsl.PollSystem
+		res.contents.get(0) as fr.istic.idm.project.uIDsl.PollSystem;
 	}
 	
 	def loadPoll(URI uri) {
-		new PollDslStandaloneSetupGenerated().createInjectorAndDoEMFRegistration()
+		new PollDslStandaloneSetupGenerated().createInjectorAndDoEMFRegistration();
 		var res = new ResourceSetImpl().getResource(uri, true);
-		res.contents.get(0) as fr.istic.idm.project.pollDsl.PollSystem
+		res.contents.get(0) as fr.istic.idm.project.pollDsl.PollSystem;
+	}
+	
+	def save(URI uri, PollSystem pollS) {
+		var res = new ResourceSetImpl().createResource(uri); 
+		res.getContents.add(pollS);
+		res.save(new HashMap());
 	}
 	
 	
@@ -73,7 +80,7 @@ class ModelToModel {
 	}
 	
 	def mergeOption(UIMM.Option optionGlobal, fr.istic.idm.project.uIDsl.Option optionUI, fr.istic.idm.project.pollDsl.Option optionPivot) {
-		optionGlobal.type = UIMM.Type.get(optionUI.type.literal);
+		optionGlobal.type = UIMM.Type.get(optionUI.type.value);
 		optionGlobal.id = optionPivot.id;
 		optionGlobal.content = optionPivot.content;
 	}
@@ -82,11 +89,12 @@ class ModelToModel {
 		var mm = new ModelToModel();
 		
 		var modelGlobal = UIMMFactory.eINSTANCE.createPollSystem;
-		var modelUI = mm.loadUI(URI.createURI("q1.ui"));
+		var modelUI = mm.loadUI(URI.createURI("q1.uidsl"));
 		var modelPivot = mm.loadPoll(URI.createURI("q1.polldsl"));
 		
 		mm.mergeModel(modelGlobal, modelUI, modelPivot);
 		
-		// TODO: save xmi
+		mm.save(URI.createURI("q1.xmi"), modelGlobal);
+		println("done");
 	}
 }
