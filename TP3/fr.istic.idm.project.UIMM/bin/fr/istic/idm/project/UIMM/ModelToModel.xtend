@@ -7,6 +7,7 @@ import fr.istic.idm.project.PollDslStandaloneSetupGenerated
 import UIMM.UIMMFactory
 import UIMM.PollSystem
 import java.util.HashMap
+import UIMM.UIMMPackage
 
 class ModelToModel {
 	
@@ -23,7 +24,9 @@ class ModelToModel {
 	}
 	
 	def save(URI uri, PollSystem pollS) {
-		var res = new ResourceSetImpl().createResource(uri); 
+		val resourceSet = new ResourceSetImpl;
+		resourceSet.getPackageRegistry().put(UIMMPackage.eNS_URI, UIMMPackage.eINSTANCE);
+		var res = resourceSet.createResource(uri); 
 		res.getContents.add(pollS);
 		res.save(new HashMap());
 	}
@@ -81,7 +84,7 @@ class ModelToModel {
 	
 	def mergeOption(UIMM.Option optionGlobal, fr.istic.idm.project.uIDsl.Option optionUI, fr.istic.idm.project.pollDsl.Option optionPivot) {
 		optionGlobal.type = UIMM.Type.get(optionUI.type.value);
-		optionGlobal.id = optionPivot.id;
+		optionGlobal.id = optionUI.id;
 		optionGlobal.content = optionPivot.content;
 	}
 	

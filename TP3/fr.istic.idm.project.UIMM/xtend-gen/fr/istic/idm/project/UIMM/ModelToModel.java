@@ -1,6 +1,7 @@
 package fr.istic.idm.project.UIMM;
 
 import UIMM.UIMMFactory;
+import UIMM.UIMMPackage;
 import fr.istic.idm.project.PollDslStandaloneSetupGenerated;
 import fr.istic.idm.project.UIDslStandaloneSetupGenerated;
 import fr.istic.idm.project.uIDsl.Option;
@@ -12,6 +13,7 @@ import java.util.HashMap;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.xtext.xbase.lib.Exceptions;
@@ -49,8 +51,10 @@ public class ModelToModel {
   
   public void save(final URI uri, final UIMM.PollSystem pollS) {
     try {
-      ResourceSetImpl _resourceSetImpl = new ResourceSetImpl();
-      Resource res = _resourceSetImpl.createResource(uri);
+      final ResourceSetImpl resourceSet = new ResourceSetImpl();
+      EPackage.Registry _packageRegistry = resourceSet.getPackageRegistry();
+      _packageRegistry.put(UIMMPackage.eNS_URI, UIMMPackage.eINSTANCE);
+      Resource res = resourceSet.createResource(uri);
       EList<EObject> _contents = res.getContents();
       _contents.add(pollS);
       HashMap<Object, Object> _hashMap = new HashMap<Object, Object>();
@@ -155,7 +159,7 @@ public class ModelToModel {
     int _value = _type.getValue();
     UIMM.Type _get = UIMM.Type.get(_value);
     optionGlobal.setType(_get);
-    String _id = optionPivot.getId();
+    String _id = optionUI.getId();
     optionGlobal.setId(_id);
     String _content = optionPivot.getContent();
     optionGlobal.setContent(_content);

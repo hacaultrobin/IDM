@@ -2,14 +2,14 @@
 <UI:PollSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UI="fr.istic.idm.project.UI">
   <polls>
     <questions id="q1" content="Agree?">
-      <options content="Oui" type="RadioButton"/>
-      <options content="Non" type="RadioButton"/>
-      <options content="Pourquoi" type="TextBox"/>
+      <options id="RadioButton" content="Oui" type="RadioButton"/>
+      <options id="RadioButton" content="Non" type="RadioButton"/>
+      <options id="TextBox" content="Pourquoi" type="TextBox"/>
     </questions>
     <questions id="q2" content="What is p2?">
-      <options content="Reponse A" type="ComboBox"/>
-      <options content="Reponse B" type="ComboBox"/>
-      <options content="Reponse C" type="ComboBox"/>
+      <options id="ComboBoxItem" content="Reponse A" type="ComboBox"/>
+      <options id="ComboBoxItem" content="Reponse B" type="ComboBox"/>
+      <options id="ComboBoxItem" content="Reponse C" type="ComboBox"/>
     </questions>
   </polls>
 </UI:PollSystem>
