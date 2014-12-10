@@ -17,7 +17,6 @@ class ModelToHTML {
 					«IF p.name != null»
 						<h1>«p.name»</h1>
 					«ENDIF»
-					
 					«FOR q : p.questions»
 						<form action="#" method="GET">
 							<label>«q.content»</label><br>
@@ -54,9 +53,9 @@ class ModelToHTML {
 		
 		var html = modelToHTML.convert(model.polls);
 		
-		val fw = new FileWriter("q1.html")
-		fw.write(html.toString)
-		fw.close
+		val fw = new FileWriter("q1.html");
+		fw.write(html.toString);
+		fw.close;
 		
 		println("done");
 	}

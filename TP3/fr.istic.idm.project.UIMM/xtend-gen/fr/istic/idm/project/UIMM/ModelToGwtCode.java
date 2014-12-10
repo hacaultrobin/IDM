@@ -27,26 +27,69 @@ import org.eclipse.xtext.xbase.lib.IterableExtensions;
 public class ModelToGwtCode {
   public CharSequence convert(final List<Poll> polls) {
     StringConcatenation _builder = new StringConcatenation();
+    _builder.append("\t\t");
+    _builder.append("import com.google.gwt.core.client.EntryPoint;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("import com.google.gwt.user.client.ui.CheckBox;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("import com.google.gwt.user.client.ui.Label;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("import com.google.gwt.user.client.ui.ListBox;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("import com.google.gwt.user.client.ui.RadioButton;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("import com.google.gwt.user.client.ui.RootPanel;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("import com.google.gwt.user.client.ui.TextBox;");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("import com.google.gwt.user.client.ui.VerticalPanel;");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("public class Qgwt implements EntryPoint {");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("public void onModuleLoad() {");
+    _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("VerticalPanel panel = new VerticalPanel();");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("//Liste des éléments GWT pour le questionnaire");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("Label poll;");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("Label question;");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("Label rep;");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("CheckBox cb;");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("RadioButton rb;");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("ListBox dropBox;");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("TextBox tb;");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("//Init poll");
     _builder.newLine();
     {
@@ -55,11 +98,13 @@ public class ModelToGwtCode {
           String _name = p.getName();
           boolean _notEquals = (!Objects.equal(_name, null));
           if (_notEquals) {
+            _builder.append("\t\t\t\t");
             _builder.append("poll = new Label(\"");
             String _name_1 = p.getName();
-            _builder.append(_name_1, "");
+            _builder.append(_name_1, "\t\t\t\t");
             _builder.append("\");");
             _builder.newLineIfNotEmpty();
+            _builder.append("\t\t\t\t");
             _builder.append("panel.add(poll);");
             _builder.newLine();
           }
@@ -67,11 +112,13 @@ public class ModelToGwtCode {
         {
           EList<Question> _questions = p.getQuestions();
           for(final Question q : _questions) {
+            _builder.append("\t\t\t\t");
             _builder.append("question = new Label(\"");
             String _content = q.getContent();
-            _builder.append(_content, "");
+            _builder.append(_content, "\t\t\t\t");
             _builder.append("\");");
             _builder.newLineIfNotEmpty();
+            _builder.append("\t\t\t\t");
             _builder.append("panel.add(question);");
             _builder.newLine();
             {
@@ -85,6 +132,7 @@ public class ModelToGwtCode {
               };
               boolean _exists = IterableExtensions.<Option>exists(_options, _function);
               if (_exists) {
+                _builder.append("\t\t\t\t");
                 _builder.append("dropBox = new ListBox(false);");
                 _builder.newLine();
               }
@@ -97,11 +145,13 @@ public class ModelToGwtCode {
                   int _value = _type.getValue();
                   boolean _equals = (_value == 0);
                   if (_equals) {
+                    _builder.append("\t\t\t\t");
                     _builder.append("cb = new CheckBox(\"");
                     String _content_1 = o.getContent();
-                    _builder.append(_content_1, "");
+                    _builder.append(_content_1, "\t\t\t\t");
                     _builder.append("\");");
                     _builder.newLineIfNotEmpty();
+                    _builder.append("\t\t\t\t");
                     _builder.append("panel.add(cb);");
                     _builder.newLine();
                   }
@@ -111,14 +161,16 @@ public class ModelToGwtCode {
                   int _value_1 = _type_1.getValue();
                   boolean _equals_1 = (_value_1 == 1);
                   if (_equals_1) {
+                    _builder.append("\t\t\t\t");
                     _builder.append("rb = new RadioButton(\"");
                     String _id = o.getId();
-                    _builder.append(_id, "");
+                    _builder.append(_id, "\t\t\t\t");
                     _builder.append("\", \"");
                     String _content_2 = o.getContent();
-                    _builder.append(_content_2, "");
+                    _builder.append(_content_2, "\t\t\t\t");
                     _builder.append("\");");
                     _builder.newLineIfNotEmpty();
+                    _builder.append("\t\t\t\t");
                     _builder.append("panel.add(rb);");
                     _builder.newLine();
                   }
@@ -128,9 +180,10 @@ public class ModelToGwtCode {
                   int _value_2 = _type_2.getValue();
                   boolean _equals_2 = (_value_2 == 2);
                   if (_equals_2) {
+                    _builder.append("\t\t\t\t");
                     _builder.append("dropBox.addItem(\"");
                     String _content_3 = o.getContent();
-                    _builder.append(_content_3, "");
+                    _builder.append(_content_3, "\t\t\t\t");
                     _builder.append("\");");
                     _builder.newLineIfNotEmpty();
                   }
@@ -140,15 +193,19 @@ public class ModelToGwtCode {
                   int _value_3 = _type_3.getValue();
                   boolean _equals_3 = (_value_3 == 3);
                   if (_equals_3) {
+                    _builder.append("\t\t\t\t");
                     _builder.append("rep = new Label(\"");
                     String _content_4 = o.getContent();
-                    _builder.append(_content_4, "");
+                    _builder.append(_content_4, "\t\t\t\t");
                     _builder.append("\");");
                     _builder.newLineIfNotEmpty();
+                    _builder.append("\t\t\t\t");
                     _builder.append("tb = new TextBox();");
                     _builder.newLine();
+                    _builder.append("\t\t\t\t");
                     _builder.append("panel.add(rep);");
                     _builder.newLine();
+                    _builder.append("\t\t\t\t");
                     _builder.append("panel.add(tb);");
                     _builder.newLine();
                   }
@@ -166,6 +223,7 @@ public class ModelToGwtCode {
               };
               boolean _exists_1 = IterableExtensions.<Option>exists(_options_2, _function_1);
               if (_exists_1) {
+                _builder.append("\t\t\t\t");
                 _builder.append("panel.add(dropBox);");
                 _builder.newLine();
               }
@@ -174,8 +232,16 @@ public class ModelToGwtCode {
         }
       }
     }
+    _builder.append("\t\t\t\t");
     _builder.newLine();
+    _builder.append("\t\t\t\t");
     _builder.append("RootPanel.get().add(panel);");
+    _builder.newLine();
+    _builder.append("\t\t\t");
+    _builder.append("}");
+    _builder.newLine();
+    _builder.append("\t\t");
+    _builder.append("}");
     _builder.newLine();
     return _builder;
   }
@@ -186,7 +252,7 @@ public class ModelToGwtCode {
       PollSystem model = modelToGWT.load("q1.xmi");
       EList<Poll> _polls = model.getPolls();
       CharSequence html = modelToGWT.convert(_polls);
-      final FileWriter fw = new FileWriter("q1.java");
+      final FileWriter fw = new FileWriter("Qgwt.java");
       String _string = html.toString();
       fw.write(_string);
       fw.close();

@@ -11,55 +11,68 @@ import org.eclipse.emf.common.util.URI
 class ModelToGwtCode {
 
 	def convert(List<Poll> polls) '''
-		VerticalPanel panel = new VerticalPanel();
-		
-		//Liste des éléments GWT pour le questionnaire
-		Label poll;
-		Label question;
-		Label rep;
-		CheckBox cb;
-		RadioButton rb;
-		ListBox dropBox;
-		TextBox tb;
-		
-		//Init poll
-		«FOR p : polls»
-			«IF p.name != null»
-				poll = new Label("«p.name»");
-				panel.add(poll);
-			«ENDIF»
-			«FOR q : p.questions»
-				question = new Label("«q.content»");
-				panel.add(question);
-				«IF q.options.exists[o | o.type.value == 2]»
-					dropBox = new ListBox(false);
-				«ENDIF»
-				«FOR o : q.options»
-					«IF o.type.value == 0»
-						cb = new CheckBox("«o.content»");
-						panel.add(cb);
+		import com.google.gwt.core.client.EntryPoint;
+		import com.google.gwt.user.client.ui.CheckBox;
+		import com.google.gwt.user.client.ui.Label;
+		import com.google.gwt.user.client.ui.ListBox;
+		import com.google.gwt.user.client.ui.RadioButton;
+		import com.google.gwt.user.client.ui.RootPanel;
+		import com.google.gwt.user.client.ui.TextBox;
+		import com.google.gwt.user.client.ui.VerticalPanel;
+ 
+		public class Qgwt implements EntryPoint {
+			public void onModuleLoad() {
+				VerticalPanel panel = new VerticalPanel();
+				
+				//Liste des éléments GWT pour le questionnaire
+				Label poll;
+				Label question;
+				Label rep;
+				CheckBox cb;
+				RadioButton rb;
+				ListBox dropBox;
+				TextBox tb;
+				
+				//Init poll
+				«FOR p : polls»
+					«IF p.name != null»
+						poll = new Label("«p.name»");
+						panel.add(poll);
 					«ENDIF»
-					«IF o.type.value == 1»
-						rb = new RadioButton("«o.id»", "«o.content»");
-						panel.add(rb);
-					«ENDIF»
-					«IF o.type.value == 2»
-						dropBox.addItem("«o.content»");
-					«ENDIF»
-					«IF o.type.value == 3»
-						rep = new Label("«o.content»");
-						tb = new TextBox();
-						panel.add(rep);
-						panel.add(tb);
-					«ENDIF»
+					«FOR q : p.questions»
+						question = new Label("«q.content»");
+						panel.add(question);
+						«IF q.options.exists[o | o.type.value == 2]»
+							dropBox = new ListBox(false);
+						«ENDIF»
+						«FOR o : q.options»
+							«IF o.type.value == 0»
+								cb = new CheckBox("«o.content»");
+								panel.add(cb);
+							«ENDIF»
+							«IF o.type.value == 1»
+								rb = new RadioButton("«o.id»", "«o.content»");
+								panel.add(rb);
+							«ENDIF»
+							«IF o.type.value == 2»
+								dropBox.addItem("«o.content»");
+							«ENDIF»
+							«IF o.type.value == 3»
+								rep = new Label("«o.content»");
+								tb = new TextBox();
+								panel.add(rep);
+								panel.add(tb);
+							«ENDIF»
+						«ENDFOR»
+						«IF q.options.exists[o | o.type.value == 2]»
+							panel.add(dropBox);
+						«ENDIF»
+					«ENDFOR»
 				«ENDFOR»
-				«IF q.options.exists[o | o.type.value == 2]»
-					panel.add(dropBox);
-				«ENDIF»
-			«ENDFOR»
-		«ENDFOR»
-		
-		RootPanel.get().add(panel);
+				
+				RootPanel.get().add(panel);
+			}
+		}
 	'''
 	
 	def static void main(String[] args) {		
@@ -68,9 +81,9 @@ class ModelToGwtCode {
 		
 		var html = modelToGWT.convert(model.polls);
 		
-		val fw = new FileWriter("q1.java")
-		fw.write(html.toString)
-		fw.close
+		val fw = new FileWriter("Qgwt.java");
+		fw.write(html.toString);
+		fw.close;
 		
 		println("done");
 	}

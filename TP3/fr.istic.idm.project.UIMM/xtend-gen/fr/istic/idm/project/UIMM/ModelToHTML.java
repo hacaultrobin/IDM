@@ -46,8 +46,6 @@ public class ModelToHTML {
             _builder.newLineIfNotEmpty();
           }
         }
-        _builder.append("\t\t");
-        _builder.newLine();
         {
           EList<Question> _questions = p.getQuestions();
           for(final Question q : _questions) {
